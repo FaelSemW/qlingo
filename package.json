@@ -1,0 +1,16 @@
+{
+  "name": "qlingo",
+  "version": "1.0.0",
+  "description": "QLingo - Plataforma Aberta e Gamificada para Estudos de Concursos & OAB (100% Grátis)",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix client install && npm --prefix client run build",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,green\" \"npm run server\" \"npm run client\"",
+    "start": "node server/index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

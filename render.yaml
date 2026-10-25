@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: qlingo
+    runtime: node
+    plan: free
+    region: ohio
+    buildCommand: npm --prefix client install && npm --prefix client run build && npm --prefix server install
+    startCommand: npm --prefix server start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        generateValue: true
