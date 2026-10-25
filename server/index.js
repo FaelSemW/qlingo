@@ -21,6 +21,11 @@ app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 app.use(optionalAuth);
 
+// Servir PDFs e arquivos baixados diretamente do HD D:\questions
+if (fs.existsSync('D:/questions')) {
+  app.use('/arquivos_locais', express.static('D:/questions'));
+}
+
 // Auth endpoints
 app.use('/api/auth', authRouter);
 app.post('/oauth/token', (req, res) => {

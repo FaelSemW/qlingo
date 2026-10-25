@@ -3,7 +3,11 @@ const path = require('path');
 const fs = require('fs');
 const seedData = require('./seed-data');
 
-const dbPath = path.join(__dirname, 'qlingo.sqlite');
+const localMasterDb = 'D:/questions/database/qlingo_master.sqlite';
+const dbPath = (fs.existsSync('D:/questions') && fs.existsSync(localMasterDb))
+  ? localMasterDb
+  : path.join(__dirname, 'qlingo.sqlite');
+console.log(`[QLingo DB] Conectado ao banco: ${dbPath}`);
 const db = new DatabaseSync(dbPath);
 
 // Create schema based on REA discoveries and QLingo enhancements

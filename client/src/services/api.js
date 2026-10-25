@@ -248,6 +248,17 @@ export async function toggleNotebookQuestion(notebookId, questionId) {
   return res.json();
 }
 
+export async function fetchCatalogProvas(params = {}) {
+  const query = new URLSearchParams(params).toString();
+  const res = await fetch(`${API_BASE}/concursos/catalogo?${query}`);
+  return res.json();
+}
+
+export async function fetchCatalogStats() {
+  const res = await fetch(`${API_BASE}/concursos/catalogo/stats`);
+  return res.json();
+}
+
 export async function fetchWeeklyErrors() {
   const res = await fetch(`${API_BASE}/mobile/notebooks/weekly_errors`, {
     headers: { ...getAuthHeader() }
@@ -330,7 +341,9 @@ export const api = {
   fetchWeeklyErrors,
   fetchUserProfile,
   fetchPerformance,
-  checkLimits
+  checkLimits,
+  fetchCatalogProvas,
+  fetchCatalogStats
 };
 
 export default api;

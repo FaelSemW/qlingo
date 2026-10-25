@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Navigation from './components/Navigation';
 import QuestionCard from './components/QuestionCard';
 import PracticeExam from './components/PracticeExam';
+import ConcursosCatalog from './components/ConcursosCatalog';
 import FlashcardViewer from './components/FlashcardViewer';
 import NotebooksView from './components/NotebooksView';
 import ProfileStats from './components/ProfileStats';
@@ -461,6 +462,11 @@ export default function App() {
         {/* PRACTICE EXAMS TAB */}
         {activeTab === 'practice' && (
           <PracticeExam onBackToDashboard={() => setActiveTab('dashboard')} />
+        )}
+
+        {/* PROVAS & CONCURSOS DO HD */}
+        {activeTab === 'catalog' && (
+          <ConcursosCatalog />
         )}
 
         {/* FLASHCARDS TAB */}
