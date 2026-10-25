@@ -11,7 +11,6 @@ const flashcardsRouter = require('./routes/flashcards');
 const notebooksRouter = require('./routes/notebooks');
 const userRouter = require('./routes/user');
 const authRouter = require('./routes/auth');
-const catalogRouter = require('./routes/catalog');
 const { optionalAuth } = require('./middleware/auth');
 
 const app = express();
@@ -79,8 +78,6 @@ app.use('/api/performance', (req, res) => {
   req.url = '/performance';
   userRouter(req, res);
 });
-app.use('/api/concursos/catalogo', catalogRouter);
-app.use('/api/catalogo', catalogRouter);
 
 // Root welcome
 app.get('/api', (req, res) => {

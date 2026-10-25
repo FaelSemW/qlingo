@@ -1,12 +1,11 @@
 import React from 'react';
-import { LayoutDashboard, CheckSquare, Clock, Layers, BookmarkCheck, User, FolderDown } from 'lucide-react';
+import { LayoutDashboard, CheckSquare, Clock, Layers, BookmarkCheck, User } from 'lucide-react';
 
 export default function Navigation({ activeTab, onSelectTab }) {
   const tabs = [
     { id: 'dashboard', label: 'Início', icon: LayoutDashboard },
     { id: 'questions', label: 'Questões', icon: CheckSquare },
     { id: 'practice', label: 'Simulados', icon: Clock },
-    { id: 'catalog', label: 'Provas do HD', icon: FolderDown },
     { id: 'flashcards', label: 'Flashcards', icon: Layers },
     { id: 'notebooks', label: 'Cadernos', icon: BookmarkCheck },
     { id: 'profile', label: 'Desempenho', icon: User }
