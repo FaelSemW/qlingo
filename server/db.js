@@ -116,6 +116,14 @@ try { db.exec('ALTER TABLE answers ADD COLUMN user_id INTEGER DEFAULT 1;'); } ca
 try { db.exec('ALTER TABLE notebooks ADD COLUMN user_id INTEGER DEFAULT 1;'); } catch (e) {}
 try { db.exec('ALTER TABLE practice_test_attempts ADD COLUMN user_id INTEGER DEFAULT 1;'); } catch (e) {}
 
+// Ensure default demo user (id: 1) exists FIRST before any foreign key references
+const bcrypt = require('bcryptjs');
+const demoHash = bcrypt.hashSync('123456', 10);
+db.prepare(`
+  INSERT OR IGNORE INTO users (id, name, email, password_hash, xp, level, streak_current, streak_max, daily_goal)
+  VALUES (1, 'Estudante Focado', 'estudante@qlingo.com', ?, 320, 'Concurseiro Dedicado 🔥', 5, 12, 10)
+`).run(demoHash);
+
 // Populate initial data if empty
 const countStmt = db.prepare('SELECT COUNT(*) as count FROM questions');
 const questionCount = countStmt.get().count;
@@ -146,7 +154,7 @@ if (questionCount === 0) {
   }
 
   const insertNotebook = db.prepare(`
-    INSERT OR IGNORE INTO notebooks (id, name, color) VALUES (?, ?, ?)
+    INSERT OR IGNORE INTO notebooks (id, user_id, name, color) VALUES (?, 1, ?, ?)
   `);
   const insertNotebookQ = db.prepare(`
     INSERT OR IGNORE INTO notebook_questions (notebook_id, question_id) VALUES (?, ?)
@@ -186,17 +194,6 @@ if (questionCount === 0) {
   `);
 
   console.log('[QLingo DB] Banco inicializado com sucesso!');
-}
-
-// Ensure demo user exists
-const demoExists = db.prepare('SELECT id FROM users WHERE email = ?').get('estudante@qlingo.com');
-if (!demoExists) {
-  const bcrypt = require('bcryptjs');
-  const demoHash = bcrypt.hashSync('123456', 10);
-  db.prepare(`
-    INSERT INTO users (name, email, password_hash, xp, level, streak_current, streak_max, daily_goal)
-    VALUES ('Estudante Focado', 'estudante@qlingo.com', ?, 320, 'Concurseiro Dedicado 🔥', 5, 12, 10)
-  `).run(demoHash);
 }
 
 module.exports = db;
