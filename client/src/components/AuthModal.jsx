@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { User, Lock, Mail, Sparkles, CheckCircle2, AlertCircle, ArrowRight } from 'lucide-react';
 import { loginUser, registerUser, loginWithFirebase } from '../services/api';
+import { signInWithGoogle, isFirebaseConfigured } from '../services/firebase';
 
 export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
   const [mode, setMode] = useState('login'); // 'login' | 'register'
@@ -39,21 +40,39 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
   };
 
   const handleGoogleLogin = async () => {
-    const googleEmail = window.prompt('Digite seu e-mail para acesso rápido com perfil individual (Firebase SSO):');
-    if (!googleEmail || !googleEmail.includes('@')) return;
+    setIsLoading(true);
+    setErrorMessage(null);
     try {
-      setIsLoading(true);
-      const res = await loginWithFirebase({
-        email: googleEmail,
-        name: googleEmail.split('@')[0],
-        avatar: null
-      });
+      if (!isFirebaseConfigured) {
+        const email = window.prompt('O Firebase aguarda as chaves no arquivo .env!\n\nPara testar login imediato agora mesmo, digite seu e-mail:');
+        if (!email || !email.includes('@')) return;
+        const res = await loginWithFirebase({
+          email: email.trim(),
+          name: email.split('@')[0],
+          avatar: null
+        });
+        if (res.user) {
+          if (onAuthSuccess) onAuthSuccess(res.user);
+          onClose();
+        }
+        return;
+      }
+
+      const googleData = await signInWithGoogle();
+      const res = await loginWithFirebase(googleData);
       if (res.user) {
         if (onAuthSuccess) onAuthSuccess(res.user);
         onClose();
+      } else if (res.error) {
+        setErrorMessage(res.error);
       }
-    } catch (e) {
-      setErrorMessage('Erro ao conectar via Google SSO');
+    } catch (err) {
+      if (err.code === 'auth/popup-closed-by-user') {
+        // Usuário fechou o popup do Google
+      } else {
+        console.error('Google Sign-in error:', err);
+        setErrorMessage(err.message || 'Erro ao autenticar com o Google');
+      }
     } finally {
       setIsLoading(false);
     }
