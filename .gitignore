@@ -33,3 +33,6 @@ client/android/local.properties
 client/ios/App/build/
 client/ios/App/Pods/
 client/ios/App/.symlinks/
+
+# Scratch & Temporary
+scratch/

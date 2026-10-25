@@ -225,10 +225,15 @@ if (questionCount < 1000) {
   console.log('[QLingo DB] Mega banco sincronizado com sucesso!');
 }
 
-// Ensure practice tests are always up to date (all 52 tests, including ENEM 2009-2026)
+// Ensure practice tests are always up to date (all 52 tests, including ENEM 2009-2026 with exactly 90 questions)
 try {
+  const hasIncompleteEnem = db.prepare(`
+    SELECT COUNT(*) as c FROM practice_tests 
+    WHERE id LIKE 'simulado-enem-20%' AND id NOT LIKE '%express%' AND json_array_length(question_ids) < 90
+  `).get()?.c > 0;
   const ptCount = db.prepare('SELECT COUNT(*) as count FROM practice_tests').get().count;
-  if (ptCount < 50 && seedData.practice_tests && seedData.practice_tests.length > 0) {
+
+  if ((ptCount < 50 || hasIncompleteEnem) && seedData.practice_tests && seedData.practice_tests.length > 0) {
     const insertPT = db.prepare(`
       INSERT OR REPLACE INTO practice_tests (id, title, description, time_limit_minutes, question_ids, career, category, cut_score, examining_board, institute)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -247,6 +252,7 @@ try {
         pt.institute || 'Nacional'
       );
     }
+    console.log('[QLingo DB] Practice tests verificados e sincronizados com 90 questões cada!');
   }
 } catch (e) {
   console.warn('[QLingo DB] Aviso ao verificar practice_tests:', e.message);
