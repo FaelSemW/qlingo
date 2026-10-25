@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { resolveQuestion, addComment, toggleNotebookQuestion } from '../services/api';
+import StatementRenderer from './StatementRenderer';
 
 export default function QuestionCard({ 
   question, 
@@ -152,9 +153,9 @@ export default function QuestionCard({
       {/* Question Body */}
       <div className="p-5 sm:p-6">
         
-        {/* Statement */}
+        {/* Statement with rich figures, quotes and formatting */}
         <div className={`text-slate-800 leading-relaxed font-normal mb-6 ${currentFontSize}`}>
-          <p className="whitespace-pre-line">{question.statement}</p>
+          <StatementRenderer statement={question.statement} />
         </div>
 
         {/* Alternatives */}

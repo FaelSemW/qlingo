@@ -1,0 +1,16 @@
+{
+  "appId": "com.qlingo.app",
+  "appName": "QLingo",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "url": "https://qlingo.onrender.com",
+    "cleartext": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "backgroundColor": "#020617"
+    }
+  }
+}

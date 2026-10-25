@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { api } from '../services/api';
 import confetti from 'canvas-confetti';
+import StatementRenderer from './StatementRenderer';
 
 export default function PracticeExam({ user, onRequireAuth }) {
   const [tests, setTests] = useState([]);
@@ -353,9 +354,7 @@ export default function PracticeExam({ user, onRequireAuth }) {
                     </span>
                   </div>
 
-                  <p className="text-sm text-slate-200 leading-relaxed font-normal mb-4 whitespace-pre-line">
-                    {q.statement}
-                  </p>
+                  <StatementRenderer statement={q.statement} isDark={true} className="text-sm text-slate-200 mb-4" />
 
                   {/* Alternatives */}
                   <div className="space-y-2 mb-4">
@@ -490,8 +489,8 @@ export default function PracticeExam({ user, onRequireAuth }) {
           </div>
 
           {/* Statement */}
-          <div className="text-base text-slate-100 leading-relaxed font-normal whitespace-pre-line py-2">
-            {currentQ.statement}
+          <div className="text-base text-slate-100 leading-relaxed font-normal py-2">
+            <StatementRenderer statement={currentQ.statement} isDark={true} />
           </div>
 
           {/* Alternatives */}

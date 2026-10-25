@@ -23,3 +23,13 @@ npm-debug.log*
 # OS Files
 .DS_Store
 Thumbs.db
+
+# Android & iOS mobile builds
+.gradle/
+client/android/.gradle/
+client/android/app/build/
+client/android/build/
+client/android/local.properties
+client/ios/App/build/
+client/ios/App/Pods/
+client/ios/App/.symlinks/
