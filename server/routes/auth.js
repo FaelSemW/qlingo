@@ -114,6 +114,51 @@ router.get('/me', requireAuth, (req, res) => {
   }
 });
 
+// Firebase / OAuth SSO Login (POST /api/auth/firebase)
+router.post('/firebase', (req, res) => {
+  try {
+    const { email, name, avatar } = req.body;
+    if (!email) {
+      return res.status(400).json({ error: 'E-mail do Firebase é obrigatório' });
+    }
+
+    const emailClean = email.trim().toLowerCase();
+    let user = db.prepare('SELECT * FROM users WHERE email = ?').get(emailClean);
+
+    if (!user) {
+      const randomPassword = bcrypt.hashSync(Math.random().toString(36), 10);
+      const displayName = (name || emailClean.split('@')[0]).trim();
+      const result = db.prepare(`
+        INSERT INTO users (name, email, password_hash, avatar, xp, level, streak_current, streak_max, daily_goal)
+        VALUES (?, ?, ?, ?, 50, 'Concurseiro Iniciante 🎯', 1, 1, 10)
+      `).run(displayName, emailClean, randomPassword, avatar || null);
+
+      user = db.prepare('SELECT * FROM users WHERE id = ?').get(result.lastInsertRowid);
+    }
+
+    const token = jwt.sign({ id: user.id, email: user.email, name: user.name }, JWT_SECRET, { expiresIn: '30d' });
+
+    res.json({
+      success: true,
+      token,
+      user: {
+        id: user.id,
+        name: user.name,
+        email: user.email,
+        avatar: user.avatar,
+        xp: user.xp,
+        level: user.level,
+        streak_current: user.streak_current,
+        streak_max: user.streak_max,
+        daily_goal: user.daily_goal
+      }
+    });
+  } catch (error) {
+    console.error('Error in /firebase auth:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Odin OAuth compatibility endpoint (POST /oauth/token)
 router.post('/oauth/token', (req, res) => {
   const { username, email, password } = req.body;

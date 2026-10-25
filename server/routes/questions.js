@@ -50,6 +50,7 @@ function formatQuestionRow(r) {
 router.get('/daily', (req, res) => {
   try {
     const { career = 'all' } = req.query;
+    const userId = req.userId;
     const now = new Date();
     const dateStr = now.toISOString().slice(0, 10);
     
@@ -58,8 +59,8 @@ router.get('/daily', (req, res) => {
 
     let query = `
       SELECT q.*, 
-        (SELECT selected_answer FROM answers WHERE question_id = q.id ORDER BY id DESC LIMIT 1) as last_user_answer,
-        (SELECT is_correct FROM answers WHERE question_id = q.id ORDER BY id DESC LIMIT 1) as is_resolved_correct
+        ${userId ? `(SELECT selected_answer FROM answers WHERE question_id = q.id AND user_id = ${Number(userId)} ORDER BY id DESC LIMIT 1)` : 'NULL'} as last_user_answer,
+        ${userId ? `(SELECT is_correct FROM answers WHERE question_id = q.id AND user_id = ${Number(userId)} ORDER BY id DESC LIMIT 1)` : 'NULL'} as is_resolved_correct
       FROM questions q
       WHERE 1=1
     `;
@@ -136,11 +137,12 @@ router.get('/daily', (req, res) => {
 router.get('/', (req, res) => {
   try {
     const { discipline, examining_board, year, difficulty, search, status, career, exam_type, limit = 20, offset = 0 } = req.query;
+    const userId = req.userId;
 
     let query = `
       SELECT q.*, 
-        (SELECT selected_answer FROM answers WHERE question_id = q.id ORDER BY id DESC LIMIT 1) as last_user_answer,
-        (SELECT is_correct FROM answers WHERE question_id = q.id ORDER BY id DESC LIMIT 1) as is_resolved_correct
+        ${userId ? `(SELECT selected_answer FROM answers WHERE question_id = q.id AND user_id = ${Number(userId)} ORDER BY id DESC LIMIT 1)` : 'NULL'} as last_user_answer,
+        ${userId ? `(SELECT is_correct FROM answers WHERE question_id = q.id AND user_id = ${Number(userId)} ORDER BY id DESC LIMIT 1)` : 'NULL'} as is_resolved_correct
       FROM questions q
       WHERE 1=1
     `;
@@ -176,11 +178,24 @@ router.get('/', (req, res) => {
     }
 
     if (status === 'resolved') {
-      query += ` AND q.id IN (SELECT DISTINCT question_id FROM answers)`;
+      if (userId) {
+        query += ` AND q.id IN (SELECT DISTINCT question_id FROM answers WHERE user_id = ?)`;
+        params.push(userId);
+      } else {
+        query += ` AND 1=0`;
+      }
     } else if (status === 'unresolved') {
-      query += ` AND q.id NOT IN (SELECT DISTINCT question_id FROM answers)`;
+      if (userId) {
+        query += ` AND q.id NOT IN (SELECT DISTINCT question_id FROM answers WHERE user_id = ?)`;
+        params.push(userId);
+      }
     } else if (status === 'wrong') {
-      query += ` AND q.id IN (SELECT question_id FROM answers WHERE is_correct = 0)`;
+      if (userId) {
+        query += ` AND q.id IN (SELECT question_id FROM answers WHERE is_correct = 0 AND user_id = ?)`;
+        params.push(userId);
+      } else {
+        query += ` AND 1=0`;
+      }
     }
 
     // Clone for count
@@ -253,10 +268,11 @@ router.get('/downloads', (req, res) => {
 router.get('/:id', (req, res) => {
   try {
     const { id } = req.params;
+    const userId = req.userId;
     const stmt = db.prepare(`
       SELECT q.*,
-        (SELECT selected_answer FROM answers WHERE question_id = q.id ORDER BY id DESC LIMIT 1) as last_user_answer,
-        (SELECT is_correct FROM answers WHERE question_id = q.id ORDER BY id DESC LIMIT 1) as is_resolved_correct
+        ${userId ? `(SELECT selected_answer FROM answers WHERE question_id = q.id AND user_id = ${Number(userId)} ORDER BY id DESC LIMIT 1)` : 'NULL'} as last_user_answer,
+        ${userId ? `(SELECT is_correct FROM answers WHERE question_id = q.id AND user_id = ${Number(userId)} ORDER BY id DESC LIMIT 1)` : 'NULL'} as is_resolved_correct
       FROM questions q
       WHERE q.id = ?
     `);
@@ -297,32 +313,39 @@ router.post('/:id/resolve', (req, res) => {
     }
 
     const is_correct = question.right_answer.trim().toUpperCase() === answer.trim().toUpperCase() ? 1 : 0;
-    const userId = req.userId || 1;
+    const userId = req.userId;
 
-    // Record answer for specific user
-    const insertAnswer = db.prepare('INSERT INTO answers (user_id, question_id, selected_answer, is_correct) VALUES (?, ?, ?, ?)');
-    insertAnswer.run(userId, Number(id), answer, is_correct);
+    let xp_earned = is_correct ? 15 : 5;
+    let newXp = 0;
+    let newLevel = "Visitante";
+    let todaySolved = 0;
+    let dailyGoal = 10;
 
-    // If incorrect, automatically add to "Caderno de Erros"
-    if (!is_correct) {
-      db.prepare('INSERT OR IGNORE INTO notebook_questions (notebook_id, question_id) VALUES (?, ?)').run('nb-caderno-erros', Number(id));
+    // Se o usuário estiver autenticado, salva no progresso pessoal dele
+    if (userId) {
+      const insertAnswer = db.prepare("INSERT INTO answers (user_id, question_id, selected_answer, is_correct) VALUES (?, ?, ?, ?)");
+      insertAnswer.run(userId, Number(id), answer, is_correct);
+
+      // Se errou, adiciona no Caderno de Erros exclusivo desse usuário
+      if (!is_correct) {
+        const errNbId = "nb-erros-" + userId;
+        db.prepare("INSERT OR IGNORE INTO notebooks (id, user_id, name, color) VALUES (?, ?, ?, ?)").run(errNbId, userId, "Caderno de Erros 🎯", "#ef4444");
+        db.prepare("INSERT OR IGNORE INTO notebook_questions (notebook_id, question_id) VALUES (?, ?)").run(errNbId, Number(id));
+      }
+
+      const user = db.prepare("SELECT * FROM users WHERE id = ?").get(userId);
+      newXp = (user?.xp || 0) + xp_earned;
+      newLevel = user?.level || "Iniciante";
+      if (newXp > 1200) newLevel = "Mestre dos Concursos 🏆";
+      else if (newXp > 600) newLevel = "Concurseiro Avançado ⚡";
+      else if (newXp > 250) newLevel = "Concurseiro Focado 🔥";
+
+      db.prepare("UPDATE users SET xp = ?, level = ? WHERE id = ?").run(newXp, newLevel, userId);
+
+      const todayCountStmt = db.prepare("SELECT COUNT(*) as count FROM answers WHERE user_id = ? AND date(created_at) = date('now')");
+      todaySolved = todayCountStmt.get(userId).count;
+      dailyGoal = user?.daily_goal || 10;
     }
-
-    // Award XP and update streak for user
-    const xp_earned = is_correct ? 15 : 5;
-    const user = db.prepare('SELECT * FROM users WHERE id = ?').get(userId);
-
-    let newXp = (user?.xp || 0) + xp_earned;
-    let newLevel = user?.level || 'Iniciante';
-    if (newXp > 1200) newLevel = 'Mestre dos Concursos 🏆';
-    else if (newXp > 600) newLevel = 'Concurseiro Avançado ⚡';
-    else if (newXp > 250) newLevel = 'Concurseiro Focado 🔥';
-
-    db.prepare('UPDATE users SET xp = ?, level = ? WHERE id = ?').run(newXp, newLevel, userId);
-
-    // Today's solved count for this user
-    const todayCountStmt = db.prepare(`SELECT COUNT(*) as count FROM answers WHERE user_id = ? AND date(created_at) = date('now')`);
-    const todaySolved = todayCountStmt.get(userId).count;
 
     res.json({
       success: true,
@@ -330,12 +353,13 @@ router.post('/:id/resolve', (req, res) => {
       selected_answer: answer,
       right_answer: question.right_answer,
       explanation: question.explanation,
-      stats_distribution: JSON.parse(question.stats_distribution || '{}'),
-      xp_earned,
+      stats_distribution: JSON.parse(question.stats_distribution || "{}"),
+      xp_earned: userId ? xp_earned : 0,
       total_xp: newXp,
       level: newLevel,
       today_solved: todaySolved,
-      daily_goal: user?.daily_goal || 10
+      daily_goal: dailyGoal,
+      is_guest: !userId
     });
   } catch (error) {
     console.error('Error resolving question:', error);

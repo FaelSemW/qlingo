@@ -3,15 +3,26 @@ const router = express.Router();
 const db = require('../db');
 const { v4: uuidv4 } = require('uuid');
 
-// Get all notebooks
+// Get all notebooks for the authenticated user
 router.get('/', (req, res) => {
   try {
-    const userId = req.userId || 1;
+    const userId = req.userId;
+    if (!userId) {
+      return res.json([]);
+    }
+
+    // Ensure this user has their personal "Caderno de Erros"
+    const defaultErrId = `nb-erros-${userId}`;
+    db.prepare(`
+      INSERT OR IGNORE INTO notebooks (id, user_id, name, color)
+      VALUES (?, ?, 'Caderno de Erros 🎯', '#ef4444')
+    `).run(defaultErrId, userId);
+
     const notebooks = db.prepare(`
       SELECT n.*, COUNT(nq.question_id) as question_count
       FROM notebooks n
       LEFT JOIN notebook_questions nq ON n.id = nq.notebook_id
-      WHERE n.user_id = ? OR n.user_id = 1
+      WHERE n.user_id = ?
       GROUP BY n.id
       ORDER BY n.created_at ASC
     `).all(userId);
@@ -26,13 +37,14 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   try {
     const { id } = req.params;
+    const userId = req.userId;
     const notebook = db.prepare('SELECT * FROM notebooks WHERE id = ?').get(id);
     if (!notebook) return res.status(404).json({ error: 'Caderno não encontrado' });
 
     const questions = db.prepare(`
       SELECT q.*, 
-        (SELECT selected_answer FROM answers WHERE question_id = q.id ORDER BY id DESC LIMIT 1) as last_user_answer,
-        (SELECT is_correct FROM answers WHERE question_id = q.id ORDER BY id DESC LIMIT 1) as is_resolved_correct
+        ${userId ? `(SELECT selected_answer FROM answers WHERE question_id = q.id AND user_id = ${Number(userId)} ORDER BY id DESC LIMIT 1)` : 'NULL'} as last_user_answer,
+        ${userId ? `(SELECT is_correct FROM answers WHERE question_id = q.id AND user_id = ${Number(userId)} ORDER BY id DESC LIMIT 1)` : 'NULL'} as is_resolved_correct
       FROM questions q
       INNER JOIN notebook_questions nq ON q.id = nq.question_id
       WHERE nq.notebook_id = ?
@@ -58,13 +70,18 @@ router.get('/:id', (req, res) => {
 // Create notebook
 router.post('/', (req, res) => {
   try {
+    const userId = req.userId;
+    if (!userId) {
+      return res.status(401).json({ error: 'Faça login para criar cadernos de questões' });
+    }
+
     const { name, color = '#3b82f6' } = req.body;
     if (!name) return res.status(400).json({ error: 'Nome do caderno obrigatório' });
 
     const id = `nb-${uuidv4().substring(0, 8)}`;
-    db.prepare('INSERT INTO notebooks (id, name, color) VALUES (?, ?, ?)').run(id, name, color);
+    db.prepare('INSERT INTO notebooks (id, user_id, name, color) VALUES (?, ?, ?, ?)').run(id, userId, name, color);
 
-    res.json({ success: true, id, name, color });
+    res.json({ success: true, id, name, color, user_id: userId });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -93,7 +110,11 @@ router.post('/:id/toggle_question', (req, res) => {
 // Weekly errors endpoint (from REA report: api/mobile/notebooks/weekly-errors/detail)
 router.get('/weekly_errors', (req, res) => {
   try {
-    const userId = req.userId || 1;
+    const userId = req.userId;
+    if (!userId) {
+      return res.json([]);
+    }
+
     const errors = db.prepare(`
       SELECT DISTINCT q.*, a.created_at as answered_at
       FROM questions q

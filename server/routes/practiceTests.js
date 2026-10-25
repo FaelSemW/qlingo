@@ -126,7 +126,7 @@ router.post('/attempts/:id/complete', (req, res) => {
   try {
     const practice_test_id = req.params.id;
     const { answers = {} } = req.body; // { question_id: selected_answer }
-    const userId = req.userId || 1;
+    const userId = req.userId;
 
     const test = db.prepare('SELECT * FROM practice_tests WHERE id = ?').get(practice_test_id);
     if (!test) return res.status(404).json({ error: 'Simulado não encontrado' });
@@ -145,13 +145,15 @@ router.post('/attempts/:id/complete', (req, res) => {
 
       if (isCorrect) {
         correctCount++;
-      } else {
-        // Add to user's wrong notebook
-        db.prepare('INSERT OR IGNORE INTO notebook_questions (notebook_id, question_id) VALUES (?, ?)').run('nb-caderno-erros', qid);
+      } else if (userId) {
+        // Add to this specific user's wrong notebook
+        const errNbId = `nb-erros-${userId}`;
+        db.prepare('INSERT OR IGNORE INTO notebooks (id, user_id, name, color) VALUES (?, ?, ?, ?)').run(errNbId, userId, 'Caderno de Erros 🎯', '#ef4444');
+        db.prepare('INSERT OR IGNORE INTO notebook_questions (notebook_id, question_id) VALUES (?, ?)').run(errNbId, qid);
       }
 
       // Record answer with user_id
-      if (userAns) {
+      if (userAns && userId) {
         db.prepare('INSERT INTO answers (user_id, question_id, selected_answer, is_correct) VALUES (?, ?, ?, ?)')
           .run(userId, qid, userAns, isCorrect ? 1 : 0);
       }
@@ -207,16 +209,22 @@ router.post('/attempts/:id/complete', (req, res) => {
       }
     }
 
-    // Save attempt
-    db.prepare(`
-      INSERT INTO practice_test_attempts (id, user_id, practice_test_id, score, total_questions, correct_answers, answers_data)
-      VALUES (?, ?, ?, ?, ?, ?, ?)
-    `).run(attemptId, userId, practice_test_id, score, total, correctCount, JSON.stringify(resultDetails));
+    // Save attempt if user is authenticated
+    if (userId) {
+      db.prepare(`
+        INSERT INTO practice_test_attempts (id, user_id, practice_test_id, score, total_questions, correct_answers, answers_data)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+      `).run(attemptId, userId, practice_test_id, score, total, correctCount, JSON.stringify(resultDetails));
 
-    // Award XP to user
-    const xpBonus = correctCount * 25 + 50; // Completion bonus
-    const user = db.prepare('SELECT xp FROM users WHERE id = ?').get(userId);
-    db.prepare('UPDATE users SET xp = xp + ? WHERE id = ?').run(xpBonus, userId);
+      // Award XP to user
+      const xpBonus = correctCount * 25 + 50; // Completion bonus
+      const user = db.prepare('SELECT xp FROM users WHERE id = ?').get(userId);
+      if (user) {
+        db.prepare('UPDATE users SET xp = xp + ? WHERE id = ?').run(xpBonus, userId);
+      }
+    }
+
+    const xpBonus = correctCount * 25 + 50;
 
     res.json({
       attempt_id: attemptId,

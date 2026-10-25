@@ -12,10 +12,12 @@ function optionalAuth(req, res, next) {
       req.userId = decoded.id;
       return next();
     } catch (err) {
-      // Invalid token, fallback to default
+      // Invalid or expired token
     }
   }
-  req.userId = 1; // Default guest/demo user
+  // Visitante não autenticado (nunca vazar ou herdar conta de outro usuário!)
+  req.user = null;
+  req.userId = null;
   next();
 }
 

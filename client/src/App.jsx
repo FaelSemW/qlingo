@@ -94,7 +94,12 @@ export default function App() {
       setStreakData(strk);
       setUserProfile(prof);
       setNotebooks(nbs || []);
-      if (me) setCurrentUser(me);
+      if (me) {
+        setCurrentUser(me);
+      } else {
+        clearAuth();
+        setCurrentUser(null);
+      }
     } catch (err) {
       console.error('Error loading initial data:', err);
     }

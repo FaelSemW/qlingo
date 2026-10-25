@@ -5,8 +5,29 @@ const db = require('../db');
 // User profile
 router.get('/profile', (req, res) => {
   try {
-    const userId = req.userId || 1;
-    const user = db.prepare('SELECT id, name, email, xp, level, streak_current, streak_max, daily_goal FROM users WHERE id = ?').get(userId);
+    const userId = req.userId;
+    if (!userId) {
+      return res.json({
+        id: null,
+        name: 'Visitante',
+        email: null,
+        xp: 0,
+        level: 'Visitante',
+        streak_current: 0,
+        streak_max: 0,
+        daily_goal: 10,
+        total_answered: 0,
+        total_correct: 0,
+        accuracy_rate: 0,
+        is_guest: true
+      });
+    }
+
+    const user = db.prepare('SELECT id, name, email, avatar, xp, level, streak_current, streak_max, daily_goal FROM users WHERE id = ?').get(userId);
+    if (!user) {
+      return res.status(404).json({ error: 'Usuário não encontrado' });
+    }
+
     const stats = db.prepare(`
       SELECT 
         COUNT(*) as total_answered,
@@ -16,10 +37,11 @@ router.get('/profile', (req, res) => {
     `).get(userId);
 
     res.json({
-      ...(user || {}),
+      ...user,
       total_answered: stats.total_answered || 0,
       total_correct: stats.total_correct || 0,
-      accuracy_rate: stats.total_answered > 0 ? Math.round((stats.total_correct / stats.total_answered) * 100) : 0
+      accuracy_rate: stats.total_answered > 0 ? Math.round((stats.total_correct / stats.total_answered) * 100) : 0,
+      is_guest: false
     });
   } catch (error) {
     res.status(500).json({ error: error.message });
@@ -29,7 +51,11 @@ router.get('/profile', (req, res) => {
 // Performance analytics by discipline (from REA report: api/performance & api/user_filter_performances2)
 router.get('/performance', (req, res) => {
   try {
-    const userId = req.userId || 1;
+    const userId = req.userId;
+    if (!userId) {
+      return res.json([]);
+    }
+
     const disciplines = db.prepare(`
       SELECT 
         q.discipline,

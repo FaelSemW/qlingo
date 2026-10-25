@@ -51,6 +51,19 @@ export async function registerUser(name, email, password) {
   return data;
 }
 
+export async function loginWithFirebase({ email, name, avatar }) {
+  const res = await fetch(`${API_BASE}/auth/firebase`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, name, avatar })
+  });
+  const data = await res.json();
+  if (data.token && data.user) {
+    saveAuth(data.token, data.user);
+  }
+  return data;
+}
+
 export async function fetchMe() {
   const res = await fetch(`${API_BASE}/auth/me`, {
     headers: { ...getAuthHeader() }
@@ -298,6 +311,7 @@ export async function checkLimits() {
 export const api = {
   loginUser,
   registerUser,
+  loginWithFirebase,
   fetchMe,
   getSavedUser,
   saveAuth,
