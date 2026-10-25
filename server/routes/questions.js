@@ -25,7 +25,7 @@ router.get('/check_limits_app', (req, res) => {
 // List questions with filters
 router.get('/', (req, res) => {
   try {
-    const { discipline, examining_board, year, difficulty, search, status, limit = 20, offset = 0 } = req.query;
+    const { discipline, examining_board, year, difficulty, search, status, career, exam_type, limit = 20, offset = 0 } = req.query;
 
     let query = `
       SELECT q.*, 
@@ -36,6 +36,14 @@ router.get('/', (req, res) => {
     `;
     const params = [];
 
+    if (exam_type && exam_type !== 'all') {
+      query += ` AND q.exam_type = ?`;
+      params.push(exam_type);
+    }
+    if (career && career !== 'all') {
+      query += ` AND q.career = ?`;
+      params.push(career);
+    }
     if (discipline && discipline !== 'all') {
       query += ` AND q.discipline = ?`;
       params.push(discipline);
@@ -105,6 +113,8 @@ router.get('/', (req, res) => {
     const disciplines = db.prepare('SELECT DISTINCT discipline FROM questions ORDER BY discipline ASC').all().map(r => r.discipline);
     const boards = db.prepare('SELECT DISTINCT examining_board FROM questions ORDER BY examining_board ASC').all().map(r => r.examining_board);
     const years = db.prepare('SELECT DISTINCT year FROM questions ORDER BY year DESC').all().map(r => r.year);
+    const careers = db.prepare('SELECT DISTINCT career FROM questions WHERE career IS NOT NULL ORDER BY career ASC').all().map(r => r.career);
+    const examTypes = db.prepare('SELECT DISTINCT exam_type FROM questions WHERE exam_type IS NOT NULL ORDER BY exam_type ASC').all().map(r => r.exam_type);
 
     res.json({
       questions,
@@ -114,7 +124,9 @@ router.get('/', (req, res) => {
       filters: {
         disciplines,
         boards,
-        years
+        years,
+        careers,
+        examTypes
       }
     });
   } catch (error) {

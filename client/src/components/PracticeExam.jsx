@@ -143,9 +143,11 @@ export default function PracticeExam({ user, onRequireAuth }) {
 
   const filteredTests = tests.filter(t => {
     if (activeCategory === 'all') return true;
-    return (t.career || '').toLowerCase().includes(activeCategory.toLowerCase()) || 
-           (t.title || '').toLowerCase().includes(activeCategory.toLowerCase()) ||
-           (t.description || '').toLowerCase().includes(activeCategory.toLowerCase());
+    const cat = activeCategory.toLowerCase();
+    return (t.career || '').toLowerCase().includes(cat) || 
+           (t.category || '').toLowerCase().includes(cat) ||
+           (t.title || '').toLowerCase().includes(cat) || 
+           (t.description || '').toLowerCase().includes(cat);
   });
 
   // ==========================================
@@ -597,13 +599,14 @@ export default function PracticeExam({ user, onRequireAuth }) {
       {/* Career Categories Filter */}
       <div className="flex items-center gap-2 overflow-x-auto pb-2 border-b border-slate-800 text-xs">
         {[
-          { id: 'all', label: 'Todos os Simulados' },
-          { id: 'Policial', label: 'Carreiras Policiais (PF / PRF)' },
-          { id: 'Tribunais', label: 'Tribunais (TJ / TRF)' },
-          { id: 'Fiscal', label: 'Carreira Fiscal (Receita Federal)' },
-          { id: 'OAB', label: 'Exame de Ordem (OAB)' },
-          { id: 'Previdenciário', label: 'INSS' },
-          { id: 'Express', label: 'Simulados Express por Matéria' },
+          { id: 'all', label: '🌟 Todos os Simulados' },
+          { id: 'ENEM', label: '🎓 ENEM (Edições Oficiais)' },
+          { id: 'Policial', label: '🚓 Carreiras Policiais (PF / PRF)' },
+          { id: 'Tribunais', label: '⚖️ Tribunais (TJ / TRF)' },
+          { id: 'Fiscal', label: '💰 Carreira Fiscal (Receita Federal)' },
+          { id: 'Bancários', label: '🏛️ Bancários & INSS' },
+          { id: 'OAB', label: '⚖️ Exame de Ordem (OAB)' },
+          { id: 'Express', label: '⚡ Simulados Express por Matéria' },
         ].map(cat => (
           <button
             key={cat.id}

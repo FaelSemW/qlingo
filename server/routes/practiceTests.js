@@ -6,7 +6,23 @@ const { v4: uuidv4 } = require('uuid');
 // List practice tests
 router.get('/', (req, res) => {
   try {
-    const tests = db.prepare('SELECT * FROM practice_tests ORDER BY created_at DESC').all();
+    const { category, career, exam_type } = req.query;
+    let query = 'SELECT * FROM practice_tests WHERE 1=1';
+    const params = [];
+    if (category && category !== 'all') {
+      query += ' AND (category = ? OR career = ?)';
+      params.push(category, category);
+    }
+    if (career && career !== 'all') {
+      query += ' AND career = ?';
+      params.push(career);
+    }
+    if (exam_type && exam_type !== 'all') {
+      query += ' AND exam_type = ?';
+      params.push(exam_type);
+    }
+    query += ' ORDER BY created_at DESC';
+    const tests = db.prepare(query).all(...params);
     const formatted = tests.map(t => ({
       ...t,
       question_ids: JSON.parse(t.question_ids || '[]'),

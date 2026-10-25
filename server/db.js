@@ -26,6 +26,7 @@ db.exec(`
   CREATE TABLE IF NOT EXISTS questions (
     id INTEGER PRIMARY KEY,
     discipline TEXT NOT NULL,
+    subject TEXT,
     examining_board TEXT NOT NULL,
     institute TEXT NOT NULL,
     year INTEGER NOT NULL,
@@ -36,6 +37,8 @@ db.exec(`
     explanation TEXT,
     stats_distribution TEXT, -- JSON object
     comments TEXT, -- JSON array
+    career TEXT DEFAULT 'Geral',
+    exam_type TEXT DEFAULT 'CONCURSO',
     created_at TEXT DEFAULT (datetime('now'))
   );
 
@@ -115,6 +118,14 @@ db.exec(`
 try { db.exec('ALTER TABLE answers ADD COLUMN user_id INTEGER DEFAULT 1;'); } catch (e) {}
 try { db.exec('ALTER TABLE notebooks ADD COLUMN user_id INTEGER DEFAULT 1;'); } catch (e) {}
 try { db.exec('ALTER TABLE practice_test_attempts ADD COLUMN user_id INTEGER DEFAULT 1;'); } catch (e) {}
+try { db.exec("ALTER TABLE questions ADD COLUMN career TEXT DEFAULT 'Geral';"); } catch (e) {}
+try { db.exec("ALTER TABLE questions ADD COLUMN exam_type TEXT DEFAULT 'CONCURSO';"); } catch (e) {}
+try { db.exec("ALTER TABLE questions ADD COLUMN subject TEXT;"); } catch (e) {}
+try { db.exec("ALTER TABLE practice_tests ADD COLUMN career TEXT DEFAULT 'Geral';"); } catch (e) {}
+try { db.exec("ALTER TABLE practice_tests ADD COLUMN category TEXT DEFAULT 'Geral';"); } catch (e) {}
+try { db.exec("ALTER TABLE practice_tests ADD COLUMN cut_score INTEGER DEFAULT 65;"); } catch (e) {}
+try { db.exec("ALTER TABLE practice_tests ADD COLUMN examining_board TEXT;"); } catch (e) {}
+try { db.exec("ALTER TABLE practice_tests ADD COLUMN institute TEXT;"); } catch (e) {}
 
 // Ensure default demo user (id: 1) exists FIRST before any foreign key references
 const bcrypt = require('bcryptjs');
@@ -124,32 +135,35 @@ db.prepare(`
   VALUES (1, 'Estudante Focado', 'estudante@qlingo.com', ?, 320, 'Concurseiro Dedicado 🔥', 5, 12, 10)
 `).run(demoHash);
 
-// Populate initial data if empty
+// Populate initial data if empty or incomplete
 const countStmt = db.prepare('SELECT COUNT(*) as count FROM questions');
 const questionCount = countStmt.get().count;
 
-if (questionCount === 0) {
-  console.log('[QLingo DB] Inicializando banco de dados com questões reais...');
+if (questionCount < 1000) {
+  console.log('[QLingo DB] Sincronizando mega banco de dados com questões reais (ENEM, Concursos, OAB)...');
   
   const insertQuestion = db.prepare(`
-    INSERT INTO questions (id, discipline, examining_board, institute, year, difficulty, statement, options, right_answer, explanation, stats_distribution, comments)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    INSERT OR REPLACE INTO questions (id, discipline, subject, examining_board, institute, year, difficulty, statement, options, right_answer, explanation, stats_distribution, comments, career, exam_type)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
 
   for (const q of seedData.questions) {
     insertQuestion.run(
       q.id,
       q.discipline,
+      q.subject || q.discipline,
       q.examining_board,
       q.institute,
       q.year,
-      q.difficulty,
+      q.difficulty || 'Médio',
       q.statement,
-      q.options,
+      typeof q.options === 'string' ? q.options : JSON.stringify(q.options),
       q.right_answer,
       q.explanation,
-      q.stats_distribution,
-      typeof q.comments === 'string' ? q.comments : JSON.stringify(q.comments || [])
+      typeof q.stats_distribution === 'string' ? q.stats_distribution : JSON.stringify(q.stats_distribution || {}),
+      typeof q.comments === 'string' ? q.comments : JSON.stringify(q.comments || []),
+      q.career || 'Geral',
+      q.exam_type || 'CONCURSO'
     );
   }
 
@@ -170,12 +184,23 @@ if (questionCount === 0) {
   }
 
   const insertPT = db.prepare(`
-    INSERT OR IGNORE INTO practice_tests (id, title, description, time_limit_minutes, question_ids)
-    VALUES (?, ?, ?, ?, ?)
+    INSERT OR REPLACE INTO practice_tests (id, title, description, time_limit_minutes, question_ids, career, category, cut_score, examining_board, institute)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
 
   for (const pt of seedData.practice_tests) {
-    insertPT.run(pt.id, pt.title, pt.description, pt.time_limit_minutes, pt.question_ids);
+    insertPT.run(
+      pt.id, 
+      pt.title, 
+      pt.description, 
+      pt.time_limit_minutes, 
+      typeof pt.question_ids === 'string' ? pt.question_ids : JSON.stringify(pt.question_ids),
+      pt.career || 'Geral',
+      pt.category || 'Geral',
+      pt.cut_score || 65,
+      pt.examining_board || 'Diversas',
+      pt.institute || 'Nacional'
+    );
   }
 
   const insertFC = db.prepare(`
@@ -193,7 +218,7 @@ if (questionCount === 0) {
     VALUES (1, 'Futuro Aprovado', 5, 14, date('now'), 10, 520, 'Concurseiro Dedicado 🔥', 1)
   `);
 
-  console.log('[QLingo DB] Banco inicializado com sucesso!');
+  console.log('[QLingo DB] Mega banco sincronizado com sucesso!');
 }
 
 module.exports = db;

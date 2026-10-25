@@ -12,6 +12,7 @@
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
     "express": "^4.21.2",
+    "hyparquet": "^1.31.5",
     "jsonwebtoken": "^9.0.3",
     "uuid": "^11.1.0"
   }

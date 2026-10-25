@@ -32,6 +32,7 @@ export default function App() {
   const [isImportModalOpen, setIsImportModalOpen] = useState(false);
 
   // Filter state for questions
+  const [filterExamType, setFilterExamType] = useState('all');
   const [filterDiscipline, setFilterDiscipline] = useState('all');
   const [filterBoard, setFilterBoard] = useState('all');
   const [filterYear, setFilterYear] = useState('all');
@@ -46,7 +47,7 @@ export default function App() {
     if (activeTab === 'questions') {
       loadQuestions();
     }
-  }, [activeTab, filterDiscipline, filterBoard, filterYear, filterStatus]);
+  }, [activeTab, filterExamType, filterDiscipline, filterBoard, filterYear, filterStatus]);
 
   const loadInitialData = async () => {
     try {
@@ -81,6 +82,7 @@ export default function App() {
     try {
       setIsLoadingQuestions(true);
       const res = await fetchQuestions({
+        exam_type: filterExamType,
         discipline: filterDiscipline,
         examining_board: filterBoard,
         year: filterYear,
@@ -289,6 +291,32 @@ export default function App() {
             {/* Search and Filter Panel */}
             <div className="bg-white rounded-3xl border border-slate-200 p-5 sm:p-6 shadow-xs mb-8">
               
+              {/* Category Filter Tabs */}
+              <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-4 border-b border-slate-100 text-xs">
+                {[
+                  { id: 'all', label: '🌟 Todas as Questões' },
+                  { id: 'ENEM', label: '🎓 ENEM & Vestibulares' },
+                  { id: 'CONCURSO', label: '🚓 Concursos Públicos' },
+                  { id: 'OAB', label: '⚖️ Exame de Ordem (OAB)' },
+                ].map((cat) => (
+                  <button
+                    key={cat.id}
+                    onClick={() => {
+                      setFilterExamType(cat.id);
+                      setFilterDiscipline('all');
+                      setFilterBoard('all');
+                    }}
+                    className={`px-4 py-2 rounded-xl font-bold whitespace-nowrap transition-all cursor-pointer ${
+                      filterExamType === cat.id
+                        ? 'bg-orange-500 text-white shadow-md shadow-orange-500/20'
+                        : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                    }`}
+                  >
+                    {cat.label}
+                  </button>
+                ))}
+              </div>
+
               {/* Search Bar */}
               <form onSubmit={handleSearchSubmit} className="flex gap-2 mb-4">
                 <div className="relative flex-1">
