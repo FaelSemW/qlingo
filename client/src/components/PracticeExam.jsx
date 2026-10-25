@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   Award, Clock, CheckCircle2, XCircle, AlertCircle, 
   ChevronRight, ArrowLeft, RefreshCw, Filter, BookOpen, 
-  TrendingUp, HelpCircle, Flame, ShieldAlert, Sparkles, Check, ChevronDown
+  TrendingUp, HelpCircle, Flame, ShieldAlert, Sparkles, Check, ChevronDown, Search
 } from 'lucide-react';
 import { api } from '../services/api';
 import confetti from 'canvas-confetti';
@@ -12,6 +12,8 @@ export default function PracticeExam({ user, onRequireAuth }) {
   const [tests, setTests] = useState([]);
   const [activeCategory, setActiveCategory] = useState('all');
   const [loading, setLoading] = useState(true);
+  const [examSearch, setExamSearch] = useState('');
+  const [enemYearFilter, setEnemYearFilter] = useState('all');
   
   // Test in progress state
   const [activeTest, setActiveTest] = useState(null);
@@ -143,12 +145,30 @@ export default function PracticeExam({ user, onRequireAuth }) {
   };
 
   const filteredTests = tests.filter(t => {
-    if (activeCategory === 'all') return true;
-    const cat = activeCategory.toLowerCase();
-    return (t.career || '').toLowerCase().includes(cat) || 
-           (t.category || '').toLowerCase().includes(cat) ||
-           (t.title || '').toLowerCase().includes(cat) || 
-           (t.description || '').toLowerCase().includes(cat);
+    if (activeCategory !== 'all') {
+      const cat = activeCategory.toLowerCase();
+      const matchesCategory = (t.career || '').toLowerCase().includes(cat) || 
+                              (t.category || '').toLowerCase().includes(cat) ||
+                              (t.title || '').toLowerCase().includes(cat) || 
+                              (t.description || '').toLowerCase().includes(cat);
+      if (!matchesCategory) return false;
+    }
+
+    if (activeCategory === 'ENEM' && enemYearFilter !== 'all') {
+      const yearMatches = (t.title || '').includes(enemYearFilter) || (t.description || '').includes(enemYearFilter);
+      if (!yearMatches) return false;
+    }
+
+    if (examSearch.trim()) {
+      const q = examSearch.toLowerCase();
+      const matchesSearch = (t.title || '').toLowerCase().includes(q) || 
+                            (t.description || '').toLowerCase().includes(q) ||
+                            (t.career || '').toLowerCase().includes(q) ||
+                            (t.category || '').toLowerCase().includes(q);
+      if (!matchesSearch) return false;
+    }
+
+    return true;
   });
 
   // ==========================================
@@ -599,7 +619,7 @@ export default function PracticeExam({ user, onRequireAuth }) {
       <div className="flex items-center gap-2 overflow-x-auto pb-2 border-b border-slate-800 text-xs">
         {[
           { id: 'all', label: '🌟 Todos os Simulados' },
-          { id: 'ENEM', label: '🎓 ENEM (Edições Oficiais)' },
+          { id: 'ENEM', label: '🎓 ENEM (Edições 2009 a 2026)' },
           { id: 'Policial', label: '🚓 Carreiras Policiais (PF / PRF)' },
           { id: 'Tribunais', label: '⚖️ Tribunais (TJ / TRF)' },
           { id: 'Fiscal', label: '💰 Carreira Fiscal (Receita Federal)' },
@@ -609,7 +629,10 @@ export default function PracticeExam({ user, onRequireAuth }) {
         ].map(cat => (
           <button
             key={cat.id}
-            onClick={() => setActiveCategory(cat.id)}
+            onClick={() => {
+              setActiveCategory(cat.id);
+              if (cat.id !== 'ENEM') setEnemYearFilter('all');
+            }}
             className={`px-4 py-2 rounded-xl font-bold whitespace-nowrap transition-all cursor-pointer ${
               activeCategory === cat.id
                 ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/25'
@@ -619,6 +642,69 @@ export default function PracticeExam({ user, onRequireAuth }) {
             {cat.label}
           </button>
         ))}
+      </div>
+
+      {/* Controls Bar: Search & Sub-filters */}
+      <div className="space-y-3">
+        <div className="flex flex-col sm:flex-row gap-3 items-center justify-between">
+          <div className="relative flex-1 w-full">
+            <Search className="w-4 h-4 text-slate-500 absolute left-3.5 top-3" />
+            <input
+              type="text"
+              value={examSearch}
+              onChange={(e) => setExamSearch(e.target.value)}
+              placeholder="Pesquisar simulado por título, ano (ex: 2024, 2020), órgão ou matéria..."
+              className="w-full pl-10 pr-10 py-2.5 bg-slate-900/70 border border-slate-800 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"
+            />
+            {examSearch && (
+              <button
+                onClick={() => setExamSearch('')}
+                className="absolute right-3 top-2.5 text-xs text-slate-400 hover:text-white cursor-pointer"
+              >
+                ✕
+              </button>
+            )}
+          </div>
+
+          <div className="text-xs text-slate-400 whitespace-nowrap self-end sm:self-center">
+            <b>{filteredTests.length}</b> simulado{filteredTests.length !== 1 ? 's' : ''} disponível{filteredTests.length !== 1 ? 'is' : ''}
+          </div>
+        </div>
+
+        {/* ENEM Special Year Pills (2009 to 2026) */}
+        {activeCategory === 'ENEM' && (
+          <div className="p-3.5 bg-slate-900/80 rounded-2xl border border-indigo-950/60 space-y-2">
+            <div className="flex items-center justify-between text-xs">
+              <span className="font-bold text-indigo-300 flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                Selecione o Ano do ENEM (2009 a 2026):
+              </span>
+              {enemYearFilter !== 'all' && (
+                <button
+                  onClick={() => setEnemYearFilter('all')}
+                  className="text-[11px] text-amber-400 hover:underline cursor-pointer"
+                >
+                  Ver todas as edições
+                </button>
+              )}
+            </div>
+            <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs">
+              {['all', '2026', '2025', '2024', '2023', '2022', '2021', '2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '2009'].map((yr) => (
+                <button
+                  key={yr}
+                  onClick={() => setEnemYearFilter(yr)}
+                  className={`px-3 py-1.5 rounded-lg font-bold whitespace-nowrap transition-all cursor-pointer ${
+                    enemYearFilter === yr
+                      ? 'bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20'
+                      : 'bg-slate-800/80 text-slate-400 hover:text-white hover:bg-slate-800'
+                  }`}
+                >
+                  {yr === 'all' ? '🌟 Todas' : yr}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Tests Grid */}

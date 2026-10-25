@@ -22,6 +22,116 @@ router.get('/check_limits_app', (req, res) => {
   });
 });
 
+function formatQuestionRow(r) {
+  const parsedOptions = JSON.parse(r.options || '[]');
+  const parsedStats = JSON.parse(r.stats_distribution || '{}');
+  const parsedComments = JSON.parse(r.comments || '[]');
+
+  return {
+    ...r,
+    statement: r.statement,
+    alternatives: parsedOptions,
+    options: parsedOptions,
+    resolution: r.explanation,
+    explanation: r.explanation,
+    is_correct: r.is_resolved_correct !== null ? r.is_resolved_correct === 1 : null,
+    correct_answer: r.right_answer,
+    right_answer: r.right_answer,
+    examining_board: r.examining_board,
+    institute: r.institute,
+    commentaries: parsedComments,
+    comments: parsedComments,
+    statistics: parsedStats,
+    stats_distribution: parsedStats
+  };
+}
+
+// GET /api/questions/daily - Desafio Diário com questões rotativas todo dia
+router.get('/daily', (req, res) => {
+  try {
+    const { career = 'all' } = req.query;
+    const now = new Date();
+    const dateStr = now.toISOString().slice(0, 10);
+    
+    // Seed numérico único da data para rotacionar todo dia
+    const daySeed = (now.getFullYear() * 1000) + ((now.getMonth() + 1) * 31) + now.getDate();
+
+    let query = `
+      SELECT q.*, 
+        (SELECT selected_answer FROM answers WHERE question_id = q.id ORDER BY id DESC LIMIT 1) as last_user_answer,
+        (SELECT is_correct FROM answers WHERE question_id = q.id ORDER BY id DESC LIMIT 1) as is_resolved_correct
+      FROM questions q
+      WHERE 1=1
+    `;
+    const params = [];
+
+    if (career && career !== 'all') {
+      const cUpper = career.toUpperCase();
+      if (cUpper.includes('ENEM')) {
+        query += " AND q.exam_type = 'ENEM'";
+      } else if (cUpper.includes('OAB')) {
+        query += " AND q.exam_type = 'OAB'";
+      } else if (cUpper.includes('POLIC') || cUpper.includes('PF') || cUpper.includes('PRF')) {
+        query += " AND (q.career LIKE '%Polícia%' OR q.career LIKE '%Policia%' OR q.career LIKE '%Policial%')";
+      } else if (cUpper.includes('TRIBUNAL') || cUpper.includes('TJ') || cUpper.includes('TRF')) {
+        query += " AND (q.career LIKE '%Tribunal%' OR q.career LIKE '%Tribunais%')";
+      } else if (cUpper.includes('FISCAL') || cUpper.includes('RECEITA')) {
+        query += " AND (q.career LIKE '%Fiscal%' OR q.career LIKE '%Receita%')";
+      } else if (cUpper.includes('PREVIDENCI') || cUpper.includes('INSS')) {
+        query += " AND (q.career LIKE '%Previdenci%' OR q.career LIKE '%INSS%')";
+      } else if (cUpper.includes('BANCO') || cUpper.includes('BANC')) {
+        query += " AND (q.career LIKE '%Banc%' OR q.career LIKE '%Banco%')";
+      } else {
+        query += " AND (q.career = ? OR q.career LIKE ?)";
+        params.push(career, `%${career}%`);
+      }
+    }
+
+    const allMatching = db.prepare(query).all(...params);
+    const count = allMatching.length;
+    
+    let selected = [];
+    const usedIds = new Set();
+    const take = 5;
+
+    if (count > 0) {
+      const start = (daySeed * 17) % count;
+      for (let step = 0; step < count && selected.length < Math.min(take, count); step++) {
+        const idx = (start + (step * 23)) % count;
+        const q = allMatching[idx];
+        if (!usedIds.has(q.id)) {
+          usedIds.add(q.id);
+          selected.push(q);
+        }
+      }
+    }
+
+    // Se faltarem questões para completar 5 (ex: filtros muito específicos), preenche com outras do banco
+    if (selected.length < take) {
+      const needed = take - selected.length;
+      const fallbackRows = db.prepare(`
+        SELECT q.*, 
+          (SELECT selected_answer FROM answers WHERE question_id = q.id ORDER BY id DESC LIMIT 1) as last_user_answer,
+          (SELECT is_correct FROM answers WHERE question_id = q.id ORDER BY id DESC LIMIT 1) as is_resolved_correct
+        FROM questions q
+        WHERE q.id NOT IN (${selected.length > 0 ? selected.map(q => q.id).join(',') : '0'})
+        ORDER BY RANDOM() LIMIT ?
+      `).all(needed);
+      selected = selected.concat(fallbackRows);
+    }
+
+    res.json({
+      date: dateStr,
+      career,
+      total: selected.length,
+      questions: selected.map(formatQuestionRow),
+      message: `Desafio Diário (${dateStr}) com 5 questões rotativas para ${career}`
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // List questions with filters
 router.get('/', (req, res) => {
   try {
@@ -84,30 +194,7 @@ router.get('/', (req, res) => {
     const stmt = db.prepare(query);
     const rows = stmt.all(...params);
 
-    const questions = rows.map(r => {
-      const parsedOptions = JSON.parse(r.options || '[]');
-      const parsedStats = JSON.parse(r.stats_distribution || '{}');
-      const parsedComments = JSON.parse(r.comments || '[]');
-
-      return {
-        ...r,
-        // Model matching Dart REA contract
-        statement: r.statement,
-        alternatives: parsedOptions,
-        options: parsedOptions,
-        resolution: r.explanation,
-        explanation: r.explanation,
-        is_correct: r.is_resolved_correct !== null ? r.is_resolved_correct === 1 : null,
-        correct_answer: r.right_answer,
-        right_answer: r.right_answer,
-        examining_board: r.examining_board,
-        institute: r.institute,
-        commentaries: parsedComments,
-        comments: parsedComments,
-        statistics: parsedStats,
-        stats_distribution: parsedStats
-      };
-    });
+    const questions = rows.map(formatQuestionRow);
 
     // Filter metadata
     const disciplines = db.prepare('SELECT DISTINCT discipline FROM questions ORDER BY discipline ASC').all().map(r => r.discipline);

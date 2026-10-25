@@ -74,6 +74,13 @@ export async function fetchQuestions(params = {}) {
   return res.json();
 }
 
+export async function fetchDailyQuestions(career = 'all') {
+  const res = await fetch(`${API_BASE}/questions/daily?career=${encodeURIComponent(career)}`, {
+    headers: { ...getAuthHeader() }
+  });
+  return res.json();
+}
+
 export async function fetchQuestion(id) {
   const res = await fetch(`${API_BASE}/questions/${id}`, {
     headers: { ...getAuthHeader() }
@@ -296,6 +303,8 @@ export const api = {
   saveAuth,
   clearAuth,
   fetchQuestions,
+  fetchDailyQuestions,
+  getDailyQuestions: fetchDailyQuestions,
   fetchQuestion,
   resolveQuestion,
   addComment,

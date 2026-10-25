@@ -14,7 +14,7 @@ import ProfileStats from './components/ProfileStats';
 import ImportModal from './components/ImportModal';
 import AuthModal from './components/AuthModal';
 import { 
-  fetchQuestions, fetchStreaks, fetchNotebooks, 
+  fetchQuestions, fetchDailyQuestions, fetchStreaks, fetchNotebooks, 
   fetchUserProfile, getSavedUser, fetchMe, clearAuth 
 } from './services/api';
 
@@ -31,6 +31,12 @@ export default function App() {
   const [isLoadingQuestions, setIsLoadingQuestions] = useState(false);
   const [isImportModalOpen, setIsImportModalOpen] = useState(false);
 
+  // Daily Challenge state
+  const [dailyCareer, setDailyCareer] = useState('all');
+  const [dailyQuestions, setDailyQuestions] = useState([]);
+  const [isLoadingDaily, setIsLoadingDaily] = useState(false);
+  const [isDailyChallengeActive, setIsDailyChallengeActive] = useState(false);
+
   // Filter state for questions
   const [filterExamType, setFilterExamType] = useState('all');
   const [filterDiscipline, setFilterDiscipline] = useState('all');
@@ -41,13 +47,41 @@ export default function App() {
 
   useEffect(() => {
     loadInitialData();
+    loadDaily('all');
   }, []);
 
   useEffect(() => {
     if (activeTab === 'questions') {
       loadQuestions();
     }
-  }, [activeTab, filterExamType, filterDiscipline, filterBoard, filterYear, filterStatus]);
+  }, [activeTab, filterExamType, filterDiscipline, filterBoard, filterYear, filterStatus, isDailyChallengeActive, dailyCareer]);
+
+  const loadDaily = async (career = dailyCareer) => {
+    try {
+      setIsLoadingDaily(true);
+      const res = await fetchDailyQuestions(career);
+      setDailyQuestions(res.questions || []);
+    } catch (err) {
+      console.error('Error loading daily questions:', err);
+    } finally {
+      setIsLoadingDaily(false);
+    }
+  };
+
+  const handleCareerChange = (newCareer) => {
+    setDailyCareer(newCareer);
+    loadDaily(newCareer);
+  };
+
+  const handleStartDailyChallenge = (career = dailyCareer) => {
+    setIsDailyChallengeActive(true);
+    setDailyCareer(career);
+    setActiveTab('questions');
+  };
+
+  const handleExitDailyChallenge = () => {
+    setIsDailyChallengeActive(false);
+  };
 
   const loadInitialData = async () => {
     try {
@@ -79,6 +113,20 @@ export default function App() {
   };
 
   const loadQuestions = async () => {
+    if (isDailyChallengeActive) {
+      try {
+        setIsLoadingQuestions(true);
+        const res = await fetchDailyQuestions(dailyCareer);
+        setQuestions(res.questions || []);
+        setTotalQuestions(res.questions ? res.questions.length : 0);
+      } catch (err) {
+        console.error('Error loading daily questions:', err);
+      } finally {
+        setIsLoadingQuestions(false);
+      }
+      return;
+    }
+
     try {
       setIsLoadingQuestions(true);
       const res = await fetchQuestions({
@@ -165,15 +213,17 @@ export default function App() {
               </div>
             </div>
 
-            {/* Daily Mission Card (Duolingo Style from REA strings) */}
-            <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-7 shadow-xs mb-8">
-              <div className="flex items-center justify-between mb-4">
+            {/* Daily Mission Card & Desafio Diário (Duolingo Style) */}
+            <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-7 shadow-xs mb-8 space-y-6">
+              
+              {/* Header com Progresso da Meta */}
+              <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2.5">
                   <div className="w-8 h-8 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center font-bold">
                     🎯
                   </div>
                   <div>
-                    <h3 className="font-extrabold text-slate-800 text-base">Próxima Missão Diária</h3>
+                    <h3 className="font-extrabold text-slate-800 text-base">Meta Diária de Estudos</h3>
                     <p className="text-xs text-slate-500">
                       Resolva questões hoje para manter sua ofensiva acesa!
                     </p>
@@ -189,7 +239,7 @@ export default function App() {
               </div>
 
               {/* Progress bar */}
-              <div className="w-full bg-slate-100 h-3 rounded-full overflow-hidden mb-4">
+              <div className="w-full bg-slate-100 h-3 rounded-full overflow-hidden">
                 <div 
                   className="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full transition-all duration-500"
                   style={{
@@ -198,16 +248,104 @@ export default function App() {
                 />
               </div>
 
-              <div className="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs text-slate-500 border-t border-slate-100">
+              {/* Seção Desafio Diário Inédito por Carreira */}
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-amber-50/70 via-orange-50/40 to-slate-50 border border-orange-200/70 space-y-4">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    <span className="w-7 h-7 rounded-lg bg-orange-500 text-white flex items-center justify-center text-xs font-black shadow-sm">
+                      🔥
+                    </span>
+                    <div>
+                      <h4 className="font-black text-slate-900 text-sm">
+                        Desafio do Dia — Questões Inéditas Diárias
+                      </h4>
+                      <p className="text-[11px] text-slate-500">
+                        5 questões rotacionadas todo dia para a sua área de foco
+                      </p>
+                    </div>
+                  </div>
+
+                  <span className="text-[11px] font-bold text-orange-700 bg-orange-100/80 px-2.5 py-1 rounded-full self-start sm:self-auto border border-orange-200">
+                    📅 {new Date().toLocaleDateString('pt-BR')}
+                  </span>
+                </div>
+
+                {/* Seleção de Carreira */}
+                <div>
+                  <label className="block text-[11px] font-bold text-slate-600 mb-2">
+                    Escolha sua carreira para o desafio de hoje:
+                  </label>
+                  <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs">
+                    {[
+                      { id: 'all', label: '🌟 Todas as Áreas' },
+                      { id: 'ENEM', label: '🎓 ENEM & Vestibulares' },
+                      { id: 'Carreiras Policiais', label: '🚓 Policiais (PF / PRF)' },
+                      { id: 'Tribunais & MP', label: '🏛️ Tribunais (TJ / TRF)' },
+                      { id: 'Carreira Fiscal', label: '💰 Fiscal (Receita Federal)' },
+                      { id: 'Exame de Ordem (OAB)', label: '⚖️ OAB' },
+                      { id: 'Previdenciário & INSS', label: '📋 INSS' },
+                      { id: 'Bancários & INSS', label: '🏦 Bancários' },
+                    ].map((car) => (
+                      <button
+                        key={car.id}
+                        onClick={() => handleCareerChange(car.id)}
+                        className={`px-3 py-1.5 rounded-xl font-bold whitespace-nowrap transition-all cursor-pointer ${
+                          dailyCareer === car.id
+                            ? 'bg-orange-500 text-white shadow-md shadow-orange-500/20'
+                            : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
+                        }`}
+                      >
+                        {car.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Preview das Matérias de Hoje */}
+                <div className="flex flex-wrap items-center gap-2 pt-1">
+                  <span className="text-[11px] text-slate-500 font-medium">Matérias de hoje:</span>
+                  {isLoadingDaily ? (
+                    <span className="text-xs text-orange-500 flex items-center gap-1">
+                      <RefreshCw className="w-3 h-3 animate-spin" /> Carregando seleção...
+                    </span>
+                  ) : (
+                    dailyQuestions.map((q, idx) => (
+                      <span
+                        key={q.id || idx}
+                        className="text-[10px] font-bold bg-white px-2 py-0.5 rounded-lg border border-orange-200 text-slate-700 shadow-2xs"
+                      >
+                        #{idx + 1} {q.discipline}
+                      </span>
+                    ))
+                  )}
+                </div>
+
+                {/* Botão de Ação */}
+                <div className="pt-2">
+                  <button
+                    onClick={() => handleStartDailyChallenge(dailyCareer)}
+                    className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-black text-xs uppercase tracking-wider shadow-md shadow-orange-500/25 transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-[0.99]"
+                  >
+                    <span>🚀 Iniciar Desafio do Dia (5 Questões)</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
+
+              {/* Footer da Ofensiva */}
+              <div className="flex flex-wrap items-center justify-between gap-3 pt-1 text-xs text-slate-500 border-t border-slate-100">
                 <div className="flex items-center gap-2">
                   <Flame className="w-4 h-4 text-orange-500 fill-orange-500" />
                   <span>Ofensiva de <strong className="text-slate-800">{streakData?.streak_current || 0} dias</strong> ativa</span>
                 </div>
                 <button
-                  onClick={() => setActiveTab('questions')}
+                  onClick={() => {
+                    setIsDailyChallengeActive(false);
+                    setActiveTab('questions');
+                  }}
                   className="font-bold text-orange-600 hover:text-orange-700 flex items-center gap-1 cursor-pointer"
                 >
-                  Continuar estudando →
+                  Ir para o banco geral de questões →
                 </button>
               </div>
             </div>
@@ -288,11 +426,85 @@ export default function App() {
         {activeTab === 'questions' && (
           <div className="max-w-4xl mx-auto px-4 py-8">
             
-            {/* Search and Filter Panel */}
+            {/* Daily Challenge Active Banner */}
+            {isDailyChallengeActive && (
+              <div className="bg-gradient-to-r from-orange-500 via-amber-500 to-emerald-600 rounded-3xl p-5 sm:p-6 text-white shadow-xl shadow-orange-500/15 mb-6 animate-fadeIn">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center text-xl shrink-0">
+                      🔥
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-[10px] font-extrabold uppercase tracking-wider bg-white/20 px-2 py-0.5 rounded-full">
+                          Desafio Diário • {new Date().toLocaleDateString('pt-BR')}
+                        </span>
+                      </div>
+                      <h3 className="font-black text-lg sm:text-xl">
+                        {dailyCareer === 'all' ? '5 Questões Inéditas do Dia' : `5 Questões do Dia • ${dailyCareer}`}
+                      </h3>
+                      <p className="text-xs opacity-90">
+                        Resolva as 5 questões selecionadas hoje para sua área e mantenha sua ofensiva!
+                      </p>
+                    </div>
+                  </div>
+
+                  <button
+                    onClick={handleExitDailyChallenge}
+                    className="px-4 py-2 rounded-xl bg-white text-orange-600 hover:bg-orange-50 font-bold text-xs shadow transition-all cursor-pointer whitespace-nowrap self-start sm:self-auto"
+                  >
+                    Ver Todo o Banco de Questões →
+                  </button>
+                </div>
+
+                {/* Sub-selector de Carreira no modo Desafio */}
+                <div className="mt-4 pt-3 border-t border-white/20 flex items-center gap-1.5 overflow-x-auto text-xs pb-1">
+                  <span className="text-[11px] font-bold text-white/80 whitespace-nowrap">Área:</span>
+                  {[
+                    { id: 'all', label: '🌟 Todas' },
+                    { id: 'ENEM', label: '🎓 ENEM' },
+                    { id: 'Carreiras Policiais', label: '🚓 Policial' },
+                    { id: 'Tribunais & MP', label: '🏛️ Tribunais' },
+                    { id: 'Carreira Fiscal', label: '💰 Fiscal' },
+                    { id: 'Exame de Ordem (OAB)', label: '⚖️ OAB' },
+                    { id: 'Previdenciário & INSS', label: '📋 INSS' },
+                    { id: 'Bancários & INSS', label: '🏦 Bancários' },
+                  ].map((car) => (
+                    <button
+                      key={car.id}
+                      onClick={() => handleCareerChange(car.id)}
+                      className={`px-2.5 py-1 rounded-lg font-bold whitespace-nowrap transition-all cursor-pointer text-xs ${
+                        dailyCareer === car.id
+                          ? 'bg-white text-orange-600 shadow'
+                          : 'bg-white/20 text-white hover:bg-white/30'
+                      }`}
+                    >
+                      {car.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Search and Filter Panel (Hidden in pure Daily Challenge mode or available to switch) */}
             <div className="bg-white rounded-3xl border border-slate-200 p-5 sm:p-6 shadow-xs mb-8">
               
               {/* Category Filter Tabs */}
               <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-4 border-b border-slate-100 text-xs">
+                {/* Desafio do Dia Quick Toggle Button */}
+                <button
+                  onClick={() => {
+                    setIsDailyChallengeActive(!isDailyChallengeActive);
+                  }}
+                  className={`px-3.5 py-2 rounded-xl font-black whitespace-nowrap transition-all cursor-pointer flex items-center gap-1.5 ${
+                    isDailyChallengeActive
+                      ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-md shadow-orange-500/25 ring-2 ring-orange-400'
+                      : 'bg-orange-50 text-orange-600 hover:bg-orange-100 border border-orange-200'
+                  }`}
+                >
+                  <span>🔥 Desafio do Dia</span>
+                </button>
+
                 {[
                   { id: 'all', label: '🌟 Todas as Questões' },
                   { id: 'ENEM', label: '🎓 ENEM & Vestibulares' },
@@ -302,12 +514,13 @@ export default function App() {
                   <button
                     key={cat.id}
                     onClick={() => {
+                      setIsDailyChallengeActive(false);
                       setFilterExamType(cat.id);
                       setFilterDiscipline('all');
                       setFilterBoard('all');
                     }}
                     className={`px-4 py-2 rounded-xl font-bold whitespace-nowrap transition-all cursor-pointer ${
-                      filterExamType === cat.id
+                      !isDailyChallengeActive && filterExamType === cat.id
                         ? 'bg-orange-500 text-white shadow-md shadow-orange-500/20'
                         : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                     }`}

@@ -225,4 +225,31 @@ if (questionCount < 1000) {
   console.log('[QLingo DB] Mega banco sincronizado com sucesso!');
 }
 
+// Ensure practice tests are always up to date (all 52 tests, including ENEM 2009-2026)
+try {
+  const ptCount = db.prepare('SELECT COUNT(*) as count FROM practice_tests').get().count;
+  if (ptCount < 50 && seedData.practice_tests && seedData.practice_tests.length > 0) {
+    const insertPT = db.prepare(`
+      INSERT OR REPLACE INTO practice_tests (id, title, description, time_limit_minutes, question_ids, career, category, cut_score, examining_board, institute)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `);
+    for (const pt of seedData.practice_tests) {
+      insertPT.run(
+        pt.id, 
+        pt.title, 
+        pt.description, 
+        pt.time_limit_minutes, 
+        typeof pt.question_ids === 'string' ? pt.question_ids : JSON.stringify(pt.question_ids),
+        pt.career || 'Geral',
+        pt.category || 'Geral',
+        pt.cut_score || 65,
+        pt.examining_board || 'Diversas',
+        pt.institute || 'Nacional'
+      );
+    }
+  }
+} catch (e) {
+  console.warn('[QLingo DB] Aviso ao verificar practice_tests:', e.message);
+}
+
 module.exports = db;
