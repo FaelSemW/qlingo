@@ -116,6 +116,20 @@ db.exec(`
     level TEXT DEFAULT 'Concurseiro Dedicado',
     is_premium INTEGER DEFAULT 1 -- SEMPRE 1 (Monetização 100% Removida)
   );
+
+  CREATE TABLE IF NOT EXISTS in_progress_exams (
+    id TEXT PRIMARY KEY,
+    user_id INTEGER,
+    practice_test_id TEXT NOT NULL,
+    current_idx INTEGER DEFAULT 0,
+    selected_answers TEXT NOT NULL,
+    time_left_seconds INTEGER NOT NULL,
+    total_questions INTEGER NOT NULL,
+    answered_count INTEGER NOT NULL,
+    updated_at TEXT DEFAULT (datetime('now')),
+    FOREIGN KEY (user_id) REFERENCES users (id),
+    FOREIGN KEY (practice_test_id) REFERENCES practice_tests (id)
+  );
 `);
 
 // Safe column migrations for existing databases
@@ -130,6 +144,9 @@ try { db.exec("ALTER TABLE practice_tests ADD COLUMN category TEXT DEFAULT 'Gera
 try { db.exec("ALTER TABLE practice_tests ADD COLUMN cut_score INTEGER DEFAULT 65;"); } catch (e) {}
 try { db.exec("ALTER TABLE practice_tests ADD COLUMN examining_board TEXT;"); } catch (e) {}
 try { db.exec("ALTER TABLE practice_tests ADD COLUMN institute TEXT;"); } catch (e) {}
+try { db.exec("ALTER TABLE users ADD COLUMN target_exam TEXT;"); } catch (e) {}
+try { db.exec("ALTER TABLE users ADD COLUMN study_goal TEXT;"); } catch (e) {}
+try { db.exec("ALTER TABLE users ADD COLUMN theme_preference TEXT DEFAULT 'dark';"); } catch (e) {}
 
 // Ensure default demo user (id: 1) exists FIRST before any foreign key references
 const bcrypt = require('bcryptjs');

@@ -20,6 +20,15 @@ app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 app.use(optionalAuth);
 
+// Anti-cache global para rotas de API (Garante isolamento absoluto de sessões entre usuários)
+app.use('/api', (req, res, next) => {
+  res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+  res.set('Pragma', 'no-cache');
+  res.set('Expires', '0');
+  res.set('Surrogate-Control', 'no-store');
+  next();
+});
+
 // Servir PDFs e arquivos baixados diretamente do HD D:\questions
 if (fs.existsSync('D:/questions')) {
   app.use('/arquivos_locais', express.static('D:/questions'));

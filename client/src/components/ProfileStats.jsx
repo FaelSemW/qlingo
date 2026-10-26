@@ -56,13 +56,13 @@ export default function ProfileStats() {
       <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm mb-8 flex flex-wrap items-center justify-between gap-6">
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-orange-500 to-amber-500 text-white flex items-center justify-center font-black text-2xl shadow-md shadow-orange-500/20">
-            {profile?.name?.charAt(0) || 'E'}
+            {profile?.name ? profile.name.charAt(0).toUpperCase() : (profile?.is_guest ? 'V' : 'E')}
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h2 className="text-xl font-black text-slate-900">{profile?.name || 'Estudante Focado'}</h2>
-              <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300">
-                Acesso Vitalício Livre
+              <h2 className="text-xl font-black text-slate-900">{profile?.is_guest ? 'Visitante' : (profile?.name || 'Estudante QLingo')}</h2>
+              <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border ${profile?.is_guest ? 'bg-amber-100 text-amber-800 border-amber-300' : 'bg-emerald-100 text-emerald-800 border border-emerald-300'}`}>
+                {profile?.is_guest ? 'Modo Visitante' : 'Acesso Vitalício Livre'}
               </span>
             </div>
             <p className="text-xs text-slate-500 font-semibold">{profile?.level || 'Concurseiro Dedicado 🔥'}</p>

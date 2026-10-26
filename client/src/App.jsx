@@ -13,6 +13,8 @@ import NotebooksView from './components/NotebooksView';
 import ProfileStats from './components/ProfileStats';
 import ImportModal from './components/ImportModal';
 import AuthModal from './components/AuthModal';
+import AnalyticsView from './components/AnalyticsView';
+import OnboardingModal from './components/OnboardingModal';
 import { 
   fetchQuestions, fetchDailyQuestions, fetchStreaks, fetchNotebooks, 
   fetchUserProfile, getSavedUser, fetchMe, clearAuth 
@@ -30,6 +32,24 @@ export default function App() {
   const [availableFilters, setAvailableFilters] = useState({ disciplines: [], boards: [], years: [] });
   const [isLoadingQuestions, setIsLoadingQuestions] = useState(false);
   const [isImportModalOpen, setIsImportModalOpen] = useState(false);
+  const [isOnboardingOpen, setIsOnboardingOpen] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('qlingo_theme') || 'dark';
+  });
+
+  const toggleTheme = () => {
+    const nextTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(nextTheme);
+    localStorage.setItem('qlingo_theme', nextTheme);
+  };
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [theme]);
 
   // Daily Challenge state
   const [dailyCareer, setDailyCareer] = useState('all');
@@ -96,6 +116,14 @@ export default function App() {
       setNotebooks(nbs || []);
       if (me) {
         setCurrentUser(me);
+        if (me.target_exam && dailyCareer === 'all') {
+          setDailyCareer(me.target_exam);
+          loadDaily(me.target_exam);
+        }
+        if (me.theme_preference) {
+          setTheme(me.theme_preference);
+          localStorage.setItem('qlingo_theme', me.theme_preference);
+        }
       } else {
         clearAuth();
         setCurrentUser(null);
@@ -108,6 +136,12 @@ export default function App() {
   const handleAuthSuccess = (user) => {
     setCurrentUser(user);
     loadInitialData();
+    if (!user.target_exam) {
+      setIsOnboardingOpen(true);
+    } else if (user.target_exam) {
+      setDailyCareer(user.target_exam);
+      loadDaily(user.target_exam);
+    }
     if (activeTab === 'questions') loadQuestions();
   };
 
@@ -681,6 +715,21 @@ export default function App() {
           <PracticeExam onBackToDashboard={() => setActiveTab('dashboard')} />
         )}
 
+        {/* ANALYTICS & PERFORMANCE DIAGNOSIS TAB */}
+        {activeTab === 'analytics' && (
+          <div className="max-w-5xl mx-auto px-4 py-8">
+            <AnalyticsView 
+              user={currentUser} 
+              theme={theme}
+              onOpenAuth={() => setIsAuthModalOpen(true)}
+              onStartPracticeInQuestions={(disc) => {
+                setFilterDiscipline(disc);
+                setActiveTab('questions');
+              }}
+            />
+          </div>
+        )}
+
         {/* FLASHCARDS TAB */}
         {activeTab === 'flashcards' && (
           <FlashcardViewer />
@@ -713,6 +762,24 @@ export default function App() {
         isOpen={isAuthModalOpen}
         onClose={() => setIsAuthModalOpen(false)}
         onAuthSuccess={handleAuthSuccess}
+      />
+
+      {/* Student Profile Onboarding Modal */}
+      <OnboardingModal
+        isOpen={isOnboardingOpen}
+        onClose={() => setIsOnboardingOpen(false)}
+        user={currentUser}
+        onSaveSuccess={(updatedUser) => {
+          setCurrentUser(updatedUser);
+          if (updatedUser.target_exam) {
+            setDailyCareer(updatedUser.target_exam);
+            loadDaily(updatedUser.target_exam);
+          }
+          if (updatedUser.theme_preference) {
+            setTheme(updatedUser.theme_preference);
+          }
+          loadInitialData();
+        }}
       />
 
     </div>

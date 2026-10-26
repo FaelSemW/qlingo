@@ -27,11 +27,11 @@ router.post('/register', (req, res) => {
 
     const hash = bcrypt.hashSync(password, 10);
     const result = db.prepare(`
-      INSERT INTO users (name, email, password_hash, xp, level, streak_current, streak_max, daily_goal)
-      VALUES (?, ?, ?, 50, 'Concurseiro Iniciante 🎯', 1, 1, 10)
-    `).run(name.trim(), emailClean, hash);
+      INSERT INTO users (name, email, password_hash, xp, level, streak_current, streak_max, daily_goal, target_exam, study_goal, theme_preference)
+      VALUES (?, ?, ?, 50, 'Concurseiro Iniciante 🎯', 1, 1, 10, ?, ?, ?)
+    `).run(name.trim(), emailClean, hash, req.body.target_exam || null, req.body.study_goal || null, req.body.theme_preference || 'dark');
 
-    const user = db.prepare('SELECT id, name, email, xp, level, streak_current, streak_max, daily_goal FROM users WHERE id = ?').get(result.lastInsertRowid);
+    const user = db.prepare('SELECT id, name, email, avatar, xp, level, streak_current, streak_max, daily_goal, target_exam, study_goal, theme_preference FROM users WHERE id = ?').get(result.lastInsertRowid);
     const token = jwt.sign({ id: user.id, email: user.email, name: user.name }, JWT_SECRET, { expiresIn: '30d' });
 
     res.status(201).json({
@@ -79,7 +79,10 @@ router.post('/login', (req, res) => {
         level: user.level,
         streak_current: user.streak_current,
         streak_max: user.streak_max,
-        daily_goal: user.daily_goal
+        daily_goal: user.daily_goal,
+        target_exam: user.target_exam,
+        study_goal: user.study_goal,
+        theme_preference: user.theme_preference || 'dark'
       }
     });
   } catch (error) {
@@ -91,7 +94,7 @@ router.post('/login', (req, res) => {
 // Current authenticated user (GET /api/auth/me)
 router.get('/me', requireAuth, (req, res) => {
   try {
-    const user = db.prepare('SELECT id, name, email, xp, level, streak_current, streak_max, daily_goal FROM users WHERE id = ?').get(req.userId);
+    const user = db.prepare('SELECT id, name, email, avatar, xp, level, streak_current, streak_max, daily_goal, target_exam, study_goal, theme_preference FROM users WHERE id = ?').get(req.userId);
     if (!user) return res.status(404).json({ error: 'Usuário não encontrado' });
 
     // Calculate accuracy
@@ -150,7 +153,10 @@ router.post('/firebase', (req, res) => {
         level: user.level,
         streak_current: user.streak_current,
         streak_max: user.streak_max,
-        daily_goal: user.daily_goal
+        daily_goal: user.daily_goal,
+        target_exam: user.target_exam,
+        study_goal: user.study_goal,
+        theme_preference: user.theme_preference || 'dark'
       }
     });
   } catch (error) {

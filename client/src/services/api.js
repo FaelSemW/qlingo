@@ -308,6 +308,68 @@ export async function checkLimits() {
 }
 
 // Unified API Object Export
+
+// ONBOARDING & ANALYTICS
+export async function saveOnboardingProfile(profileData) {
+  const res = await fetch(`${API_BASE}/user_profile/onboarding`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      ...getAuthHeader()
+    },
+    body: JSON.stringify(profileData)
+  });
+  const data = await res.json();
+  if (data.user) {
+    const curUser = getSavedUser() || {};
+    saveAuth(localStorage.getItem('qlingo_token'), { ...curUser, ...data.user });
+  }
+  return data;
+}
+
+export async function fetchAnalytics() {
+  const res = await fetch(`${API_BASE}/user_profile/analytics`, {
+    headers: { ...getAuthHeader() }
+  });
+  return res.json();
+}
+
+export async function fetchWeaknessQuestions(discipline) {
+  const query = discipline ? `?discipline=${encodeURIComponent(discipline)}` : '';
+  const res = await fetch(`${API_BASE}/user_profile/weakness_questions${query}`, {
+    headers: { ...getAuthHeader() }
+  });
+  return res.json();
+}
+
+// IN-PROGRESS EXAMS (PAUSE & RESUME)
+export async function pausePracticeTest(data) {
+  const res = await fetch(`${API_BASE}/ils/practice_tests/attempts/pause`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      ...getAuthHeader()
+    },
+    body: JSON.stringify(data)
+  });
+  return res.json();
+}
+
+export async function fetchInProgressExams() {
+  const res = await fetch(`${API_BASE}/ils/practice_tests/attempts/in_progress`, {
+    headers: { ...getAuthHeader() }
+  });
+  return res.json();
+}
+
+export async function discardInProgressExam(id) {
+  const res = await fetch(`${API_BASE}/ils/practice_tests/attempts/${id}/discard`, {
+    method: 'DELETE',
+    headers: { ...getAuthHeader() }
+  });
+  return res.json();
+}
+
 export const api = {
   loginUser,
   registerUser,
@@ -348,10 +410,16 @@ export const api = {
         'Content-Type': 'application/json',
         ...getAuthHeader()
       },
-      body: JSON.stringify({ answers })
+      body: JSON.stringify({ answers, practice_test_id: attemptId })
     });
     return res.json();
   },
+  pausePracticeTest,
+  fetchInProgressExams,
+  discardInProgressExam,
+  saveOnboardingProfile,
+  fetchAnalytics,
+  fetchWeaknessQuestions,
   fetchStreaks,
   updateDailyGoal,
   fetchFlashcards,

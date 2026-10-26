@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { 
   Award, Clock, CheckCircle2, XCircle, AlertCircle, 
   ChevronRight, ArrowLeft, RefreshCw, Filter, BookOpen, 
-  TrendingUp, HelpCircle, Flame, ShieldAlert, Sparkles, Check, ChevronDown, Search
+  TrendingUp, HelpCircle, Flame, ShieldAlert, Sparkles, Check, ChevronDown, Search,
+  Pause, Play, Trash2
 } from 'lucide-react';
+import OptionContent from './OptionContent';
 import { api } from '../services/api';
 import confetti from 'canvas-confetti';
 import StatementRenderer from './StatementRenderer';
@@ -14,6 +16,7 @@ export default function PracticeExam({ user, onRequireAuth }) {
   const [loading, setLoading] = useState(true);
   const [examSearch, setExamSearch] = useState('');
   const [enemYearFilter, setEnemYearFilter] = useState('all');
+  const [inProgressTests, setInProgressTests] = useState([]);
   
   // Test in progress state
   const [activeTest, setActiveTest] = useState(null);
@@ -30,7 +33,85 @@ export default function PracticeExam({ user, onRequireAuth }) {
 
   useEffect(() => {
     loadTests();
+    loadInProgress();
   }, []);
+
+
+  const loadInProgress = async () => {
+    try {
+      const data = await api.fetchInProgressExams();
+      setInProgressTests(Array.isArray(data) ? data : []);
+    } catch (e) {
+      console.warn('Erro ao carregar simulados em andamento:', e);
+    }
+  };
+
+  const handlePauseTest = async () => {
+    if (!activeTest) return;
+    try {
+      const answeredCount = Object.keys(selectedAnswers).length;
+      const totalCount = testQuestions.length;
+      await api.pausePracticeTest({
+        practice_test_id: activeTest.id,
+        current_idx: currentIdx,
+        selected_answers: selectedAnswers,
+        time_left_seconds: timeLeft,
+        total_questions: totalCount
+      });
+      localStorage.setItem(`qlingo_paused_${activeTest.id}`, JSON.stringify({
+        practice_test_id: activeTest.id,
+        title: activeTest.title,
+        current_idx: currentIdx,
+        selected_answers: selectedAnswers,
+        time_left_seconds: timeLeft,
+        total_questions: totalCount,
+        updated_at: new Date().toISOString()
+      }));
+      alert(`Simulado "${activeTest.title}" pausado com sucesso!\n\nVocê respondeu ${answeredCount} de ${totalCount} questões (${totalCount > 0 ? Math.round((answeredCount / totalCount) * 100) : 0}%).\nSeu progresso e tempo foram salvos para continuar a qualquer momento na aba "⏳ Em Andamento".`);
+      setActiveTest(null);
+      loadTests();
+      loadInProgress();
+    } catch (err) {
+      console.error('Erro ao pausar simulado:', err);
+      alert('Erro ao pausar o simulado.');
+    }
+  };
+
+  const handleResumeTest = async (pausedItem) => {
+    try {
+      setLoading(true);
+      const res = await api.getPracticeTestQuestions(pausedItem.practice_test_id);
+      const fullTest = tests.find(t => t.id === pausedItem.practice_test_id) || {
+        id: pausedItem.practice_test_id,
+        title: pausedItem.title,
+        cut_score: 65,
+        time_limit_minutes: pausedItem.time_limit_minutes || 60
+      };
+      setActiveTest(fullTest);
+      setTestQuestions(res.questions || []);
+      setCurrentIdx(pausedItem.current_idx || 0);
+      setSelectedAnswers(pausedItem.selected_answers || {});
+      setResult(null);
+      setTimeLeft(pausedItem.time_left_seconds || 3600);
+      setAttemptId(pausedItem.practice_test_id);
+    } catch (err) {
+      console.error('Erro ao retomar simulado:', err);
+      alert('Não foi possível retomar o simulado.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleDiscardInProgress = async (pausedItem) => {
+    if (!window.confirm(`Deseja realmente descartar e apagar o progresso de "${pausedItem.title}"?`)) return;
+    try {
+      await api.discardInProgressExam(pausedItem.id);
+      localStorage.removeItem(`qlingo_paused_${pausedItem.practice_test_id}`);
+      await loadInProgress();
+    } catch (err) {
+      console.error('Erro ao descartar simulado:', err);
+    }
+  };
 
   const loadTests = async () => {
     try {
@@ -105,7 +186,7 @@ export default function PracticeExam({ user, onRequireAuth }) {
   };
 
   const handleFinishTest = async () => {
-    if (submitting || !attemptId) return;
+    if (submitting || !activeTest) return;
     const answeredCount = Object.keys(selectedAnswers).length;
     const totalCount = testQuestions.length;
 
@@ -116,10 +197,60 @@ export default function PracticeExam({ user, onRequireAuth }) {
 
     try {
       setSubmitting(true);
-      const res = await api.completePracticeTestAttempt(attemptId, selectedAnswers);
-      setResult(res);
+      const targetId = activeTest.id;
+      const res = await api.completePracticeTestAttempt(targetId, selectedAnswers);
 
-      if (res.passed_cut_score || res.is_approved) {
+      let finalRes = res;
+      if (!finalRes || finalRes.error || finalRes.score === undefined) {
+        console.warn('Backend completion returned error or empty, calculating locally:', finalRes);
+        let localCorrect = 0;
+        const discMap = {};
+        testQuestions.forEach(q => {
+          const uAns = selectedAnswers[q.id];
+          const right = (q.right_answer || q.correct_answer || '').trim().toUpperCase();
+          const isC = uAns && uAns.trim().toUpperCase() === right;
+          if (isC) localCorrect++;
+          const d = q.discipline || 'Geral';
+          if (!discMap[d]) discMap[d] = { total: 0, correct: 0 };
+          discMap[d].total++;
+          if (isC) discMap[d].correct++;
+        });
+        const localScore = totalCount > 0 ? Math.round((localCorrect / totalCount) * 100) : 0;
+        const cut = activeTest.cut_score || 65;
+        const passed = localScore >= cut;
+        finalRes = {
+          attempt_id: `att-local-${Date.now()}`,
+          test_title: activeTest.title,
+          score: localScore,
+          score_percentage: localScore,
+          correct_count: localCorrect,
+          correct_answers: localCorrect,
+          total_questions: totalCount,
+          passed_cut_score: passed,
+          is_approved: passed,
+          cut_score: cut,
+          xp_earned: localCorrect * 25 + 50,
+          discipline_breakdown: Object.entries(discMap).map(([k, v]) => ({
+            discipline: k,
+            total: v.total,
+            correct: v.correct,
+            percentage: Math.round((v.correct / v.total) * 100),
+            status: (v.correct / v.total) >= 0.75 ? 'Ponto Forte 🚀' : (v.correct / v.total) >= 0.5 ? 'Regular ⚡' : 'Requer Revisão ⚠️'
+          })),
+          pedagogical_diagnosis: passed 
+            ? `Parabéns! Seu rendimento de ${localScore}% ultrapassou a nota de corte (${cut}%). Continue com essa consistência!` 
+            : `Você atingiu ${localScore}% de aproveitamento (nota de corte: ${cut}%). Revise as questões que errou para consolidar seus pontos fracos.`
+        };
+      }
+
+      setResult(finalRes);
+
+      // Clean up paused attempt
+      try { await api.discardInProgressExam(targetId); } catch(e) {}
+      localStorage.removeItem(`qlingo_paused_${targetId}`);
+      loadInProgress();
+
+      if (finalRes.passed_cut_score || finalRes.is_approved) {
         confetti({
           particleCount: 120,
           spread: 80,
@@ -175,10 +306,12 @@ export default function PracticeExam({ user, onRequireAuth }) {
   // VIEW: DIAGNÓSTICO E RESULTADO FINAL
   // ==========================================
   if (result) {
-    const isApproved = result.passed_cut_score !== undefined ? result.passed_cut_score : result.is_approved;
-    const correctCount = result.correct_answers !== undefined ? result.correct_answers : result.correct_count;
-    const totalCount = result.total_questions || testQuestions.length;
-    const diagnosisText = result.pedagogical_diagnosis || result.diagnosis;
+    const correctCount = result.correct_count ?? result.correct_answers ?? result.correct ?? 0;
+    const totalCount = result.total_questions || testQuestions.length || 90;
+    const scoreValue = result.score_percentage ?? result.score ?? (totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0);
+    const cutScoreValue = result.cut_score || activeTest?.cut_score || 65;
+    const isApproved = result.passed_cut_score !== undefined ? result.passed_cut_score : (result.is_approved !== undefined ? result.is_approved : (scoreValue >= cutScoreValue));
+    const diagnosisText = result.pedagogical_diagnosis || result.diagnosis || 'Diagnóstico de desempenho gerado com base nas suas respostas.';
     const breakdown = result.discipline_breakdown || (result.subject_stats ? Object.entries(result.subject_stats).map(([k, v]) => ({ discipline: k, ...v })) : []);
 
     const wrongQuestions = testQuestions.filter(q => {
@@ -224,13 +357,13 @@ export default function PracticeExam({ user, onRequireAuth }) {
               }`}>
                 {isApproved ? '🎉 Classificado / Aprovado no Corte' : '⚠️ Abaixo da Nota de Corte'}
               </span>
-              <h2 className="text-3xl font-black text-white tracking-tight">{result.test_title || activeTest?.title}</h2>
+              <h2 className="text-3xl font-black text-white tracking-tight">{result.test_title || activeTest?.title || "Simulado Oficial"}</h2>
               <p className="text-slate-300 max-w-xl text-sm leading-relaxed">{diagnosisText}</p>
             </div>
 
             <div className="flex items-center gap-6 bg-slate-900/80 p-5 rounded-2xl border border-slate-800">
               <div className="text-center">
-                <div className="text-4xl font-black text-white">{result.score}%</div>
+                <div className="text-4xl font-black text-white">{scoreValue}%</div>
                 <div className="text-xs text-slate-400 mt-1 font-medium">Sua Pontuação</div>
               </div>
               <div className="h-10 w-[1px] bg-slate-800" />
@@ -240,7 +373,7 @@ export default function PracticeExam({ user, onRequireAuth }) {
               </div>
               <div className="h-10 w-[1px] bg-slate-800" />
               <div className="text-center">
-                <div className="text-2xl font-bold text-slate-400">{result.cut_score || 60}%</div>
+                <div className="text-2xl font-bold text-slate-400">{cutScoreValue}%</div>
                 <div className="text-xs text-slate-500 mt-1 font-medium">Corte Estimado</div>
               </div>
             </div>
@@ -399,7 +532,7 @@ export default function PracticeExam({ user, onRequireAuth }) {
                           }`}>
                             {optKey}
                           </span>
-                          <span className="flex-1 leading-relaxed">{alt.text}</span>
+                          <span className="flex-1 leading-relaxed"><OptionContent text={alt.text} isDark={true} /></span>
                           {isOptionCorrect && <span className="text-[11px] text-emerald-400 font-bold uppercase tracking-wider">Gabarito Oficial</span>}
                         </div>
                       );
@@ -460,6 +593,17 @@ export default function PracticeExam({ user, onRequireAuth }) {
           </div>
 
           <div className="flex items-center gap-4">
+
+            {/* Pause Exam Button */}
+            <button
+              onClick={handlePauseTest}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-amber-500/30 bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 text-xs font-bold transition-all cursor-pointer shadow-xs"
+              title="Pausar simulado e continuar mais tarde de onde parou"
+            >
+              <Pause className="w-4 h-4" />
+              <span className="hidden sm:inline">Pausar Simulado</span>
+            </button>
+
             {/* Countdown timer */}
             <div className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl border text-sm font-mono font-bold ${
               timeLeft < 300 
@@ -536,7 +680,7 @@ export default function PracticeExam({ user, onRequireAuth }) {
                   }`}>
                     {optKey}
                   </span>
-                  <span className="text-sm leading-relaxed flex-1">{alt.text}</span>
+                  <span className="text-sm leading-relaxed flex-1"><OptionContent text={alt.text} isDark={true} /></span>
                   {isSelected && <Check className="w-5 h-5 text-indigo-400 shrink-0" />}
                 </button>
               );
@@ -619,6 +763,7 @@ export default function PracticeExam({ user, onRequireAuth }) {
       <div className="flex items-center gap-2 overflow-x-auto pb-2 border-b border-slate-800 text-xs">
         {[
           { id: 'all', label: '🌟 Todos os Simulados' },
+          { id: 'in_progress', label: `⏳ Em Andamento (${inProgressTests.length})` },
           { id: 'ENEM', label: '🎓 ENEM (Edições 2009 a 2026)' },
           { id: 'Policial', label: '🚓 Carreiras Policiais (PF / PRF)' },
           { id: 'Tribunais', label: '⚖️ Tribunais (TJ / TRF)' },
@@ -713,6 +858,75 @@ export default function PracticeExam({ user, onRequireAuth }) {
           <RefreshCw className="w-8 h-8 animate-spin mx-auto text-indigo-500" />
           <p className="text-sm">Carregando catálogo de simulados oficiais...</p>
         </div>
+      ) : activeCategory === 'in_progress' ? (
+        inProgressTests.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {inProgressTests.map((pt) => (
+              <div
+                key={pt.id}
+                className="bg-slate-900/90 rounded-3xl border border-amber-500/30 p-6 flex flex-col justify-between hover:border-amber-500/60 transition-all duration-300 group hover:shadow-xl hover:shadow-amber-500/10 relative overflow-hidden space-y-4"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-lg border border-amber-500/20 flex items-center gap-1.5">
+                      <Clock className="w-3.5 h-3.5" /> Pausado
+                    </span>
+                    <span className="text-xs text-slate-400 font-mono">
+                      {Math.floor(pt.time_left_seconds / 60)} min restantes
+                    </span>
+                  </div>
+
+                  <h3 className="text-base font-bold text-white group-hover:text-amber-300 transition-colors line-clamp-2">
+                    {pt.title}
+                  </h3>
+
+                  {/* Progress Bar & Percentage */}
+                  <div className="space-y-1.5 pt-1">
+                    <div className="flex justify-between text-xs">
+                      <span className="text-slate-400 font-medium">Progresso respondido:</span>
+                      <span className="text-amber-400 font-black">{pt.progress_percentage}%</span>
+                    </div>
+                    <div className="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                      <div 
+                        className="bg-gradient-to-r from-amber-500 to-emerald-500 h-full rounded-full transition-all duration-500" 
+                        style={{ width: `${pt.progress_percentage}%` }} 
+                      />
+                    </div>
+                    <p className="text-[11px] text-slate-500">
+                      {pt.answered_count} de {pt.total_questions} questões respondidas
+                    </p>
+                  </div>
+                </div>
+
+                {/* Action buttons */}
+                <div className="flex items-center gap-2 pt-2 border-t border-slate-800">
+                  <button
+                    onClick={() => handleResumeTest(pt)}
+                    className="flex-1 py-2.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-slate-950 font-black text-xs rounded-xl shadow-md flex items-center justify-center gap-1.5 cursor-pointer transition-all"
+                  >
+                    <Play className="w-4 h-4 fill-slate-950" />
+                    <span>Continuar Simulado</span>
+                  </button>
+                  <button
+                    onClick={() => handleDiscardInProgress(pt)}
+                    className="p-2.5 rounded-xl border border-slate-800 hover:border-rose-500/50 hover:bg-rose-500/10 text-slate-400 hover:text-rose-400 transition-colors cursor-pointer"
+                    title="Descartar progresso salvo"
+                  >
+                    <Trash2 className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-20 text-slate-400 space-y-3 bg-slate-900/40 rounded-3xl border border-slate-800/80 p-8">
+            <Clock className="w-10 h-10 text-slate-600 mx-auto" />
+            <p className="text-base font-bold text-white">Nenhum simulado pausado no momento</p>
+            <p className="text-xs text-slate-400 max-w-md mx-auto leading-relaxed">
+              Ao iniciar qualquer simulado, você pode clicar no botão <b>"Pausar Simulado"</b> no topo a qualquer momento para salvar seu progresso e continuar no dia seguinte!
+            </p>
+          </div>
+        )
       ) : filteredTests.length === 0 ? (
         <div className="text-center py-16 bg-slate-900/40 rounded-3xl border border-slate-800/60 space-y-3">
           <AlertCircle className="w-10 h-10 text-slate-500 mx-auto" />

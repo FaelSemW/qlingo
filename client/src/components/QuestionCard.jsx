@@ -6,6 +6,7 @@ import {
 import confetti from 'canvas-confetti';
 import { resolveQuestion, addComment, toggleNotebookQuestion } from '../services/api';
 import StatementRenderer from './StatementRenderer';
+import OptionContent from './OptionContent';
 
 export default function QuestionCard({ 
   question, 
@@ -192,7 +193,7 @@ export default function QuestionCard({
                     {opt.key}
                   </span>
                   <span className="flex-1 pt-0.5 text-sm sm:text-base leading-snug">
-                    {opt.text}
+                    <OptionContent text={opt.text} isDark={isDark} />
                   </span>
 
                   {/* Right/Wrong Icon Indicator */}
