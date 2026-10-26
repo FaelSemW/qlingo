@@ -227,6 +227,7 @@ if (questionCount < 1000) {
 
 // Ensure practice tests are always up to date (all 52 tests, including ENEM 2009-2026 with exactly 90 questions)
 try {
+  try { db.prepare("DELETE FROM practice_tests WHERE id IN ('simulado-enem-2025-pre-oficial', 'simulado-enem-2026-diagnostico', 'simulado-enem-2025', 'simulado-enem-2026')").run(); } catch(e){}
   const hasIncompleteEnem = db.prepare(`
     SELECT COUNT(*) as c FROM practice_tests 
     WHERE id LIKE 'simulado-enem-20%' AND id NOT LIKE '%express%' AND json_array_length(question_ids) < 90
