@@ -156,6 +156,10 @@ db.prepare(`
   VALUES (1, 'Estudante Focado', 'estudante@qlingo.com', ?, 320, 'Concurseiro Dedicado 🔥', 5, 12, 10)
 `).run(demoHash);
 
+// Restore permanently registered users
+const { restoreUsersToDb } = require('./usersRegistry');
+restoreUsersToDb(db);
+
 // Populate initial data if empty or incomplete
 const countStmt = db.prepare('SELECT COUNT(*) as count FROM questions');
 const questionCount = countStmt.get().count;

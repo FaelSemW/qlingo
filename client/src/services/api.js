@@ -5,15 +5,39 @@ function getAuthHeader() {
   return token ? { 'Authorization': `Bearer ${token}` } : {};
 }
 
+export function getSavedUserProfile(email) {
+  try {
+    if (email) {
+      const cleanEmail = email.trim().toLowerCase();
+      const p = localStorage.getItem(`qlingo_profile_${cleanEmail}`);
+      if (p) return JSON.parse(p);
+    }
+    const last = localStorage.getItem('qlingo_last_known_profile');
+    if (last) return JSON.parse(last);
+  } catch (e) {}
+  return null;
+}
+
 export function saveAuth(token, user) {
   if (token) localStorage.setItem('qlingo_token', token);
-  if (user) localStorage.setItem('qlingo_user', JSON.stringify(user));
+  if (user) {
+    localStorage.setItem('qlingo_user', JSON.stringify(user));
+    if (user.email) {
+      const cleanEmail = user.email.trim().toLowerCase();
+      // Persistent permanent profile backup (survives clearAuth and backend redeploys!)
+      localStorage.setItem(`qlingo_profile_${cleanEmail}`, JSON.stringify(user));
+      localStorage.setItem('qlingo_last_known_profile', JSON.stringify(user));
+    }
+  }
 }
 
 export function getSavedUser() {
   const user = localStorage.getItem('qlingo_user');
   try {
-    return user ? JSON.parse(user) : null;
+    if (user) return JSON.parse(user);
+    // Fallback to permanent profile if available
+    const last = localStorage.getItem('qlingo_last_known_profile');
+    return last ? JSON.parse(last) : null;
   } catch (e) {
     return null;
   }
@@ -22,6 +46,7 @@ export function getSavedUser() {
 export function clearAuth() {
   localStorage.removeItem('qlingo_token');
   localStorage.removeItem('qlingo_user');
+  // Note: we intentionally PRESERVE qlingo_profile_<email> and qlingo_last_known_profile so students never lose their career/study goals
 }
 
 // AUTH API
@@ -52,13 +77,31 @@ export async function registerUser(name, email, password) {
 }
 
 export async function loginWithFirebase({ email, name, avatar }) {
+  const cleanEmail = (email || '').trim().toLowerCase();
+  const savedProfile = getSavedUserProfile(cleanEmail);
+
+  const payload = {
+    email: cleanEmail,
+    name: name || cleanEmail.split('@')[0],
+    avatar,
+    target_exam: savedProfile?.target_exam || null,
+    study_goal: savedProfile?.study_goal || null,
+    daily_goal: savedProfile?.daily_goal || 10,
+    theme_preference: savedProfile?.theme_preference || 'dark'
+  };
+
   const res = await fetch(`${API_BASE}/auth/firebase`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email, name, avatar })
+    body: JSON.stringify(payload)
   });
   const data = await res.json();
   if (data.token && data.user) {
+    // If backend response is missing target_exam but local backup has it, merge seamlessly
+    if (!data.user.target_exam && savedProfile?.target_exam) {
+      data.user.target_exam = savedProfile.target_exam;
+      data.user.study_goal = savedProfile.study_goal || data.user.study_goal;
+    }
     saveAuth(data.token, data.user);
   }
   return data;
@@ -323,6 +366,17 @@ export async function checkLimits() {
 
 // ONBOARDING & ANALYTICS
 export async function saveOnboardingProfile(profileData) {
+  const curUser = getSavedUser() || {};
+  const cleanEmail = (curUser.email || '').trim().toLowerCase();
+  const merged = { ...curUser, ...profileData };
+
+  // Save to persistent local storage immediately before network call
+  if (cleanEmail) {
+    localStorage.setItem(`qlingo_profile_${cleanEmail}`, JSON.stringify(merged));
+  }
+  localStorage.setItem('qlingo_last_known_profile', JSON.stringify(merged));
+  saveAuth(localStorage.getItem('qlingo_token'), merged);
+
   const res = await fetch(`${API_BASE}/user_profile/onboarding`, {
     method: 'POST',
     headers: {
@@ -333,8 +387,7 @@ export async function saveOnboardingProfile(profileData) {
   });
   const data = await res.json();
   if (data.user) {
-    const curUser = getSavedUser() || {};
-    saveAuth(localStorage.getItem('qlingo_token'), { ...curUser, ...data.user });
+    saveAuth(localStorage.getItem('qlingo_token'), { ...merged, ...data.user });
   }
   return data;
 }
@@ -388,6 +441,7 @@ export const api = {
   loginWithFirebase,
   fetchMe,
   getSavedUser,
+  getSavedUserProfile,
   saveAuth,
   clearAuth,
   fetchQuestions,

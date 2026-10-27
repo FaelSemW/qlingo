@@ -5,6 +5,7 @@ import {
   CheckSquare, AlertCircle, RefreshCw 
 } from 'lucide-react';
 import Header from './components/Header';
+import { onFirebaseAuthStateChanged } from './services/firebase';
 import Navigation from './components/Navigation';
 import QuestionCard from './components/QuestionCard';
 import PracticeExam from './components/PracticeExam';
@@ -18,7 +19,7 @@ import AnalyticsView from './components/AnalyticsView';
 import OnboardingModal from './components/OnboardingModal';
 import { 
   fetchQuestions, fetchDailyQuestions, fetchStreaks, fetchNotebooks, 
-  fetchUserProfile, getSavedUser, fetchMe, clearAuth 
+  fetchUserProfile, getSavedUser, getSavedUserProfile, fetchMe, clearAuth, loginWithFirebase, saveAuth, saveOnboardingProfile 
 } from './services/api';
 
 
@@ -127,6 +128,30 @@ export default function App() {
   useEffect(() => {
     loadInitialData();
     loadDaily('all');
+
+    // Restauração silenciosa da sessão Google/Firebase através de deploys e recargas de página
+    const unsubscribe = onFirebaseAuthStateChanged(async (firebaseUser) => {
+      if (firebaseUser && firebaseUser.email) {
+        const token = localStorage.getItem('qlingo_token');
+        if (!token) {
+          try {
+            console.log('[Auth] Conta Google ativa detectada no navegador, restaurando sessão...');
+            const res = await loginWithFirebase({
+              email: firebaseUser.email,
+              name: firebaseUser.displayName,
+              avatar: firebaseUser.photoURL
+            });
+            if (res.user) {
+              handleAuthSuccess(res.user);
+            }
+          } catch (e) {
+            console.warn('[Auth] Erro ao restaurar sessão automática do Google:', e);
+          }
+        }
+      }
+    });
+
+    return () => unsubscribe();
   }, []);
 
   useEffect(() => {
@@ -200,14 +225,38 @@ export default function App() {
   };
 
   const handleAuthSuccess = (user) => {
-    setCurrentUser(user);
-    loadInitialData();
-    if (!user.target_exam) {
+    const cleanEmail = (user?.email || '').trim().toLowerCase();
+    const savedLocal = getSavedUserProfile(cleanEmail);
+    const effectiveTarget = user?.target_exam || savedLocal?.target_exam;
+    const effectiveGoal = user?.study_goal || savedLocal?.study_goal;
+    const effectiveUser = {
+      ...user,
+      target_exam: effectiveTarget,
+      study_goal: effectiveGoal
+    };
+
+    setCurrentUser(effectiveUser);
+    saveAuth(localStorage.getItem('qlingo_token'), effectiveUser);
+
+    if (!effectiveTarget) {
       setIsOnboardingOpen(true);
-    } else if (user.target_exam) {
-      setDailyCareer(user.target_exam);
-      loadDaily(user.target_exam);
+    } else {
+      setIsOnboardingOpen(false);
+      setDailyCareer(effectiveTarget);
+      loadDaily(effectiveTarget);
+
+      // Se o backend perdeu o target_exam (ex: após deploy no Render), sincroniza de volta silenciosamente
+      if (!user?.target_exam && effectiveTarget) {
+        saveOnboardingProfile({
+          target_exam: effectiveTarget,
+          study_goal: effectiveGoal,
+          daily_goal: effectiveUser.daily_goal || 10,
+          theme_preference: effectiveUser.theme_preference || theme
+        }).catch(() => {});
+      }
     }
+
+    loadInitialData();
     if (activeTab === 'questions') loadQuestions();
   };
 

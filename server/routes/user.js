@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../db');
+const { saveUserToRegistry } = require('../usersRegistry');
 
 // User profile
 router.get('/profile', (req, res) => {
@@ -91,6 +92,9 @@ const updateProfileHandler = (req, res) => {
     }
 
     const updatedUser = db.prepare('SELECT id, name, email, avatar, xp, level, streak_current, streak_max, daily_goal, target_exam, study_goal, theme_preference FROM users WHERE id = ?').get(userId);
+
+    // Save to permanent registry
+    saveUserToRegistry(updatedUser);
 
     res.json({
       success: true,

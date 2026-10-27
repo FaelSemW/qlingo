@@ -4,6 +4,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const db = require('../db');
 const { JWT_SECRET, requireAuth, optionalAuth } = require('../middleware/auth');
+const { saveUserToRegistry } = require('../usersRegistry');
 
 // Register new user
 router.post('/register', (req, res) => {
@@ -33,6 +34,8 @@ router.post('/register', (req, res) => {
 
     const user = db.prepare('SELECT id, name, email, avatar, xp, level, streak_current, streak_max, daily_goal, target_exam, study_goal, theme_preference FROM users WHERE id = ?').get(result.lastInsertRowid);
     const token = jwt.sign({ id: user.id, email: user.email, name: user.name }, JWT_SECRET, { expiresIn: '30d' });
+
+    saveUserToRegistry(user);
 
     res.status(201).json({
       success: true,
@@ -120,7 +123,7 @@ router.get('/me', requireAuth, (req, res) => {
 // Firebase / OAuth SSO Login (POST /api/auth/firebase)
 router.post('/firebase', (req, res) => {
   try {
-    const { email, name, avatar } = req.body;
+    const { email, name, avatar, target_exam, study_goal, theme_preference, daily_goal } = req.body;
     if (!email) {
       return res.status(400).json({ error: 'E-mail do Firebase é obrigatório' });
     }
@@ -132,12 +135,49 @@ router.post('/firebase', (req, res) => {
       const randomPassword = bcrypt.hashSync(Math.random().toString(36), 10);
       const displayName = (name || emailClean.split('@')[0]).trim();
       const result = db.prepare(`
-        INSERT INTO users (name, email, password_hash, avatar, xp, level, streak_current, streak_max, daily_goal)
-        VALUES (?, ?, ?, ?, 50, 'Concurseiro Iniciante 🎯', 1, 1, 10)
-      `).run(displayName, emailClean, randomPassword, avatar || null);
+        INSERT INTO users (name, email, password_hash, avatar, xp, level, streak_current, streak_max, daily_goal, target_exam, study_goal, theme_preference)
+        VALUES (?, ?, ?, ?, 50, 'Concurseiro Iniciante 🎯', 1, 1, ?, ?, ?, ?)
+      `).run(
+        displayName, 
+        emailClean, 
+        randomPassword, 
+        avatar || null, 
+        daily_goal ? Number(daily_goal) : 10,
+        target_exam || null,
+        study_goal || null,
+        theme_preference || 'dark'
+      );
 
       user = db.prepare('SELECT * FROM users WHERE id = ?').get(result.lastInsertRowid);
+    } else {
+      // If user exists, update any profile fields if passed or missing
+      const updates = [];
+      const params = [];
+      if (target_exam && !user.target_exam) {
+        updates.push('target_exam = ?');
+        params.push(target_exam);
+      }
+      if (study_goal && !user.study_goal) {
+        updates.push('study_goal = ?');
+        params.push(study_goal);
+      }
+      if (theme_preference && !user.theme_preference) {
+        updates.push('theme_preference = ?');
+        params.push(theme_preference);
+      }
+      if (avatar && !user.avatar) {
+        updates.push('avatar = ?');
+        params.push(avatar);
+      }
+      if (updates.length > 0) {
+        params.push(user.id);
+        db.prepare(`UPDATE users SET ${updates.join(', ')} WHERE id = ?`).run(...params);
+        user = db.prepare('SELECT * FROM users WHERE id = ?').get(user.id);
+      }
     }
+
+    // Persist to permanent registry file
+    saveUserToRegistry(user);
 
     const token = jwt.sign({ id: user.id, email: user.email, name: user.name }, JWT_SECRET, { expiresIn: '30d' });
 

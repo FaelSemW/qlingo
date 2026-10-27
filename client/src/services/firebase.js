@@ -57,3 +57,12 @@ export async function logoutFirebase() {
     }
   }
 }
+
+export function onFirebaseAuthStateChanged(callback) {
+  if (!auth) return () => {};
+  return auth.onAuthStateChanged(callback);
+}
+
+export function getFirebaseUser() {
+  return auth?.currentUser || null;
+}
