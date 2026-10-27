@@ -1,10 +1,10 @@
-// Mega banco de questões e simulados QLingo
+// Mega banco de dados QLingo sincronizado automaticamente
 module.exports = {
   "questions": [
     {
       "id": 101,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2024,
       "difficulty": "Médio",
@@ -40,7 +40,7 @@ module.exports = {
     {
       "id": 103,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2024,
       "difficulty": "Médio",
@@ -94,7 +94,7 @@ module.exports = {
     {
       "id": 106,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2024,
       "difficulty": "Fácil",
@@ -130,7 +130,7 @@ module.exports = {
     {
       "id": 108,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2024,
       "difficulty": "Médio",
@@ -148,7 +148,7 @@ module.exports = {
     {
       "id": 109,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "TCU",
       "year": 2024,
       "difficulty": "Difícil",
@@ -184,7 +184,7 @@ module.exports = {
     {
       "id": 501,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2024,
       "difficulty": "Médio",
@@ -202,7 +202,7 @@ module.exports = {
     {
       "id": 502,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2024,
       "difficulty": "Difícil",
@@ -220,7 +220,7 @@ module.exports = {
     {
       "id": 503,
       "discipline": "Direito Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2024,
       "difficulty": "Médio",
@@ -238,7 +238,7 @@ module.exports = {
     {
       "id": 504,
       "discipline": "Direito Processual Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2024,
       "difficulty": "Médio",
@@ -256,7 +256,7 @@ module.exports = {
     {
       "id": 505,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2023,
       "difficulty": "Médio",
@@ -274,7 +274,7 @@ module.exports = {
     {
       "id": 506,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2023,
       "difficulty": "Fácil",
@@ -364,7 +364,7 @@ module.exports = {
     {
       "id": 1000,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -382,7 +382,7 @@ module.exports = {
     {
       "id": 1001,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -400,7 +400,7 @@ module.exports = {
     {
       "id": 1002,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -418,7 +418,7 @@ module.exports = {
     {
       "id": 1003,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -436,7 +436,7 @@ module.exports = {
     {
       "id": 1004,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -454,7 +454,7 @@ module.exports = {
     {
       "id": 1005,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -472,7 +472,7 @@ module.exports = {
     {
       "id": 1006,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -490,7 +490,7 @@ module.exports = {
     {
       "id": 1007,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -508,7 +508,7 @@ module.exports = {
     {
       "id": 1008,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -526,7 +526,7 @@ module.exports = {
     {
       "id": 1009,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -544,7 +544,7 @@ module.exports = {
     {
       "id": 1010,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -562,7 +562,7 @@ module.exports = {
     {
       "id": 1011,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -580,7 +580,7 @@ module.exports = {
     {
       "id": 1012,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -598,7 +598,7 @@ module.exports = {
     {
       "id": 1013,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -616,7 +616,7 @@ module.exports = {
     {
       "id": 1014,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -634,7 +634,7 @@ module.exports = {
     {
       "id": 1015,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -652,7 +652,7 @@ module.exports = {
     {
       "id": 1016,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -670,7 +670,7 @@ module.exports = {
     {
       "id": 1017,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -688,7 +688,7 @@ module.exports = {
     {
       "id": 1018,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -706,7 +706,7 @@ module.exports = {
     {
       "id": 1019,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -724,7 +724,7 @@ module.exports = {
     {
       "id": 1020,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -742,7 +742,7 @@ module.exports = {
     {
       "id": 1021,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -760,7 +760,7 @@ module.exports = {
     {
       "id": 1022,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -778,7 +778,7 @@ module.exports = {
     {
       "id": 1023,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -796,7 +796,7 @@ module.exports = {
     {
       "id": 1024,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -814,7 +814,7 @@ module.exports = {
     {
       "id": 1025,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -832,7 +832,7 @@ module.exports = {
     {
       "id": 1026,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -850,7 +850,7 @@ module.exports = {
     {
       "id": 1027,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -868,7 +868,7 @@ module.exports = {
     {
       "id": 1028,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -886,7 +886,7 @@ module.exports = {
     {
       "id": 1029,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -904,7 +904,7 @@ module.exports = {
     {
       "id": 1030,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -922,7 +922,7 @@ module.exports = {
     {
       "id": 1031,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -940,7 +940,7 @@ module.exports = {
     {
       "id": 1032,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -958,7 +958,7 @@ module.exports = {
     {
       "id": 1033,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -976,7 +976,7 @@ module.exports = {
     {
       "id": 1034,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -994,7 +994,7 @@ module.exports = {
     {
       "id": 1035,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1012,7 +1012,7 @@ module.exports = {
     {
       "id": 1036,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1030,7 +1030,7 @@ module.exports = {
     {
       "id": 1037,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1048,7 +1048,7 @@ module.exports = {
     {
       "id": 1038,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1066,7 +1066,7 @@ module.exports = {
     {
       "id": 1039,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1084,7 +1084,7 @@ module.exports = {
     {
       "id": 1040,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1102,7 +1102,7 @@ module.exports = {
     {
       "id": 1041,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1120,7 +1120,7 @@ module.exports = {
     {
       "id": 1042,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1138,7 +1138,7 @@ module.exports = {
     {
       "id": 1043,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1156,7 +1156,7 @@ module.exports = {
     {
       "id": 1044,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1174,7 +1174,7 @@ module.exports = {
     {
       "id": 1045,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1192,7 +1192,7 @@ module.exports = {
     {
       "id": 1046,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1210,7 +1210,7 @@ module.exports = {
     {
       "id": 1047,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1228,7 +1228,7 @@ module.exports = {
     {
       "id": 1048,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1246,7 +1246,7 @@ module.exports = {
     {
       "id": 1049,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1264,7 +1264,7 @@ module.exports = {
     {
       "id": 1050,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1282,7 +1282,7 @@ module.exports = {
     {
       "id": 1051,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1300,7 +1300,7 @@ module.exports = {
     {
       "id": 1052,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1318,7 +1318,7 @@ module.exports = {
     {
       "id": 1053,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1336,7 +1336,7 @@ module.exports = {
     {
       "id": 1054,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1354,7 +1354,7 @@ module.exports = {
     {
       "id": 1055,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1372,7 +1372,7 @@ module.exports = {
     {
       "id": 1056,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1390,7 +1390,7 @@ module.exports = {
     {
       "id": 1057,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1408,7 +1408,7 @@ module.exports = {
     {
       "id": 1058,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1426,7 +1426,7 @@ module.exports = {
     {
       "id": 1059,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1444,7 +1444,7 @@ module.exports = {
     {
       "id": 1060,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1462,7 +1462,7 @@ module.exports = {
     {
       "id": 1061,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1480,7 +1480,7 @@ module.exports = {
     {
       "id": 1062,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1498,7 +1498,7 @@ module.exports = {
     {
       "id": 1063,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1516,7 +1516,7 @@ module.exports = {
     {
       "id": 1064,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1534,7 +1534,7 @@ module.exports = {
     {
       "id": 1065,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1552,7 +1552,7 @@ module.exports = {
     {
       "id": 1066,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1570,7 +1570,7 @@ module.exports = {
     {
       "id": 1067,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1588,7 +1588,7 @@ module.exports = {
     {
       "id": 1068,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1606,7 +1606,7 @@ module.exports = {
     {
       "id": 1069,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1624,7 +1624,7 @@ module.exports = {
     {
       "id": 1070,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1642,7 +1642,7 @@ module.exports = {
     {
       "id": 1071,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1660,7 +1660,7 @@ module.exports = {
     {
       "id": 1072,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1678,7 +1678,7 @@ module.exports = {
     {
       "id": 1073,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1696,7 +1696,7 @@ module.exports = {
     {
       "id": 1074,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1714,7 +1714,7 @@ module.exports = {
     {
       "id": 1075,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1732,7 +1732,7 @@ module.exports = {
     {
       "id": 1076,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1750,7 +1750,7 @@ module.exports = {
     {
       "id": 1077,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1768,7 +1768,7 @@ module.exports = {
     {
       "id": 1078,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1786,7 +1786,7 @@ module.exports = {
     {
       "id": 1079,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1804,7 +1804,7 @@ module.exports = {
     {
       "id": 1080,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1822,7 +1822,7 @@ module.exports = {
     {
       "id": 1081,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1840,7 +1840,7 @@ module.exports = {
     {
       "id": 1082,
       "discipline": "Direito Ambiental",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1858,7 +1858,7 @@ module.exports = {
     {
       "id": 1083,
       "discipline": "Direito Ambiental",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1876,7 +1876,7 @@ module.exports = {
     {
       "id": 1084,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1894,7 +1894,7 @@ module.exports = {
     {
       "id": 1085,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1912,7 +1912,7 @@ module.exports = {
     {
       "id": 1086,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1930,7 +1930,7 @@ module.exports = {
     {
       "id": 1087,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -1948,7 +1948,7 @@ module.exports = {
     {
       "id": 1088,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -1966,7 +1966,7 @@ module.exports = {
     {
       "id": 1089,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -1984,7 +1984,7 @@ module.exports = {
     {
       "id": 1090,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2002,7 +2002,7 @@ module.exports = {
     {
       "id": 1091,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2020,7 +2020,7 @@ module.exports = {
     {
       "id": 1092,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2038,7 +2038,7 @@ module.exports = {
     {
       "id": 1093,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2056,7 +2056,7 @@ module.exports = {
     {
       "id": 1094,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2074,7 +2074,7 @@ module.exports = {
     {
       "id": 1095,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2092,7 +2092,7 @@ module.exports = {
     {
       "id": 1096,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2110,7 +2110,7 @@ module.exports = {
     {
       "id": 1097,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2128,7 +2128,7 @@ module.exports = {
     {
       "id": 1098,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2146,7 +2146,7 @@ module.exports = {
     {
       "id": 1099,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2164,7 +2164,7 @@ module.exports = {
     {
       "id": 1100,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2182,7 +2182,7 @@ module.exports = {
     {
       "id": 1101,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2200,7 +2200,7 @@ module.exports = {
     {
       "id": 1102,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2218,7 +2218,7 @@ module.exports = {
     {
       "id": 1103,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2236,7 +2236,7 @@ module.exports = {
     {
       "id": 1104,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2254,7 +2254,7 @@ module.exports = {
     {
       "id": 1105,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2272,7 +2272,7 @@ module.exports = {
     {
       "id": 1106,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2290,7 +2290,7 @@ module.exports = {
     {
       "id": 1107,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2308,7 +2308,7 @@ module.exports = {
     {
       "id": 1108,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2326,7 +2326,7 @@ module.exports = {
     {
       "id": 1109,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2344,7 +2344,7 @@ module.exports = {
     {
       "id": 1110,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2362,7 +2362,7 @@ module.exports = {
     {
       "id": 1111,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2380,7 +2380,7 @@ module.exports = {
     {
       "id": 1112,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2398,7 +2398,7 @@ module.exports = {
     {
       "id": 1113,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2416,7 +2416,7 @@ module.exports = {
     {
       "id": 1114,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2434,7 +2434,7 @@ module.exports = {
     {
       "id": 1115,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2452,7 +2452,7 @@ module.exports = {
     {
       "id": 1116,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2470,7 +2470,7 @@ module.exports = {
     {
       "id": 1117,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2488,7 +2488,7 @@ module.exports = {
     {
       "id": 1118,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2506,7 +2506,7 @@ module.exports = {
     {
       "id": 1119,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2524,7 +2524,7 @@ module.exports = {
     {
       "id": 1120,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2542,7 +2542,7 @@ module.exports = {
     {
       "id": 1121,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2560,7 +2560,7 @@ module.exports = {
     {
       "id": 1122,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2578,7 +2578,7 @@ module.exports = {
     {
       "id": 1123,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2596,7 +2596,7 @@ module.exports = {
     {
       "id": 1124,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2614,7 +2614,7 @@ module.exports = {
     {
       "id": 1125,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2632,7 +2632,7 @@ module.exports = {
     {
       "id": 1126,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2650,7 +2650,7 @@ module.exports = {
     {
       "id": 1127,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2668,7 +2668,7 @@ module.exports = {
     {
       "id": 1128,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2686,7 +2686,7 @@ module.exports = {
     {
       "id": 1129,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2704,7 +2704,7 @@ module.exports = {
     {
       "id": 1130,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2722,7 +2722,7 @@ module.exports = {
     {
       "id": 1131,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2740,7 +2740,7 @@ module.exports = {
     {
       "id": 1132,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2758,7 +2758,7 @@ module.exports = {
     {
       "id": 1133,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2776,7 +2776,7 @@ module.exports = {
     {
       "id": 1134,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2794,7 +2794,7 @@ module.exports = {
     {
       "id": 1135,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2812,7 +2812,7 @@ module.exports = {
     {
       "id": 1136,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2830,7 +2830,7 @@ module.exports = {
     {
       "id": 1137,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2848,7 +2848,7 @@ module.exports = {
     {
       "id": 1138,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2866,7 +2866,7 @@ module.exports = {
     {
       "id": 1139,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2884,7 +2884,7 @@ module.exports = {
     {
       "id": 1140,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2902,7 +2902,7 @@ module.exports = {
     {
       "id": 1141,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2920,7 +2920,7 @@ module.exports = {
     {
       "id": 1142,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2938,7 +2938,7 @@ module.exports = {
     {
       "id": 1143,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -2956,7 +2956,7 @@ module.exports = {
     {
       "id": 1144,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -2974,7 +2974,7 @@ module.exports = {
     {
       "id": 1145,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -2992,7 +2992,7 @@ module.exports = {
     {
       "id": 1146,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3010,7 +3010,7 @@ module.exports = {
     {
       "id": 1147,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3028,7 +3028,7 @@ module.exports = {
     {
       "id": 1148,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3046,7 +3046,7 @@ module.exports = {
     {
       "id": 1149,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3064,7 +3064,7 @@ module.exports = {
     {
       "id": 1150,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3082,7 +3082,7 @@ module.exports = {
     {
       "id": 1151,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3100,7 +3100,7 @@ module.exports = {
     {
       "id": 1152,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3118,7 +3118,7 @@ module.exports = {
     {
       "id": 1153,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3136,7 +3136,7 @@ module.exports = {
     {
       "id": 1154,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3154,7 +3154,7 @@ module.exports = {
     {
       "id": 1155,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3172,7 +3172,7 @@ module.exports = {
     {
       "id": 1156,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3190,7 +3190,7 @@ module.exports = {
     {
       "id": 1157,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3208,7 +3208,7 @@ module.exports = {
     {
       "id": 1158,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3226,7 +3226,7 @@ module.exports = {
     {
       "id": 1159,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3244,7 +3244,7 @@ module.exports = {
     {
       "id": 1160,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3262,7 +3262,7 @@ module.exports = {
     {
       "id": 1161,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3280,7 +3280,7 @@ module.exports = {
     {
       "id": 1162,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3298,7 +3298,7 @@ module.exports = {
     {
       "id": 1163,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3316,7 +3316,7 @@ module.exports = {
     {
       "id": 1164,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3334,7 +3334,7 @@ module.exports = {
     {
       "id": 1165,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3352,7 +3352,7 @@ module.exports = {
     {
       "id": 1166,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3370,7 +3370,7 @@ module.exports = {
     {
       "id": 1167,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3388,7 +3388,7 @@ module.exports = {
     {
       "id": 1168,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3406,7 +3406,7 @@ module.exports = {
     {
       "id": 1169,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3424,7 +3424,7 @@ module.exports = {
     {
       "id": 1170,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3442,7 +3442,7 @@ module.exports = {
     {
       "id": 1171,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3460,7 +3460,7 @@ module.exports = {
     {
       "id": 1172,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3478,7 +3478,7 @@ module.exports = {
     {
       "id": 1173,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3496,7 +3496,7 @@ module.exports = {
     {
       "id": 1174,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3514,7 +3514,7 @@ module.exports = {
     {
       "id": 1175,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3532,7 +3532,7 @@ module.exports = {
     {
       "id": 1176,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3550,7 +3550,7 @@ module.exports = {
     {
       "id": 1177,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3568,7 +3568,7 @@ module.exports = {
     {
       "id": 1178,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3586,7 +3586,7 @@ module.exports = {
     {
       "id": 1179,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3604,7 +3604,7 @@ module.exports = {
     {
       "id": 1180,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3622,7 +3622,7 @@ module.exports = {
     {
       "id": 1181,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3640,7 +3640,7 @@ module.exports = {
     {
       "id": 1182,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3658,7 +3658,7 @@ module.exports = {
     {
       "id": 1183,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3676,7 +3676,7 @@ module.exports = {
     {
       "id": 1184,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3694,7 +3694,7 @@ module.exports = {
     {
       "id": 1185,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3712,7 +3712,7 @@ module.exports = {
     {
       "id": 1186,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3730,7 +3730,7 @@ module.exports = {
     {
       "id": 1187,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3748,7 +3748,7 @@ module.exports = {
     {
       "id": 1188,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3766,7 +3766,7 @@ module.exports = {
     {
       "id": 1189,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3784,7 +3784,7 @@ module.exports = {
     {
       "id": 1190,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3802,7 +3802,7 @@ module.exports = {
     {
       "id": 1191,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3820,7 +3820,7 @@ module.exports = {
     {
       "id": 1192,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3838,7 +3838,7 @@ module.exports = {
     {
       "id": 1193,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3856,7 +3856,7 @@ module.exports = {
     {
       "id": 1194,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3874,7 +3874,7 @@ module.exports = {
     {
       "id": 1195,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3892,7 +3892,7 @@ module.exports = {
     {
       "id": 1196,
       "discipline": "Direito Ambiental",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3910,7 +3910,7 @@ module.exports = {
     {
       "id": 1197,
       "discipline": "Direito Ambiental",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Médio",
@@ -3928,7 +3928,7 @@ module.exports = {
     {
       "id": 1198,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Difícil",
@@ -3946,7 +3946,7 @@ module.exports = {
     {
       "id": 1199,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2010,
       "difficulty": "Fácil",
@@ -3964,7 +3964,7 @@ module.exports = {
     {
       "id": 1200,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -3982,7 +3982,7 @@ module.exports = {
     {
       "id": 1201,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4000,7 +4000,7 @@ module.exports = {
     {
       "id": 1202,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4018,7 +4018,7 @@ module.exports = {
     {
       "id": 1203,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4036,7 +4036,7 @@ module.exports = {
     {
       "id": 1204,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4054,7 +4054,7 @@ module.exports = {
     {
       "id": 1205,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4072,7 +4072,7 @@ module.exports = {
     {
       "id": 1206,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4090,7 +4090,7 @@ module.exports = {
     {
       "id": 1207,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4108,7 +4108,7 @@ module.exports = {
     {
       "id": 1208,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4126,7 +4126,7 @@ module.exports = {
     {
       "id": 1209,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4144,7 +4144,7 @@ module.exports = {
     {
       "id": 1210,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4162,7 +4162,7 @@ module.exports = {
     {
       "id": 1211,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4180,7 +4180,7 @@ module.exports = {
     {
       "id": 1212,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4198,7 +4198,7 @@ module.exports = {
     {
       "id": 1213,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4216,7 +4216,7 @@ module.exports = {
     {
       "id": 1214,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4234,7 +4234,7 @@ module.exports = {
     {
       "id": 1215,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4252,7 +4252,7 @@ module.exports = {
     {
       "id": 1216,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4270,7 +4270,7 @@ module.exports = {
     {
       "id": 1217,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4288,7 +4288,7 @@ module.exports = {
     {
       "id": 1218,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4306,7 +4306,7 @@ module.exports = {
     {
       "id": 1219,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4324,7 +4324,7 @@ module.exports = {
     {
       "id": 1220,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4342,7 +4342,7 @@ module.exports = {
     {
       "id": 1221,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4360,7 +4360,7 @@ module.exports = {
     {
       "id": 1222,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4378,7 +4378,7 @@ module.exports = {
     {
       "id": 1223,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4396,7 +4396,7 @@ module.exports = {
     {
       "id": 1224,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4414,7 +4414,7 @@ module.exports = {
     {
       "id": 1225,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4432,7 +4432,7 @@ module.exports = {
     {
       "id": 1226,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4450,7 +4450,7 @@ module.exports = {
     {
       "id": 1227,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4468,7 +4468,7 @@ module.exports = {
     {
       "id": 1228,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4486,7 +4486,7 @@ module.exports = {
     {
       "id": 1229,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4504,7 +4504,7 @@ module.exports = {
     {
       "id": 1230,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4522,7 +4522,7 @@ module.exports = {
     {
       "id": 1231,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4540,7 +4540,7 @@ module.exports = {
     {
       "id": 1232,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4558,7 +4558,7 @@ module.exports = {
     {
       "id": 1233,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4576,7 +4576,7 @@ module.exports = {
     {
       "id": 1234,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4594,7 +4594,7 @@ module.exports = {
     {
       "id": 1235,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4612,7 +4612,7 @@ module.exports = {
     {
       "id": 1236,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4630,7 +4630,7 @@ module.exports = {
     {
       "id": 1237,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4648,7 +4648,7 @@ module.exports = {
     {
       "id": 1238,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4666,7 +4666,7 @@ module.exports = {
     {
       "id": 1239,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4684,7 +4684,7 @@ module.exports = {
     {
       "id": 1240,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4702,7 +4702,7 @@ module.exports = {
     {
       "id": 1241,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4720,7 +4720,7 @@ module.exports = {
     {
       "id": 1242,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4738,7 +4738,7 @@ module.exports = {
     {
       "id": 1243,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4756,7 +4756,7 @@ module.exports = {
     {
       "id": 1244,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4774,7 +4774,7 @@ module.exports = {
     {
       "id": 1245,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4792,7 +4792,7 @@ module.exports = {
     {
       "id": 1246,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4810,7 +4810,7 @@ module.exports = {
     {
       "id": 1247,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4828,7 +4828,7 @@ module.exports = {
     {
       "id": 1248,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4846,7 +4846,7 @@ module.exports = {
     {
       "id": 1249,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4864,7 +4864,7 @@ module.exports = {
     {
       "id": 1250,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4882,7 +4882,7 @@ module.exports = {
     {
       "id": 1251,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4900,7 +4900,7 @@ module.exports = {
     {
       "id": 1252,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4918,7 +4918,7 @@ module.exports = {
     {
       "id": 1253,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4936,7 +4936,7 @@ module.exports = {
     {
       "id": 1254,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -4954,7 +4954,7 @@ module.exports = {
     {
       "id": 1255,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -4972,7 +4972,7 @@ module.exports = {
     {
       "id": 1256,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -4990,7 +4990,7 @@ module.exports = {
     {
       "id": 1257,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5008,7 +5008,7 @@ module.exports = {
     {
       "id": 1258,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5026,7 +5026,7 @@ module.exports = {
     {
       "id": 1259,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5044,7 +5044,7 @@ module.exports = {
     {
       "id": 1260,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5062,7 +5062,7 @@ module.exports = {
     {
       "id": 1261,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5080,7 +5080,7 @@ module.exports = {
     {
       "id": 1262,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5098,7 +5098,7 @@ module.exports = {
     {
       "id": 1263,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5116,7 +5116,7 @@ module.exports = {
     {
       "id": 1264,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5134,7 +5134,7 @@ module.exports = {
     {
       "id": 1265,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5152,7 +5152,7 @@ module.exports = {
     {
       "id": 1266,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5170,7 +5170,7 @@ module.exports = {
     {
       "id": 1267,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5188,7 +5188,7 @@ module.exports = {
     {
       "id": 1268,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5206,7 +5206,7 @@ module.exports = {
     {
       "id": 1269,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5224,7 +5224,7 @@ module.exports = {
     {
       "id": 1270,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5242,7 +5242,7 @@ module.exports = {
     {
       "id": 1271,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5260,7 +5260,7 @@ module.exports = {
     {
       "id": 1272,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5278,7 +5278,7 @@ module.exports = {
     {
       "id": 1273,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5296,7 +5296,7 @@ module.exports = {
     {
       "id": 1274,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5314,7 +5314,7 @@ module.exports = {
     {
       "id": 1275,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5332,7 +5332,7 @@ module.exports = {
     {
       "id": 1276,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5350,7 +5350,7 @@ module.exports = {
     {
       "id": 1277,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5368,7 +5368,7 @@ module.exports = {
     {
       "id": 1278,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5386,7 +5386,7 @@ module.exports = {
     {
       "id": 1279,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5404,7 +5404,7 @@ module.exports = {
     {
       "id": 1280,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5422,7 +5422,7 @@ module.exports = {
     {
       "id": 1281,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5440,7 +5440,7 @@ module.exports = {
     {
       "id": 1282,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5458,7 +5458,7 @@ module.exports = {
     {
       "id": 1283,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5476,7 +5476,7 @@ module.exports = {
     {
       "id": 1284,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5494,7 +5494,7 @@ module.exports = {
     {
       "id": 1285,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5512,7 +5512,7 @@ module.exports = {
     {
       "id": 1286,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5530,7 +5530,7 @@ module.exports = {
     {
       "id": 1287,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5548,7 +5548,7 @@ module.exports = {
     {
       "id": 1288,
       "discipline": "Direito Ambiental",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5566,7 +5566,7 @@ module.exports = {
     {
       "id": 1289,
       "discipline": "Direito Ambiental",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5584,7 +5584,7 @@ module.exports = {
     {
       "id": 1290,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5602,7 +5602,7 @@ module.exports = {
     {
       "id": 1291,
       "discipline": "Direito Ambiental",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5620,7 +5620,7 @@ module.exports = {
     {
       "id": 1292,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5638,7 +5638,7 @@ module.exports = {
     {
       "id": 1293,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5656,7 +5656,7 @@ module.exports = {
     {
       "id": 1294,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5674,7 +5674,7 @@ module.exports = {
     {
       "id": 1295,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5692,7 +5692,7 @@ module.exports = {
     {
       "id": 1296,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5710,7 +5710,7 @@ module.exports = {
     {
       "id": 1297,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5728,7 +5728,7 @@ module.exports = {
     {
       "id": 1298,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5746,7 +5746,7 @@ module.exports = {
     {
       "id": 1299,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5764,7 +5764,7 @@ module.exports = {
     {
       "id": 1300,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5782,7 +5782,7 @@ module.exports = {
     {
       "id": 1301,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5800,7 +5800,7 @@ module.exports = {
     {
       "id": 1302,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5818,7 +5818,7 @@ module.exports = {
     {
       "id": 1303,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5836,7 +5836,7 @@ module.exports = {
     {
       "id": 1304,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5854,7 +5854,7 @@ module.exports = {
     {
       "id": 1305,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5872,7 +5872,7 @@ module.exports = {
     {
       "id": 1306,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5890,7 +5890,7 @@ module.exports = {
     {
       "id": 1307,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5908,7 +5908,7 @@ module.exports = {
     {
       "id": 1308,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5926,7 +5926,7 @@ module.exports = {
     {
       "id": 1309,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5944,7 +5944,7 @@ module.exports = {
     {
       "id": 1310,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -5962,7 +5962,7 @@ module.exports = {
     {
       "id": 1311,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -5980,7 +5980,7 @@ module.exports = {
     {
       "id": 1312,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -5998,7 +5998,7 @@ module.exports = {
     {
       "id": 1313,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6016,7 +6016,7 @@ module.exports = {
     {
       "id": 1314,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6034,7 +6034,7 @@ module.exports = {
     {
       "id": 1315,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6052,7 +6052,7 @@ module.exports = {
     {
       "id": 1316,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6070,7 +6070,7 @@ module.exports = {
     {
       "id": 1317,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6088,7 +6088,7 @@ module.exports = {
     {
       "id": 1318,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6106,7 +6106,7 @@ module.exports = {
     {
       "id": 1319,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6124,7 +6124,7 @@ module.exports = {
     {
       "id": 1320,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6142,7 +6142,7 @@ module.exports = {
     {
       "id": 1321,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6160,7 +6160,7 @@ module.exports = {
     {
       "id": 1322,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6178,7 +6178,7 @@ module.exports = {
     {
       "id": 1323,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6196,7 +6196,7 @@ module.exports = {
     {
       "id": 1324,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6214,7 +6214,7 @@ module.exports = {
     {
       "id": 1325,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6232,7 +6232,7 @@ module.exports = {
     {
       "id": 1326,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6250,7 +6250,7 @@ module.exports = {
     {
       "id": 1327,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6268,7 +6268,7 @@ module.exports = {
     {
       "id": 1328,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6286,7 +6286,7 @@ module.exports = {
     {
       "id": 1329,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6304,7 +6304,7 @@ module.exports = {
     {
       "id": 1330,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6322,7 +6322,7 @@ module.exports = {
     {
       "id": 1331,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6340,7 +6340,7 @@ module.exports = {
     {
       "id": 1332,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6358,7 +6358,7 @@ module.exports = {
     {
       "id": 1333,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6376,7 +6376,7 @@ module.exports = {
     {
       "id": 1334,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6394,7 +6394,7 @@ module.exports = {
     {
       "id": 1335,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6412,7 +6412,7 @@ module.exports = {
     {
       "id": 1336,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6430,7 +6430,7 @@ module.exports = {
     {
       "id": 1337,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6448,7 +6448,7 @@ module.exports = {
     {
       "id": 1338,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6466,7 +6466,7 @@ module.exports = {
     {
       "id": 1339,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6484,7 +6484,7 @@ module.exports = {
     {
       "id": 1340,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6502,7 +6502,7 @@ module.exports = {
     {
       "id": 1341,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6520,7 +6520,7 @@ module.exports = {
     {
       "id": 1342,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6538,7 +6538,7 @@ module.exports = {
     {
       "id": 1343,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6556,7 +6556,7 @@ module.exports = {
     {
       "id": 1344,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6574,7 +6574,7 @@ module.exports = {
     {
       "id": 1345,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6592,7 +6592,7 @@ module.exports = {
     {
       "id": 1346,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6610,7 +6610,7 @@ module.exports = {
     {
       "id": 1347,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6628,7 +6628,7 @@ module.exports = {
     {
       "id": 1348,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6646,7 +6646,7 @@ module.exports = {
     {
       "id": 1349,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6664,7 +6664,7 @@ module.exports = {
     {
       "id": 1350,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6682,7 +6682,7 @@ module.exports = {
     {
       "id": 1351,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6700,7 +6700,7 @@ module.exports = {
     {
       "id": 1352,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6718,7 +6718,7 @@ module.exports = {
     {
       "id": 1353,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6736,7 +6736,7 @@ module.exports = {
     {
       "id": 1354,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6754,7 +6754,7 @@ module.exports = {
     {
       "id": 1355,
       "discipline": "Direito Ambiental",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6772,7 +6772,7 @@ module.exports = {
     {
       "id": 1356,
       "discipline": "Direito Ambiental",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6790,7 +6790,7 @@ module.exports = {
     {
       "id": 1357,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6808,7 +6808,7 @@ module.exports = {
     {
       "id": 1358,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6826,7 +6826,7 @@ module.exports = {
     {
       "id": 1359,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6844,7 +6844,7 @@ module.exports = {
     {
       "id": 1360,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6862,7 +6862,7 @@ module.exports = {
     {
       "id": 1361,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6880,7 +6880,7 @@ module.exports = {
     {
       "id": 1362,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6898,7 +6898,7 @@ module.exports = {
     {
       "id": 1363,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6916,7 +6916,7 @@ module.exports = {
     {
       "id": 1364,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6934,7 +6934,7 @@ module.exports = {
     {
       "id": 1365,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -6952,7 +6952,7 @@ module.exports = {
     {
       "id": 1366,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -6970,7 +6970,7 @@ module.exports = {
     {
       "id": 1367,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -6988,7 +6988,7 @@ module.exports = {
     {
       "id": 1368,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7006,7 +7006,7 @@ module.exports = {
     {
       "id": 1369,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7024,7 +7024,7 @@ module.exports = {
     {
       "id": 1370,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7042,7 +7042,7 @@ module.exports = {
     {
       "id": 1371,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7060,7 +7060,7 @@ module.exports = {
     {
       "id": 1372,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7078,7 +7078,7 @@ module.exports = {
     {
       "id": 1373,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7096,7 +7096,7 @@ module.exports = {
     {
       "id": 1374,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7114,7 +7114,7 @@ module.exports = {
     {
       "id": 1375,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7132,7 +7132,7 @@ module.exports = {
     {
       "id": 1376,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7150,7 +7150,7 @@ module.exports = {
     {
       "id": 1377,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7168,7 +7168,7 @@ module.exports = {
     {
       "id": 1378,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7186,7 +7186,7 @@ module.exports = {
     {
       "id": 1379,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7204,7 +7204,7 @@ module.exports = {
     {
       "id": 1380,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7222,7 +7222,7 @@ module.exports = {
     {
       "id": 1381,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7240,7 +7240,7 @@ module.exports = {
     {
       "id": 1382,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7258,7 +7258,7 @@ module.exports = {
     {
       "id": 1383,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7276,7 +7276,7 @@ module.exports = {
     {
       "id": 1384,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7294,7 +7294,7 @@ module.exports = {
     {
       "id": 1385,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7312,7 +7312,7 @@ module.exports = {
     {
       "id": 1386,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7330,7 +7330,7 @@ module.exports = {
     {
       "id": 1387,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7348,7 +7348,7 @@ module.exports = {
     {
       "id": 1388,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7366,7 +7366,7 @@ module.exports = {
     {
       "id": 1389,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7384,7 +7384,7 @@ module.exports = {
     {
       "id": 1390,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7402,7 +7402,7 @@ module.exports = {
     {
       "id": 1391,
       "discipline": "Direitos Humanos",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7420,7 +7420,7 @@ module.exports = {
     {
       "id": 1392,
       "discipline": "Direitos Humanos",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7438,7 +7438,7 @@ module.exports = {
     {
       "id": 1393,
       "discipline": "Direitos Humanos",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7456,7 +7456,7 @@ module.exports = {
     {
       "id": 1394,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7474,7 +7474,7 @@ module.exports = {
     {
       "id": 1395,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7492,7 +7492,7 @@ module.exports = {
     {
       "id": 1396,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7510,7 +7510,7 @@ module.exports = {
     {
       "id": 1397,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7528,7 +7528,7 @@ module.exports = {
     {
       "id": 1398,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7546,7 +7546,7 @@ module.exports = {
     {
       "id": 1399,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7564,7 +7564,7 @@ module.exports = {
     {
       "id": 1400,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7582,7 +7582,7 @@ module.exports = {
     {
       "id": 1401,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7600,7 +7600,7 @@ module.exports = {
     {
       "id": 1402,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7618,7 +7618,7 @@ module.exports = {
     {
       "id": 1403,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7636,7 +7636,7 @@ module.exports = {
     {
       "id": 1404,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7654,7 +7654,7 @@ module.exports = {
     {
       "id": 1405,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7672,7 +7672,7 @@ module.exports = {
     {
       "id": 1406,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7690,7 +7690,7 @@ module.exports = {
     {
       "id": 1407,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7708,7 +7708,7 @@ module.exports = {
     {
       "id": 1408,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7726,7 +7726,7 @@ module.exports = {
     {
       "id": 1409,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7744,7 +7744,7 @@ module.exports = {
     {
       "id": 1410,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7762,7 +7762,7 @@ module.exports = {
     {
       "id": 1411,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7780,7 +7780,7 @@ module.exports = {
     {
       "id": 1412,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7798,7 +7798,7 @@ module.exports = {
     {
       "id": 1413,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7816,7 +7816,7 @@ module.exports = {
     {
       "id": 1414,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7834,7 +7834,7 @@ module.exports = {
     {
       "id": 1415,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7852,7 +7852,7 @@ module.exports = {
     {
       "id": 1416,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7870,7 +7870,7 @@ module.exports = {
     {
       "id": 1417,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7888,7 +7888,7 @@ module.exports = {
     {
       "id": 1418,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7906,7 +7906,7 @@ module.exports = {
     {
       "id": 1419,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7924,7 +7924,7 @@ module.exports = {
     {
       "id": 1420,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7942,7 +7942,7 @@ module.exports = {
     {
       "id": 1421,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -7960,7 +7960,7 @@ module.exports = {
     {
       "id": 1422,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -7978,7 +7978,7 @@ module.exports = {
     {
       "id": 1423,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -7996,7 +7996,7 @@ module.exports = {
     {
       "id": 1424,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -8014,7 +8014,7 @@ module.exports = {
     {
       "id": 1425,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -8032,7 +8032,7 @@ module.exports = {
     {
       "id": 1426,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -8050,7 +8050,7 @@ module.exports = {
     {
       "id": 1427,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -8068,7 +8068,7 @@ module.exports = {
     {
       "id": 1428,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -8086,7 +8086,7 @@ module.exports = {
     {
       "id": 1429,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -8104,7 +8104,7 @@ module.exports = {
     {
       "id": 1430,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -8122,7 +8122,7 @@ module.exports = {
     {
       "id": 1431,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -8140,7 +8140,7 @@ module.exports = {
     {
       "id": 1432,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -8158,7 +8158,7 @@ module.exports = {
     {
       "id": 1433,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -8176,7 +8176,7 @@ module.exports = {
     {
       "id": 1434,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -8194,7 +8194,7 @@ module.exports = {
     {
       "id": 1435,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -8212,7 +8212,7 @@ module.exports = {
     {
       "id": 1436,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -8230,7 +8230,7 @@ module.exports = {
     {
       "id": 1437,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -8248,7 +8248,7 @@ module.exports = {
     {
       "id": 1438,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -8266,7 +8266,7 @@ module.exports = {
     {
       "id": 1439,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -8284,7 +8284,7 @@ module.exports = {
     {
       "id": 1440,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -8302,7 +8302,7 @@ module.exports = {
     {
       "id": 1441,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -8320,7 +8320,7 @@ module.exports = {
     {
       "id": 1442,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -8338,7 +8338,7 @@ module.exports = {
     {
       "id": 1443,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -8356,7 +8356,7 @@ module.exports = {
     {
       "id": 1444,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -8374,7 +8374,7 @@ module.exports = {
     {
       "id": 1445,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -8392,7 +8392,7 @@ module.exports = {
     {
       "id": 1446,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -8410,7 +8410,7 @@ module.exports = {
     {
       "id": 1447,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -8428,7 +8428,7 @@ module.exports = {
     {
       "id": 1448,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -8446,7 +8446,7 @@ module.exports = {
     {
       "id": 1449,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -8464,7 +8464,7 @@ module.exports = {
     {
       "id": 1450,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -8482,7 +8482,7 @@ module.exports = {
     {
       "id": 1451,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -8500,7 +8500,7 @@ module.exports = {
     {
       "id": 1452,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -8518,7 +8518,7 @@ module.exports = {
     {
       "id": 1453,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -8536,7 +8536,7 @@ module.exports = {
     {
       "id": 1454,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -8554,7 +8554,7 @@ module.exports = {
     {
       "id": 1455,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -8572,7 +8572,7 @@ module.exports = {
     {
       "id": 1456,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Difícil",
@@ -8590,7 +8590,7 @@ module.exports = {
     {
       "id": 1457,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Fácil",
@@ -8608,7 +8608,7 @@ module.exports = {
     {
       "id": 1458,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2011,
       "difficulty": "Médio",
@@ -8626,7 +8626,7 @@ module.exports = {
     {
       "id": 1459,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -8644,7 +8644,7 @@ module.exports = {
     {
       "id": 1460,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -8662,7 +8662,7 @@ module.exports = {
     {
       "id": 1461,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -8680,7 +8680,7 @@ module.exports = {
     {
       "id": 1462,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -8698,7 +8698,7 @@ module.exports = {
     {
       "id": 1463,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -8716,7 +8716,7 @@ module.exports = {
     {
       "id": 1464,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -8734,7 +8734,7 @@ module.exports = {
     {
       "id": 1465,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -8752,7 +8752,7 @@ module.exports = {
     {
       "id": 1466,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -8770,7 +8770,7 @@ module.exports = {
     {
       "id": 1467,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -8788,7 +8788,7 @@ module.exports = {
     {
       "id": 1468,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -8806,7 +8806,7 @@ module.exports = {
     {
       "id": 1469,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -8824,7 +8824,7 @@ module.exports = {
     {
       "id": 1470,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -8842,7 +8842,7 @@ module.exports = {
     {
       "id": 1471,
       "discipline": "Direitos Humanos",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -8860,7 +8860,7 @@ module.exports = {
     {
       "id": 1472,
       "discipline": "Direitos Humanos",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -8878,7 +8878,7 @@ module.exports = {
     {
       "id": 1473,
       "discipline": "Direitos Humanos",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -8896,7 +8896,7 @@ module.exports = {
     {
       "id": 1474,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -8914,7 +8914,7 @@ module.exports = {
     {
       "id": 1475,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -8932,7 +8932,7 @@ module.exports = {
     {
       "id": 1476,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -8950,7 +8950,7 @@ module.exports = {
     {
       "id": 1477,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -8968,7 +8968,7 @@ module.exports = {
     {
       "id": 1478,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -8986,7 +8986,7 @@ module.exports = {
     {
       "id": 1479,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9004,7 +9004,7 @@ module.exports = {
     {
       "id": 1480,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9022,7 +9022,7 @@ module.exports = {
     {
       "id": 1481,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9040,7 +9040,7 @@ module.exports = {
     {
       "id": 1482,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9058,7 +9058,7 @@ module.exports = {
     {
       "id": 1483,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9076,7 +9076,7 @@ module.exports = {
     {
       "id": 1484,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9094,7 +9094,7 @@ module.exports = {
     {
       "id": 1485,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9112,7 +9112,7 @@ module.exports = {
     {
       "id": 1486,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9130,7 +9130,7 @@ module.exports = {
     {
       "id": 1487,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9148,7 +9148,7 @@ module.exports = {
     {
       "id": 1488,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9166,7 +9166,7 @@ module.exports = {
     {
       "id": 1489,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9184,7 +9184,7 @@ module.exports = {
     {
       "id": 1490,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9202,7 +9202,7 @@ module.exports = {
     {
       "id": 1491,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9220,7 +9220,7 @@ module.exports = {
     {
       "id": 1492,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9238,7 +9238,7 @@ module.exports = {
     {
       "id": 1493,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9256,7 +9256,7 @@ module.exports = {
     {
       "id": 1494,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9274,7 +9274,7 @@ module.exports = {
     {
       "id": 1495,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9292,7 +9292,7 @@ module.exports = {
     {
       "id": 1496,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9310,7 +9310,7 @@ module.exports = {
     {
       "id": 1497,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9328,7 +9328,7 @@ module.exports = {
     {
       "id": 1498,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9346,7 +9346,7 @@ module.exports = {
     {
       "id": 1499,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9364,7 +9364,7 @@ module.exports = {
     {
       "id": 1500,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9382,7 +9382,7 @@ module.exports = {
     {
       "id": 1501,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9400,7 +9400,7 @@ module.exports = {
     {
       "id": 1502,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9418,7 +9418,7 @@ module.exports = {
     {
       "id": 1503,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9436,7 +9436,7 @@ module.exports = {
     {
       "id": 1504,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9454,7 +9454,7 @@ module.exports = {
     {
       "id": 1505,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9472,7 +9472,7 @@ module.exports = {
     {
       "id": 1506,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9490,7 +9490,7 @@ module.exports = {
     {
       "id": 1507,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9508,7 +9508,7 @@ module.exports = {
     {
       "id": 1508,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9526,7 +9526,7 @@ module.exports = {
     {
       "id": 1509,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9544,7 +9544,7 @@ module.exports = {
     {
       "id": 1510,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9562,7 +9562,7 @@ module.exports = {
     {
       "id": 1511,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9580,7 +9580,7 @@ module.exports = {
     {
       "id": 1512,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9598,7 +9598,7 @@ module.exports = {
     {
       "id": 1513,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9616,7 +9616,7 @@ module.exports = {
     {
       "id": 1514,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9634,7 +9634,7 @@ module.exports = {
     {
       "id": 1515,
       "discipline": "Direito Ambiental",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9652,7 +9652,7 @@ module.exports = {
     {
       "id": 1516,
       "discipline": "Direito Ambiental",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9670,7 +9670,7 @@ module.exports = {
     {
       "id": 1517,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9688,7 +9688,7 @@ module.exports = {
     {
       "id": 1518,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9706,7 +9706,7 @@ module.exports = {
     {
       "id": 1519,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9724,7 +9724,7 @@ module.exports = {
     {
       "id": 1520,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9742,7 +9742,7 @@ module.exports = {
     {
       "id": 1521,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9760,7 +9760,7 @@ module.exports = {
     {
       "id": 1522,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9778,7 +9778,7 @@ module.exports = {
     {
       "id": 1523,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9796,7 +9796,7 @@ module.exports = {
     {
       "id": 1524,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9814,7 +9814,7 @@ module.exports = {
     {
       "id": 1525,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9832,7 +9832,7 @@ module.exports = {
     {
       "id": 1526,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9850,7 +9850,7 @@ module.exports = {
     {
       "id": 1527,
       "discipline": "Direito Processual Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9868,7 +9868,7 @@ module.exports = {
     {
       "id": 1528,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9886,7 +9886,7 @@ module.exports = {
     {
       "id": 1529,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9904,7 +9904,7 @@ module.exports = {
     {
       "id": 1530,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9922,7 +9922,7 @@ module.exports = {
     {
       "id": 1531,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9940,7 +9940,7 @@ module.exports = {
     {
       "id": 1532,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -9958,7 +9958,7 @@ module.exports = {
     {
       "id": 1533,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -9976,7 +9976,7 @@ module.exports = {
     {
       "id": 1534,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -9994,7 +9994,7 @@ module.exports = {
     {
       "id": 1535,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10012,7 +10012,7 @@ module.exports = {
     {
       "id": 1536,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10030,7 +10030,7 @@ module.exports = {
     {
       "id": 1537,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10048,7 +10048,7 @@ module.exports = {
     {
       "id": 1538,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10066,7 +10066,7 @@ module.exports = {
     {
       "id": 1539,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10084,7 +10084,7 @@ module.exports = {
     {
       "id": 1540,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10102,7 +10102,7 @@ module.exports = {
     {
       "id": 1541,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10120,7 +10120,7 @@ module.exports = {
     {
       "id": 1542,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10138,7 +10138,7 @@ module.exports = {
     {
       "id": 1543,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10156,7 +10156,7 @@ module.exports = {
     {
       "id": 1544,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10174,7 +10174,7 @@ module.exports = {
     {
       "id": 1545,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10192,7 +10192,7 @@ module.exports = {
     {
       "id": 1546,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10210,7 +10210,7 @@ module.exports = {
     {
       "id": 1547,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10228,7 +10228,7 @@ module.exports = {
     {
       "id": 1548,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10246,7 +10246,7 @@ module.exports = {
     {
       "id": 1549,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10264,7 +10264,7 @@ module.exports = {
     {
       "id": 1550,
       "discipline": "Ética e Estatuto da OAB",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10282,7 +10282,7 @@ module.exports = {
     {
       "id": 1551,
       "discipline": "Direitos Humanos",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10300,7 +10300,7 @@ module.exports = {
     {
       "id": 1552,
       "discipline": "Direitos Humanos",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10318,7 +10318,7 @@ module.exports = {
     {
       "id": 1553,
       "discipline": "Direitos Humanos",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10336,7 +10336,7 @@ module.exports = {
     {
       "id": 1554,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10354,7 +10354,7 @@ module.exports = {
     {
       "id": 1555,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10372,7 +10372,7 @@ module.exports = {
     {
       "id": 1556,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10390,7 +10390,7 @@ module.exports = {
     {
       "id": 1557,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10408,7 +10408,7 @@ module.exports = {
     {
       "id": 1558,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10426,7 +10426,7 @@ module.exports = {
     {
       "id": 1559,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10444,7 +10444,7 @@ module.exports = {
     {
       "id": 1560,
       "discipline": "Direito Constitucional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10462,7 +10462,7 @@ module.exports = {
     {
       "id": 1561,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10480,7 +10480,7 @@ module.exports = {
     {
       "id": 1562,
       "discipline": "Direito Internacional",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10498,7 +10498,7 @@ module.exports = {
     {
       "id": 1563,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10516,7 +10516,7 @@ module.exports = {
     {
       "id": 1564,
       "discipline": "Estatuto da Criança e do Adolescente (ECA)",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10534,7 +10534,7 @@ module.exports = {
     {
       "id": 1565,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10552,7 +10552,7 @@ module.exports = {
     {
       "id": 1566,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10570,7 +10570,7 @@ module.exports = {
     {
       "id": 1567,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10588,7 +10588,7 @@ module.exports = {
     {
       "id": 1568,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10606,7 +10606,7 @@ module.exports = {
     {
       "id": 1569,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10624,7 +10624,7 @@ module.exports = {
     {
       "id": 1570,
       "discipline": "Direito Administrativo",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10642,7 +10642,7 @@ module.exports = {
     {
       "id": 1571,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10660,7 +10660,7 @@ module.exports = {
     {
       "id": 1572,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10678,7 +10678,7 @@ module.exports = {
     {
       "id": 1573,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10696,7 +10696,7 @@ module.exports = {
     {
       "id": 1574,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10714,7 +10714,7 @@ module.exports = {
     {
       "id": 1575,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10732,7 +10732,7 @@ module.exports = {
     {
       "id": 1576,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10750,7 +10750,7 @@ module.exports = {
     {
       "id": 1577,
       "discipline": "Direito Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10768,7 +10768,7 @@ module.exports = {
     {
       "id": 1578,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10786,7 +10786,7 @@ module.exports = {
     {
       "id": 1579,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10804,7 +10804,7 @@ module.exports = {
     {
       "id": 1580,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10822,7 +10822,7 @@ module.exports = {
     {
       "id": 1581,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10840,7 +10840,7 @@ module.exports = {
     {
       "id": 1582,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10858,7 +10858,7 @@ module.exports = {
     {
       "id": 1583,
       "discipline": "Direito Processual Civil",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10876,7 +10876,7 @@ module.exports = {
     {
       "id": 1584,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10894,7 +10894,7 @@ module.exports = {
     {
       "id": 1585,
       "discipline": "Direito do Consumidor",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10912,7 +10912,7 @@ module.exports = {
     {
       "id": 1586,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10930,7 +10930,7 @@ module.exports = {
     {
       "id": 1587,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -10948,7 +10948,7 @@ module.exports = {
     {
       "id": 1588,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -10966,7 +10966,7 @@ module.exports = {
     {
       "id": 1589,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -10984,7 +10984,7 @@ module.exports = {
     {
       "id": 1590,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -11002,7 +11002,7 @@ module.exports = {
     {
       "id": 1591,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -11020,7 +11020,7 @@ module.exports = {
     {
       "id": 1592,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -11038,7 +11038,7 @@ module.exports = {
     {
       "id": 1593,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -11056,7 +11056,7 @@ module.exports = {
     {
       "id": 1594,
       "discipline": "Direito Geral",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -11074,7 +11074,7 @@ module.exports = {
     {
       "id": 1595,
       "discipline": "Direito Ambiental",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -11092,7 +11092,7 @@ module.exports = {
     {
       "id": 1596,
       "discipline": "Direito Ambiental",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -11110,7 +11110,7 @@ module.exports = {
     {
       "id": 1597,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Médio",
@@ -11128,7 +11128,7 @@ module.exports = {
     {
       "id": 1598,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Difícil",
@@ -11146,7 +11146,7 @@ module.exports = {
     {
       "id": 1599,
       "discipline": "Direito Penal",
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "OAB Nacional / Concursos Jurídicos",
       "year": 2012,
       "difficulty": "Fácil",
@@ -40180,7 +40180,7 @@ module.exports = {
     {
       "id": 30001,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal",
       "year": 2024,
       "difficulty": "Médio",
@@ -40198,7 +40198,7 @@ module.exports = {
     {
       "id": 30002,
       "discipline": "Direito Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal",
       "year": 2024,
       "difficulty": "Médio",
@@ -40216,7 +40216,7 @@ module.exports = {
     {
       "id": 30003,
       "discipline": "Direito Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal",
       "year": 2024,
       "difficulty": "Difícil",
@@ -40234,7 +40234,7 @@ module.exports = {
     {
       "id": 30004,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal",
       "year": 2024,
       "difficulty": "Médio",
@@ -40252,7 +40252,7 @@ module.exports = {
     {
       "id": 30005,
       "discipline": "Direito Processual Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal",
       "year": 2023,
       "difficulty": "Médio",
@@ -40270,7 +40270,7 @@ module.exports = {
     {
       "id": 30006,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2023,
       "difficulty": "Médio",
@@ -40288,7 +40288,7 @@ module.exports = {
     {
       "id": 30007,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2023,
       "difficulty": "Fácil",
@@ -40306,7 +40306,7 @@ module.exports = {
     {
       "id": 30008,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2023,
       "difficulty": "Médio",
@@ -40360,7 +40360,7 @@ module.exports = {
     {
       "id": 30011,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -40378,7 +40378,7 @@ module.exports = {
     {
       "id": 30012,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Caixa Econômica Federal",
       "year": 2024,
       "difficulty": "Fácil",
@@ -40414,7 +40414,7 @@ module.exports = {
     {
       "id": 40001,
       "discipline": "Direito Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal",
       "year": 2024,
       "difficulty": "Médio",
@@ -40432,7 +40432,7 @@ module.exports = {
     {
       "id": 40002,
       "discipline": "Direito Processual Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal",
       "year": 2024,
       "difficulty": "Fácil",
@@ -40450,7 +40450,7 @@ module.exports = {
     {
       "id": 40003,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal",
       "year": 2023,
       "difficulty": "Médio",
@@ -40468,7 +40468,7 @@ module.exports = {
     {
       "id": 40004,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal",
       "year": 2023,
       "difficulty": "Médio",
@@ -40540,7 +40540,7 @@ module.exports = {
     {
       "id": 40008,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -40558,7 +40558,7 @@ module.exports = {
     {
       "id": 40009,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Caixa Econômica Federal",
       "year": 2024,
       "difficulty": "Fácil",
@@ -40576,7 +40576,7 @@ module.exports = {
     {
       "id": 40010,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2023,
       "difficulty": "Médio",
@@ -40594,7 +40594,7 @@ module.exports = {
     {
       "id": 40011,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2023,
       "difficulty": "Médio",
@@ -82660,7 +82660,7 @@ module.exports = {
     {
       "id": 52347,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "CESGRANRIO",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil / Caixa Econômica",
       "year": 2024,
       "difficulty": "Fácil",
@@ -82678,7 +82678,7 @@ module.exports = {
     {
       "id": 52348,
       "discipline": "Matemática Financeira",
-      "examining_board": "CESGRANRIO",
+      "examining_board": "Cesgranrio",
       "institute": "Caixa Econômica Federal",
       "year": 2024,
       "difficulty": "Médio",
@@ -122782,7 +122782,7 @@ module.exports = {
     {
       "id": 54576,
       "discipline": "Língua Inglesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -122800,7 +122800,7 @@ module.exports = {
     {
       "id": 54577,
       "discipline": "Língua Inglesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -122818,7 +122818,7 @@ module.exports = {
     {
       "id": 54578,
       "discipline": "Língua Inglesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -122836,7 +122836,7 @@ module.exports = {
     {
       "id": 54579,
       "discipline": "Língua Inglesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -122854,7 +122854,7 @@ module.exports = {
     {
       "id": 54580,
       "discipline": "Língua Inglesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -122872,7 +122872,7 @@ module.exports = {
     {
       "id": 54581,
       "discipline": "Língua Inglesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -122890,7 +122890,7 @@ module.exports = {
     {
       "id": 54582,
       "discipline": "Língua Inglesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -122908,7 +122908,7 @@ module.exports = {
     {
       "id": 54583,
       "discipline": "Língua Inglesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -122926,7 +122926,7 @@ module.exports = {
     {
       "id": 54584,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -122944,7 +122944,7 @@ module.exports = {
     {
       "id": 54585,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -122962,7 +122962,7 @@ module.exports = {
     {
       "id": 54586,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -122980,7 +122980,7 @@ module.exports = {
     {
       "id": 54587,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -122998,7 +122998,7 @@ module.exports = {
     {
       "id": 54588,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123016,7 +123016,7 @@ module.exports = {
     {
       "id": 54589,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123034,7 +123034,7 @@ module.exports = {
     {
       "id": 54590,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123052,7 +123052,7 @@ module.exports = {
     {
       "id": 54591,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123070,7 +123070,7 @@ module.exports = {
     {
       "id": 54592,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123088,7 +123088,7 @@ module.exports = {
     {
       "id": 54593,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123106,7 +123106,7 @@ module.exports = {
     {
       "id": 54594,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123124,7 +123124,7 @@ module.exports = {
     {
       "id": 54595,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123142,7 +123142,7 @@ module.exports = {
     {
       "id": 54596,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123160,7 +123160,7 @@ module.exports = {
     {
       "id": 54597,
       "discipline": "Redação Oficial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123178,7 +123178,7 @@ module.exports = {
     {
       "id": 54598,
       "discipline": "Redação Oficial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123196,7 +123196,7 @@ module.exports = {
     {
       "id": 54599,
       "discipline": "Redação Oficial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123214,7 +123214,7 @@ module.exports = {
     {
       "id": 54600,
       "discipline": "Redação Oficial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123232,7 +123232,7 @@ module.exports = {
     {
       "id": 54601,
       "discipline": "Redação Oficial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123250,7 +123250,7 @@ module.exports = {
     {
       "id": 54602,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123268,7 +123268,7 @@ module.exports = {
     {
       "id": 54603,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123286,7 +123286,7 @@ module.exports = {
     {
       "id": 54604,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123304,7 +123304,7 @@ module.exports = {
     {
       "id": 54605,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123322,7 +123322,7 @@ module.exports = {
     {
       "id": 54606,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123340,7 +123340,7 @@ module.exports = {
     {
       "id": 54607,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123358,7 +123358,7 @@ module.exports = {
     {
       "id": 54608,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123376,7 +123376,7 @@ module.exports = {
     {
       "id": 54609,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123394,7 +123394,7 @@ module.exports = {
     {
       "id": 54610,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123412,7 +123412,7 @@ module.exports = {
     {
       "id": 54611,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123430,7 +123430,7 @@ module.exports = {
     {
       "id": 54612,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123448,7 +123448,7 @@ module.exports = {
     {
       "id": 54613,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123466,7 +123466,7 @@ module.exports = {
     {
       "id": 54614,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123484,7 +123484,7 @@ module.exports = {
     {
       "id": 54615,
       "discipline": "Noções de Física",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123502,7 +123502,7 @@ module.exports = {
     {
       "id": 54616,
       "discipline": "Noções de Física",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123520,7 +123520,7 @@ module.exports = {
     {
       "id": 54617,
       "discipline": "Noções de Física",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123538,7 +123538,7 @@ module.exports = {
     {
       "id": 54618,
       "discipline": "Noções de Física",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123556,7 +123556,7 @@ module.exports = {
     {
       "id": 54619,
       "discipline": "Noções de Física",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123574,7 +123574,7 @@ module.exports = {
     {
       "id": 54620,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123592,7 +123592,7 @@ module.exports = {
     {
       "id": 54621,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123610,7 +123610,7 @@ module.exports = {
     {
       "id": 54622,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123628,7 +123628,7 @@ module.exports = {
     {
       "id": 54623,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123646,7 +123646,7 @@ module.exports = {
     {
       "id": 54624,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123664,7 +123664,7 @@ module.exports = {
     {
       "id": 54625,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123682,7 +123682,7 @@ module.exports = {
     {
       "id": 54626,
       "discipline": "Geopolítica Brasileira",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123700,7 +123700,7 @@ module.exports = {
     {
       "id": 54627,
       "discipline": "Geopolítica Brasileira",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123718,7 +123718,7 @@ module.exports = {
     {
       "id": 54628,
       "discipline": "Geopolítica Brasileira",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123736,7 +123736,7 @@ module.exports = {
     {
       "id": 54629,
       "discipline": "Geopolítica Brasileira",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123754,7 +123754,7 @@ module.exports = {
     {
       "id": 54630,
       "discipline": "Geopolítica Brasileira",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123772,7 +123772,7 @@ module.exports = {
     {
       "id": 54631,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123790,7 +123790,7 @@ module.exports = {
     {
       "id": 54632,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123808,7 +123808,7 @@ module.exports = {
     {
       "id": 54633,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123826,7 +123826,7 @@ module.exports = {
     {
       "id": 54634,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123844,7 +123844,7 @@ module.exports = {
     {
       "id": 54635,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123862,7 +123862,7 @@ module.exports = {
     {
       "id": 54636,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123880,7 +123880,7 @@ module.exports = {
     {
       "id": 54637,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123898,7 +123898,7 @@ module.exports = {
     {
       "id": 54638,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123916,7 +123916,7 @@ module.exports = {
     {
       "id": 54639,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123934,7 +123934,7 @@ module.exports = {
     {
       "id": 54640,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123952,7 +123952,7 @@ module.exports = {
     {
       "id": 54641,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123970,7 +123970,7 @@ module.exports = {
     {
       "id": 54642,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -123988,7 +123988,7 @@ module.exports = {
     {
       "id": 54643,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124006,7 +124006,7 @@ module.exports = {
     {
       "id": 54644,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124024,7 +124024,7 @@ module.exports = {
     {
       "id": 54645,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124042,7 +124042,7 @@ module.exports = {
     {
       "id": 54646,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124060,7 +124060,7 @@ module.exports = {
     {
       "id": 54647,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124078,7 +124078,7 @@ module.exports = {
     {
       "id": 54648,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124096,7 +124096,7 @@ module.exports = {
     {
       "id": 54649,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124114,7 +124114,7 @@ module.exports = {
     {
       "id": 54650,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124132,7 +124132,7 @@ module.exports = {
     {
       "id": 54651,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124150,7 +124150,7 @@ module.exports = {
     {
       "id": 54652,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124168,7 +124168,7 @@ module.exports = {
     {
       "id": 54653,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124186,7 +124186,7 @@ module.exports = {
     {
       "id": 54654,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124204,7 +124204,7 @@ module.exports = {
     {
       "id": 54655,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124222,7 +124222,7 @@ module.exports = {
     {
       "id": 54656,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124240,7 +124240,7 @@ module.exports = {
     {
       "id": 54657,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124258,7 +124258,7 @@ module.exports = {
     {
       "id": 54658,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124276,7 +124276,7 @@ module.exports = {
     {
       "id": 54659,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124294,7 +124294,7 @@ module.exports = {
     {
       "id": 54660,
       "discipline": "Legislação de Trânsito",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124312,7 +124312,7 @@ module.exports = {
     {
       "id": 54661,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124330,7 +124330,7 @@ module.exports = {
     {
       "id": 54662,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124348,7 +124348,7 @@ module.exports = {
     {
       "id": 54663,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124366,7 +124366,7 @@ module.exports = {
     {
       "id": 54664,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124384,7 +124384,7 @@ module.exports = {
     {
       "id": 54665,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124402,7 +124402,7 @@ module.exports = {
     {
       "id": 54666,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124420,7 +124420,7 @@ module.exports = {
     {
       "id": 54667,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124438,7 +124438,7 @@ module.exports = {
     {
       "id": 54668,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124456,7 +124456,7 @@ module.exports = {
     {
       "id": 54669,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124474,7 +124474,7 @@ module.exports = {
     {
       "id": 54670,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124492,7 +124492,7 @@ module.exports = {
     {
       "id": 54671,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124510,7 +124510,7 @@ module.exports = {
     {
       "id": 54672,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124528,7 +124528,7 @@ module.exports = {
     {
       "id": 54673,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124546,7 +124546,7 @@ module.exports = {
     {
       "id": 54674,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124564,7 +124564,7 @@ module.exports = {
     {
       "id": 54675,
       "discipline": "Direito Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124582,7 +124582,7 @@ module.exports = {
     {
       "id": 54676,
       "discipline": "Direito Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124600,7 +124600,7 @@ module.exports = {
     {
       "id": 54677,
       "discipline": "Direito Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124618,7 +124618,7 @@ module.exports = {
     {
       "id": 54678,
       "discipline": "Direito Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124636,7 +124636,7 @@ module.exports = {
     {
       "id": 54679,
       "discipline": "Direito Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124654,7 +124654,7 @@ module.exports = {
     {
       "id": 54680,
       "discipline": "Direito Processual Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124672,7 +124672,7 @@ module.exports = {
     {
       "id": 54681,
       "discipline": "Direito Processual Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124690,7 +124690,7 @@ module.exports = {
     {
       "id": 54682,
       "discipline": "Direito Processual Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124708,7 +124708,7 @@ module.exports = {
     {
       "id": 54683,
       "discipline": "Direito Processual Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124726,7 +124726,7 @@ module.exports = {
     {
       "id": 54684,
       "discipline": "Direito Processual Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124744,7 +124744,7 @@ module.exports = {
     {
       "id": 54685,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124762,7 +124762,7 @@ module.exports = {
     {
       "id": 54686,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124780,7 +124780,7 @@ module.exports = {
     {
       "id": 54687,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124798,7 +124798,7 @@ module.exports = {
     {
       "id": 54688,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124816,7 +124816,7 @@ module.exports = {
     {
       "id": 54689,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124834,7 +124834,7 @@ module.exports = {
     {
       "id": 54690,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124852,7 +124852,7 @@ module.exports = {
     {
       "id": 54691,
       "discipline": "Direitos Humanos",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124870,7 +124870,7 @@ module.exports = {
     {
       "id": 54692,
       "discipline": "Direitos Humanos",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124888,7 +124888,7 @@ module.exports = {
     {
       "id": 54693,
       "discipline": "Direitos Humanos",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124906,7 +124906,7 @@ module.exports = {
     {
       "id": 54694,
       "discipline": "Direitos Humanos",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124924,7 +124924,7 @@ module.exports = {
     {
       "id": 54695,
       "discipline": "Direitos Humanos",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Rodoviária Federal (PRF)",
       "year": 2021,
       "difficulty": "Difícil",
@@ -124942,7 +124942,7 @@ module.exports = {
     {
       "id": 54696,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -124960,7 +124960,7 @@ module.exports = {
     {
       "id": 54697,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -124978,7 +124978,7 @@ module.exports = {
     {
       "id": 54698,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -124996,7 +124996,7 @@ module.exports = {
     {
       "id": 54699,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125014,7 +125014,7 @@ module.exports = {
     {
       "id": 54700,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125032,7 +125032,7 @@ module.exports = {
     {
       "id": 54701,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125050,7 +125050,7 @@ module.exports = {
     {
       "id": 54702,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125068,7 +125068,7 @@ module.exports = {
     {
       "id": 54703,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125086,7 +125086,7 @@ module.exports = {
     {
       "id": 54704,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125104,7 +125104,7 @@ module.exports = {
     {
       "id": 54705,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125122,7 +125122,7 @@ module.exports = {
     {
       "id": 54706,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125140,7 +125140,7 @@ module.exports = {
     {
       "id": 54707,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125158,7 +125158,7 @@ module.exports = {
     {
       "id": 54708,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125176,7 +125176,7 @@ module.exports = {
     {
       "id": 54709,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125194,7 +125194,7 @@ module.exports = {
     {
       "id": 54710,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125212,7 +125212,7 @@ module.exports = {
     {
       "id": 54711,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125230,7 +125230,7 @@ module.exports = {
     {
       "id": 54712,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125248,7 +125248,7 @@ module.exports = {
     {
       "id": 54713,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125266,7 +125266,7 @@ module.exports = {
     {
       "id": 54714,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125284,7 +125284,7 @@ module.exports = {
     {
       "id": 54715,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125302,7 +125302,7 @@ module.exports = {
     {
       "id": 54716,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125320,7 +125320,7 @@ module.exports = {
     {
       "id": 54717,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125338,7 +125338,7 @@ module.exports = {
     {
       "id": 54718,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125356,7 +125356,7 @@ module.exports = {
     {
       "id": 54719,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125374,7 +125374,7 @@ module.exports = {
     {
       "id": 54720,
       "discipline": "Redação Oficial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125392,7 +125392,7 @@ module.exports = {
     {
       "id": 54721,
       "discipline": "Redação Oficial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125410,7 +125410,7 @@ module.exports = {
     {
       "id": 54722,
       "discipline": "Redação Oficial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125428,7 +125428,7 @@ module.exports = {
     {
       "id": 54723,
       "discipline": "Redação Oficial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125446,7 +125446,7 @@ module.exports = {
     {
       "id": 54724,
       "discipline": "Redação Oficial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125464,7 +125464,7 @@ module.exports = {
     {
       "id": 54725,
       "discipline": "Redação Oficial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125482,7 +125482,7 @@ module.exports = {
     {
       "id": 54726,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125500,7 +125500,7 @@ module.exports = {
     {
       "id": 54727,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125518,7 +125518,7 @@ module.exports = {
     {
       "id": 54728,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125536,7 +125536,7 @@ module.exports = {
     {
       "id": 54729,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125554,7 +125554,7 @@ module.exports = {
     {
       "id": 54730,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125572,7 +125572,7 @@ module.exports = {
     {
       "id": 54731,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125590,7 +125590,7 @@ module.exports = {
     {
       "id": 54732,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125608,7 +125608,7 @@ module.exports = {
     {
       "id": 54733,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125626,7 +125626,7 @@ module.exports = {
     {
       "id": 54734,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125644,7 +125644,7 @@ module.exports = {
     {
       "id": 54735,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125662,7 +125662,7 @@ module.exports = {
     {
       "id": 54736,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125680,7 +125680,7 @@ module.exports = {
     {
       "id": 54737,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125698,7 +125698,7 @@ module.exports = {
     {
       "id": 54738,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125716,7 +125716,7 @@ module.exports = {
     {
       "id": 54739,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125734,7 +125734,7 @@ module.exports = {
     {
       "id": 54740,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125752,7 +125752,7 @@ module.exports = {
     {
       "id": 54741,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125770,7 +125770,7 @@ module.exports = {
     {
       "id": 54742,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125788,7 +125788,7 @@ module.exports = {
     {
       "id": 54743,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125806,7 +125806,7 @@ module.exports = {
     {
       "id": 54744,
       "discipline": "Atualidades",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125824,7 +125824,7 @@ module.exports = {
     {
       "id": 54745,
       "discipline": "Atualidades",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125842,7 +125842,7 @@ module.exports = {
     {
       "id": 54746,
       "discipline": "Atualidades",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125860,7 +125860,7 @@ module.exports = {
     {
       "id": 54747,
       "discipline": "Atualidades",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125878,7 +125878,7 @@ module.exports = {
     {
       "id": 54748,
       "discipline": "Atualidades",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125896,7 +125896,7 @@ module.exports = {
     {
       "id": 54749,
       "discipline": "Atualidades",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125914,7 +125914,7 @@ module.exports = {
     {
       "id": 54750,
       "discipline": "Atualidades",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125932,7 +125932,7 @@ module.exports = {
     {
       "id": 54751,
       "discipline": "Atualidades",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125950,7 +125950,7 @@ module.exports = {
     {
       "id": 54752,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125968,7 +125968,7 @@ module.exports = {
     {
       "id": 54753,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -125986,7 +125986,7 @@ module.exports = {
     {
       "id": 54754,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126004,7 +126004,7 @@ module.exports = {
     {
       "id": 54755,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126022,7 +126022,7 @@ module.exports = {
     {
       "id": 54756,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126040,7 +126040,7 @@ module.exports = {
     {
       "id": 54757,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126058,7 +126058,7 @@ module.exports = {
     {
       "id": 54758,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126076,7 +126076,7 @@ module.exports = {
     {
       "id": 54759,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126094,7 +126094,7 @@ module.exports = {
     {
       "id": 54760,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126112,7 +126112,7 @@ module.exports = {
     {
       "id": 54761,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126130,7 +126130,7 @@ module.exports = {
     {
       "id": 54762,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126148,7 +126148,7 @@ module.exports = {
     {
       "id": 54763,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126166,7 +126166,7 @@ module.exports = {
     {
       "id": 54764,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126184,7 +126184,7 @@ module.exports = {
     {
       "id": 54765,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126202,7 +126202,7 @@ module.exports = {
     {
       "id": 54766,
       "discipline": "Noções de Administração",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126220,7 +126220,7 @@ module.exports = {
     {
       "id": 54767,
       "discipline": "Noções de Administração",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126238,7 +126238,7 @@ module.exports = {
     {
       "id": 54768,
       "discipline": "Noções de Administração",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126256,7 +126256,7 @@ module.exports = {
     {
       "id": 54769,
       "discipline": "Noções de Administração",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126274,7 +126274,7 @@ module.exports = {
     {
       "id": 54770,
       "discipline": "Noções de Administração",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126292,7 +126292,7 @@ module.exports = {
     {
       "id": 54771,
       "discipline": "Noções de Administração",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126310,7 +126310,7 @@ module.exports = {
     {
       "id": 54772,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126328,7 +126328,7 @@ module.exports = {
     {
       "id": 54773,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126346,7 +126346,7 @@ module.exports = {
     {
       "id": 54774,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126364,7 +126364,7 @@ module.exports = {
     {
       "id": 54775,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126382,7 +126382,7 @@ module.exports = {
     {
       "id": 54776,
       "discipline": "Noções de Contabilidade",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126400,7 +126400,7 @@ module.exports = {
     {
       "id": 54777,
       "discipline": "Noções de Contabilidade",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126418,7 +126418,7 @@ module.exports = {
     {
       "id": 54778,
       "discipline": "Noções de Contabilidade",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126436,7 +126436,7 @@ module.exports = {
     {
       "id": 54779,
       "discipline": "Noções de Contabilidade",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126454,7 +126454,7 @@ module.exports = {
     {
       "id": 54780,
       "discipline": "Noções de Contabilidade",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126472,7 +126472,7 @@ module.exports = {
     {
       "id": 54781,
       "discipline": "Noções de Contabilidade",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126490,7 +126490,7 @@ module.exports = {
     {
       "id": 54782,
       "discipline": "Noções de Contabilidade",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126508,7 +126508,7 @@ module.exports = {
     {
       "id": 54783,
       "discipline": "Noções de Contabilidade",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126526,7 +126526,7 @@ module.exports = {
     {
       "id": 54784,
       "discipline": "Noções de Contabilidade",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126544,7 +126544,7 @@ module.exports = {
     {
       "id": 54785,
       "discipline": "Noções de Contabilidade",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126562,7 +126562,7 @@ module.exports = {
     {
       "id": 54786,
       "discipline": "Noções de Economia",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126580,7 +126580,7 @@ module.exports = {
     {
       "id": 54787,
       "discipline": "Noções de Economia",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126598,7 +126598,7 @@ module.exports = {
     {
       "id": 54788,
       "discipline": "Noções de Economia",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126616,7 +126616,7 @@ module.exports = {
     {
       "id": 54789,
       "discipline": "Noções de Economia",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126634,7 +126634,7 @@ module.exports = {
     {
       "id": 54790,
       "discipline": "Noções de Economia",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126652,7 +126652,7 @@ module.exports = {
     {
       "id": 54791,
       "discipline": "Noções de Economia",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126670,7 +126670,7 @@ module.exports = {
     {
       "id": 54792,
       "discipline": "Noções de Economia",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126688,7 +126688,7 @@ module.exports = {
     {
       "id": 54793,
       "discipline": "Noções de Economia",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126706,7 +126706,7 @@ module.exports = {
     {
       "id": 54794,
       "discipline": "Noções de Economia",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126724,7 +126724,7 @@ module.exports = {
     {
       "id": 54795,
       "discipline": "Noções de Economia",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126742,7 +126742,7 @@ module.exports = {
     {
       "id": 54796,
       "discipline": "Direito Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126760,7 +126760,7 @@ module.exports = {
     {
       "id": 54797,
       "discipline": "Direito Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126778,7 +126778,7 @@ module.exports = {
     {
       "id": 54798,
       "discipline": "Direito Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126796,7 +126796,7 @@ module.exports = {
     {
       "id": 54799,
       "discipline": "Direito Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126814,7 +126814,7 @@ module.exports = {
     {
       "id": 54800,
       "discipline": "Direito Processual Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126832,7 +126832,7 @@ module.exports = {
     {
       "id": 54801,
       "discipline": "Direito Processual Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126850,7 +126850,7 @@ module.exports = {
     {
       "id": 54802,
       "discipline": "Direito Processual Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126868,7 +126868,7 @@ module.exports = {
     {
       "id": 54803,
       "discipline": "Direito Processual Penal",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126886,7 +126886,7 @@ module.exports = {
     {
       "id": 54804,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126904,7 +126904,7 @@ module.exports = {
     {
       "id": 54805,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126922,7 +126922,7 @@ module.exports = {
     {
       "id": 54806,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126940,7 +126940,7 @@ module.exports = {
     {
       "id": 54807,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126958,7 +126958,7 @@ module.exports = {
     {
       "id": 54808,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126976,7 +126976,7 @@ module.exports = {
     {
       "id": 54809,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -126994,7 +126994,7 @@ module.exports = {
     {
       "id": 54810,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -127012,7 +127012,7 @@ module.exports = {
     {
       "id": 54811,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -127030,7 +127030,7 @@ module.exports = {
     {
       "id": 54812,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -127048,7 +127048,7 @@ module.exports = {
     {
       "id": 54813,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -127066,7 +127066,7 @@ module.exports = {
     {
       "id": 54814,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -127084,7 +127084,7 @@ module.exports = {
     {
       "id": 54815,
       "discipline": "Legislação Especial",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Difícil",
@@ -127102,7 +127102,7 @@ module.exports = {
     {
       "id": 54816,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127120,7 +127120,7 @@ module.exports = {
     {
       "id": 54817,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127138,7 +127138,7 @@ module.exports = {
     {
       "id": 54818,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127156,7 +127156,7 @@ module.exports = {
     {
       "id": 54819,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127174,7 +127174,7 @@ module.exports = {
     {
       "id": 54820,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127192,7 +127192,7 @@ module.exports = {
     {
       "id": 54821,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127210,7 +127210,7 @@ module.exports = {
     {
       "id": 54822,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127228,7 +127228,7 @@ module.exports = {
     {
       "id": 54823,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127246,7 +127246,7 @@ module.exports = {
     {
       "id": 54824,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127264,7 +127264,7 @@ module.exports = {
     {
       "id": 54825,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127282,7 +127282,7 @@ module.exports = {
     {
       "id": 54826,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127300,7 +127300,7 @@ module.exports = {
     {
       "id": 54827,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127318,7 +127318,7 @@ module.exports = {
     {
       "id": 54828,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127336,7 +127336,7 @@ module.exports = {
     {
       "id": 54829,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127354,7 +127354,7 @@ module.exports = {
     {
       "id": 54830,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127372,7 +127372,7 @@ module.exports = {
     {
       "id": 54831,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127390,7 +127390,7 @@ module.exports = {
     {
       "id": 54832,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127408,7 +127408,7 @@ module.exports = {
     {
       "id": 54833,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127426,7 +127426,7 @@ module.exports = {
     {
       "id": 54834,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127444,7 +127444,7 @@ module.exports = {
     {
       "id": 54835,
       "discipline": "Ética no Serviço Público",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127462,7 +127462,7 @@ module.exports = {
     {
       "id": 54836,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127480,7 +127480,7 @@ module.exports = {
     {
       "id": 54837,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127498,7 +127498,7 @@ module.exports = {
     {
       "id": 54838,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127516,7 +127516,7 @@ module.exports = {
     {
       "id": 54839,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127534,7 +127534,7 @@ module.exports = {
     {
       "id": 54840,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127552,7 +127552,7 @@ module.exports = {
     {
       "id": 54841,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127570,7 +127570,7 @@ module.exports = {
     {
       "id": 54842,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127588,7 +127588,7 @@ module.exports = {
     {
       "id": 54843,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127606,7 +127606,7 @@ module.exports = {
     {
       "id": 54844,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127624,7 +127624,7 @@ module.exports = {
     {
       "id": 54845,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127642,7 +127642,7 @@ module.exports = {
     {
       "id": 54846,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127660,7 +127660,7 @@ module.exports = {
     {
       "id": 54847,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127678,7 +127678,7 @@ module.exports = {
     {
       "id": 54848,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127696,7 +127696,7 @@ module.exports = {
     {
       "id": 54849,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127714,7 +127714,7 @@ module.exports = {
     {
       "id": 54850,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127732,7 +127732,7 @@ module.exports = {
     {
       "id": 54851,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127750,7 +127750,7 @@ module.exports = {
     {
       "id": 54852,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127768,7 +127768,7 @@ module.exports = {
     {
       "id": 54853,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127786,7 +127786,7 @@ module.exports = {
     {
       "id": 54854,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127804,7 +127804,7 @@ module.exports = {
     {
       "id": 54855,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127822,7 +127822,7 @@ module.exports = {
     {
       "id": 54856,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127840,7 +127840,7 @@ module.exports = {
     {
       "id": 54857,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127858,7 +127858,7 @@ module.exports = {
     {
       "id": 54858,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127876,7 +127876,7 @@ module.exports = {
     {
       "id": 54859,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127894,7 +127894,7 @@ module.exports = {
     {
       "id": 54860,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127912,7 +127912,7 @@ module.exports = {
     {
       "id": 54861,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127930,7 +127930,7 @@ module.exports = {
     {
       "id": 54862,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127948,7 +127948,7 @@ module.exports = {
     {
       "id": 54863,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127966,7 +127966,7 @@ module.exports = {
     {
       "id": 54864,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -127984,7 +127984,7 @@ module.exports = {
     {
       "id": 54865,
       "discipline": "Raciocínio Lógico-Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128002,7 +128002,7 @@ module.exports = {
     {
       "id": 54866,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128020,7 +128020,7 @@ module.exports = {
     {
       "id": 54867,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128038,7 +128038,7 @@ module.exports = {
     {
       "id": 54868,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128056,7 +128056,7 @@ module.exports = {
     {
       "id": 54869,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128074,7 +128074,7 @@ module.exports = {
     {
       "id": 54870,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128092,7 +128092,7 @@ module.exports = {
     {
       "id": 54871,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128110,7 +128110,7 @@ module.exports = {
     {
       "id": 54872,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128128,7 +128128,7 @@ module.exports = {
     {
       "id": 54873,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128146,7 +128146,7 @@ module.exports = {
     {
       "id": 54874,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128164,7 +128164,7 @@ module.exports = {
     {
       "id": 54875,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128182,7 +128182,7 @@ module.exports = {
     {
       "id": 54876,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128200,7 +128200,7 @@ module.exports = {
     {
       "id": 54877,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128218,7 +128218,7 @@ module.exports = {
     {
       "id": 54878,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128236,7 +128236,7 @@ module.exports = {
     {
       "id": 54879,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128254,7 +128254,7 @@ module.exports = {
     {
       "id": 54880,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128272,7 +128272,7 @@ module.exports = {
     {
       "id": 54881,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128290,7 +128290,7 @@ module.exports = {
     {
       "id": 54882,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128308,7 +128308,7 @@ module.exports = {
     {
       "id": 54883,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128326,7 +128326,7 @@ module.exports = {
     {
       "id": 54884,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128344,7 +128344,7 @@ module.exports = {
     {
       "id": 54885,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128362,7 +128362,7 @@ module.exports = {
     {
       "id": 54886,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128380,7 +128380,7 @@ module.exports = {
     {
       "id": 54887,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128398,7 +128398,7 @@ module.exports = {
     {
       "id": 54888,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128416,7 +128416,7 @@ module.exports = {
     {
       "id": 54889,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128434,7 +128434,7 @@ module.exports = {
     {
       "id": 54890,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128452,7 +128452,7 @@ module.exports = {
     {
       "id": 54891,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128470,7 +128470,7 @@ module.exports = {
     {
       "id": 54892,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128488,7 +128488,7 @@ module.exports = {
     {
       "id": 54893,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128506,7 +128506,7 @@ module.exports = {
     {
       "id": 54894,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128524,7 +128524,7 @@ module.exports = {
     {
       "id": 54895,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128542,7 +128542,7 @@ module.exports = {
     {
       "id": 54896,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128560,7 +128560,7 @@ module.exports = {
     {
       "id": 54897,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128578,7 +128578,7 @@ module.exports = {
     {
       "id": 54898,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128596,7 +128596,7 @@ module.exports = {
     {
       "id": 54899,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128614,7 +128614,7 @@ module.exports = {
     {
       "id": 54900,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128632,7 +128632,7 @@ module.exports = {
     {
       "id": 54901,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128650,7 +128650,7 @@ module.exports = {
     {
       "id": 54902,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128668,7 +128668,7 @@ module.exports = {
     {
       "id": 54903,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128686,7 +128686,7 @@ module.exports = {
     {
       "id": 54904,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128704,7 +128704,7 @@ module.exports = {
     {
       "id": 54905,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128722,7 +128722,7 @@ module.exports = {
     {
       "id": 54906,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128740,7 +128740,7 @@ module.exports = {
     {
       "id": 54907,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128758,7 +128758,7 @@ module.exports = {
     {
       "id": 54908,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128776,7 +128776,7 @@ module.exports = {
     {
       "id": 54909,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128794,7 +128794,7 @@ module.exports = {
     {
       "id": 54910,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128812,7 +128812,7 @@ module.exports = {
     {
       "id": 54911,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128830,7 +128830,7 @@ module.exports = {
     {
       "id": 54912,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128848,7 +128848,7 @@ module.exports = {
     {
       "id": 54913,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128866,7 +128866,7 @@ module.exports = {
     {
       "id": 54914,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128884,7 +128884,7 @@ module.exports = {
     {
       "id": 54915,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128902,7 +128902,7 @@ module.exports = {
     {
       "id": 54916,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128920,7 +128920,7 @@ module.exports = {
     {
       "id": 54917,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128938,7 +128938,7 @@ module.exports = {
     {
       "id": 54918,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128956,7 +128956,7 @@ module.exports = {
     {
       "id": 54919,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128974,7 +128974,7 @@ module.exports = {
     {
       "id": 54920,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -128992,7 +128992,7 @@ module.exports = {
     {
       "id": 54921,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129010,7 +129010,7 @@ module.exports = {
     {
       "id": 54922,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129028,7 +129028,7 @@ module.exports = {
     {
       "id": 54923,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129046,7 +129046,7 @@ module.exports = {
     {
       "id": 54924,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129064,7 +129064,7 @@ module.exports = {
     {
       "id": 54925,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129082,7 +129082,7 @@ module.exports = {
     {
       "id": 54926,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129100,7 +129100,7 @@ module.exports = {
     {
       "id": 54927,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129118,7 +129118,7 @@ module.exports = {
     {
       "id": 54928,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129136,7 +129136,7 @@ module.exports = {
     {
       "id": 54929,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129154,7 +129154,7 @@ module.exports = {
     {
       "id": 54930,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129172,7 +129172,7 @@ module.exports = {
     {
       "id": 54931,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129190,7 +129190,7 @@ module.exports = {
     {
       "id": 54932,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129208,7 +129208,7 @@ module.exports = {
     {
       "id": 54933,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129226,7 +129226,7 @@ module.exports = {
     {
       "id": 54934,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129244,7 +129244,7 @@ module.exports = {
     {
       "id": 54935,
       "discipline": "Direito Previdenciário",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "year": 2022,
       "difficulty": "Médio",
@@ -129262,7 +129262,7 @@ module.exports = {
     {
       "id": 54936,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129280,7 +129280,7 @@ module.exports = {
     {
       "id": 54937,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129298,7 +129298,7 @@ module.exports = {
     {
       "id": 54938,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129316,7 +129316,7 @@ module.exports = {
     {
       "id": 54939,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129334,7 +129334,7 @@ module.exports = {
     {
       "id": 54940,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129352,7 +129352,7 @@ module.exports = {
     {
       "id": 54941,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129370,7 +129370,7 @@ module.exports = {
     {
       "id": 54942,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129388,7 +129388,7 @@ module.exports = {
     {
       "id": 54943,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129406,7 +129406,7 @@ module.exports = {
     {
       "id": 54944,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129424,7 +129424,7 @@ module.exports = {
     {
       "id": 54945,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129442,7 +129442,7 @@ module.exports = {
     {
       "id": 54946,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129460,7 +129460,7 @@ module.exports = {
     {
       "id": 54947,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129478,7 +129478,7 @@ module.exports = {
     {
       "id": 54948,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129496,7 +129496,7 @@ module.exports = {
     {
       "id": 54949,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129514,7 +129514,7 @@ module.exports = {
     {
       "id": 54950,
       "discipline": "Língua Portuguesa",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129532,7 +129532,7 @@ module.exports = {
     {
       "id": 54951,
       "discipline": "Raciocínio Lógico Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129550,7 +129550,7 @@ module.exports = {
     {
       "id": 54952,
       "discipline": "Raciocínio Lógico Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129568,7 +129568,7 @@ module.exports = {
     {
       "id": 54953,
       "discipline": "Raciocínio Lógico Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129586,7 +129586,7 @@ module.exports = {
     {
       "id": 54954,
       "discipline": "Raciocínio Lógico Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129604,7 +129604,7 @@ module.exports = {
     {
       "id": 54955,
       "discipline": "Raciocínio Lógico Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129622,7 +129622,7 @@ module.exports = {
     {
       "id": 54956,
       "discipline": "Raciocínio Lógico Matemático",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129640,7 +129640,7 @@ module.exports = {
     {
       "id": 54957,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129658,7 +129658,7 @@ module.exports = {
     {
       "id": 54958,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129676,7 +129676,7 @@ module.exports = {
     {
       "id": 54959,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129694,7 +129694,7 @@ module.exports = {
     {
       "id": 54960,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129712,7 +129712,7 @@ module.exports = {
     {
       "id": 54961,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129730,7 +129730,7 @@ module.exports = {
     {
       "id": 54962,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129748,7 +129748,7 @@ module.exports = {
     {
       "id": 54963,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129766,7 +129766,7 @@ module.exports = {
     {
       "id": 54964,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129784,7 +129784,7 @@ module.exports = {
     {
       "id": 54965,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129802,7 +129802,7 @@ module.exports = {
     {
       "id": 54966,
       "discipline": "Noções de Informática",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129820,7 +129820,7 @@ module.exports = {
     {
       "id": 54967,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129838,7 +129838,7 @@ module.exports = {
     {
       "id": 54968,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129856,7 +129856,7 @@ module.exports = {
     {
       "id": 54969,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129874,7 +129874,7 @@ module.exports = {
     {
       "id": 54970,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129892,7 +129892,7 @@ module.exports = {
     {
       "id": 54971,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129910,7 +129910,7 @@ module.exports = {
     {
       "id": 54972,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129928,7 +129928,7 @@ module.exports = {
     {
       "id": 54973,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129946,7 +129946,7 @@ module.exports = {
     {
       "id": 54974,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129964,7 +129964,7 @@ module.exports = {
     {
       "id": 54975,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -129982,7 +129982,7 @@ module.exports = {
     {
       "id": 54976,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130000,7 +130000,7 @@ module.exports = {
     {
       "id": 54977,
       "discipline": "Direito Administrativo",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130018,7 +130018,7 @@ module.exports = {
     {
       "id": 54978,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130036,7 +130036,7 @@ module.exports = {
     {
       "id": 54979,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130054,7 +130054,7 @@ module.exports = {
     {
       "id": 54980,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130072,7 +130072,7 @@ module.exports = {
     {
       "id": 54981,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130090,7 +130090,7 @@ module.exports = {
     {
       "id": 54982,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130108,7 +130108,7 @@ module.exports = {
     {
       "id": 54983,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130126,7 +130126,7 @@ module.exports = {
     {
       "id": 54984,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130144,7 +130144,7 @@ module.exports = {
     {
       "id": 54985,
       "discipline": "Direito Constitucional",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130162,7 +130162,7 @@ module.exports = {
     {
       "id": 54986,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130180,7 +130180,7 @@ module.exports = {
     {
       "id": 54987,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130198,7 +130198,7 @@ module.exports = {
     {
       "id": 54988,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130216,7 +130216,7 @@ module.exports = {
     {
       "id": 54989,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130234,7 +130234,7 @@ module.exports = {
     {
       "id": 54990,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130252,7 +130252,7 @@ module.exports = {
     {
       "id": 54991,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130270,7 +130270,7 @@ module.exports = {
     {
       "id": 54992,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130288,7 +130288,7 @@ module.exports = {
     {
       "id": 54993,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130306,7 +130306,7 @@ module.exports = {
     {
       "id": 54994,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130324,7 +130324,7 @@ module.exports = {
     {
       "id": 54995,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130342,7 +130342,7 @@ module.exports = {
     {
       "id": 54996,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130360,7 +130360,7 @@ module.exports = {
     {
       "id": 54997,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130378,7 +130378,7 @@ module.exports = {
     {
       "id": 54998,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130396,7 +130396,7 @@ module.exports = {
     {
       "id": 54999,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130414,7 +130414,7 @@ module.exports = {
     {
       "id": 55000,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130432,7 +130432,7 @@ module.exports = {
     {
       "id": 55001,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130450,7 +130450,7 @@ module.exports = {
     {
       "id": 55002,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130468,7 +130468,7 @@ module.exports = {
     {
       "id": 55003,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130486,7 +130486,7 @@ module.exports = {
     {
       "id": 55004,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130504,7 +130504,7 @@ module.exports = {
     {
       "id": 55005,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130522,7 +130522,7 @@ module.exports = {
     {
       "id": 55006,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130540,7 +130540,7 @@ module.exports = {
     {
       "id": 55007,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130558,7 +130558,7 @@ module.exports = {
     {
       "id": 55008,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130576,7 +130576,7 @@ module.exports = {
     {
       "id": 55009,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130594,7 +130594,7 @@ module.exports = {
     {
       "id": 55010,
       "discipline": "Administração Geral e Pública",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130612,7 +130612,7 @@ module.exports = {
     {
       "id": 55011,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130630,7 +130630,7 @@ module.exports = {
     {
       "id": 55012,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130648,7 +130648,7 @@ module.exports = {
     {
       "id": 55013,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130666,7 +130666,7 @@ module.exports = {
     {
       "id": 55014,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130684,7 +130684,7 @@ module.exports = {
     {
       "id": 55015,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130702,7 +130702,7 @@ module.exports = {
     {
       "id": 55016,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130720,7 +130720,7 @@ module.exports = {
     {
       "id": 55017,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130738,7 +130738,7 @@ module.exports = {
     {
       "id": 55018,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130756,7 +130756,7 @@ module.exports = {
     {
       "id": 55019,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130774,7 +130774,7 @@ module.exports = {
     {
       "id": 55020,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130792,7 +130792,7 @@ module.exports = {
     {
       "id": 55021,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130810,7 +130810,7 @@ module.exports = {
     {
       "id": 55022,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130828,7 +130828,7 @@ module.exports = {
     {
       "id": 55023,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130846,7 +130846,7 @@ module.exports = {
     {
       "id": 55024,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130864,7 +130864,7 @@ module.exports = {
     {
       "id": 55025,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130882,7 +130882,7 @@ module.exports = {
     {
       "id": 55026,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130900,7 +130900,7 @@ module.exports = {
     {
       "id": 55027,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130918,7 +130918,7 @@ module.exports = {
     {
       "id": 55028,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130936,7 +130936,7 @@ module.exports = {
     {
       "id": 55029,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130954,7 +130954,7 @@ module.exports = {
     {
       "id": 55030,
       "discipline": "Administração Financeira e Orçamentária",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130972,7 +130972,7 @@ module.exports = {
     {
       "id": 55031,
       "discipline": "Gestão de Pessoas",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -130990,7 +130990,7 @@ module.exports = {
     {
       "id": 55032,
       "discipline": "Gestão de Pessoas",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131008,7 +131008,7 @@ module.exports = {
     {
       "id": 55033,
       "discipline": "Gestão de Pessoas",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131026,7 +131026,7 @@ module.exports = {
     {
       "id": 55034,
       "discipline": "Gestão de Pessoas",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131044,7 +131044,7 @@ module.exports = {
     {
       "id": 55035,
       "discipline": "Gestão de Pessoas",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131062,7 +131062,7 @@ module.exports = {
     {
       "id": 55036,
       "discipline": "Gestão de Pessoas",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131080,7 +131080,7 @@ module.exports = {
     {
       "id": 55037,
       "discipline": "Gestão de Pessoas",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131098,7 +131098,7 @@ module.exports = {
     {
       "id": 55038,
       "discipline": "Gestão de Pessoas",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131116,7 +131116,7 @@ module.exports = {
     {
       "id": 55039,
       "discipline": "Gestão de Pessoas",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131134,7 +131134,7 @@ module.exports = {
     {
       "id": 55040,
       "discipline": "Gestão de Pessoas",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131152,7 +131152,7 @@ module.exports = {
     {
       "id": 55041,
       "discipline": "Gestão de Pessoas",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131170,7 +131170,7 @@ module.exports = {
     {
       "id": 55042,
       "discipline": "Gestão de Pessoas",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131188,7 +131188,7 @@ module.exports = {
     {
       "id": 55043,
       "discipline": "Gestão de Pessoas",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131206,7 +131206,7 @@ module.exports = {
     {
       "id": 55044,
       "discipline": "Gestão de Recursos Materiais",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131224,7 +131224,7 @@ module.exports = {
     {
       "id": 55045,
       "discipline": "Gestão de Recursos Materiais",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131242,7 +131242,7 @@ module.exports = {
     {
       "id": 55046,
       "discipline": "Gestão de Recursos Materiais",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131260,7 +131260,7 @@ module.exports = {
     {
       "id": 55047,
       "discipline": "Gestão de Recursos Materiais",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131278,7 +131278,7 @@ module.exports = {
     {
       "id": 55048,
       "discipline": "Gestão de Recursos Materiais",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131296,7 +131296,7 @@ module.exports = {
     {
       "id": 55049,
       "discipline": "Gestão de Recursos Materiais",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131314,7 +131314,7 @@ module.exports = {
     {
       "id": 55050,
       "discipline": "Gestão de Recursos Materiais",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131332,7 +131332,7 @@ module.exports = {
     {
       "id": 55051,
       "discipline": "Gestão de Recursos Materiais",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131350,7 +131350,7 @@ module.exports = {
     {
       "id": 55052,
       "discipline": "Gestão de Recursos Materiais",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131368,7 +131368,7 @@ module.exports = {
     {
       "id": 55053,
       "discipline": "Gestão de Recursos Materiais",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131386,7 +131386,7 @@ module.exports = {
     {
       "id": 55054,
       "discipline": "Gestão de Recursos Materiais",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131404,7 +131404,7 @@ module.exports = {
     {
       "id": 55055,
       "discipline": "Gestão de Recursos Materiais",
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "year": 2014,
       "difficulty": "Médio",
@@ -131422,7 +131422,7 @@ module.exports = {
     {
       "id": 55126,
       "discipline": "Língua Portuguesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131440,7 +131440,7 @@ module.exports = {
     {
       "id": 55127,
       "discipline": "Língua Portuguesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131458,7 +131458,7 @@ module.exports = {
     {
       "id": 55128,
       "discipline": "Língua Portuguesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131476,7 +131476,7 @@ module.exports = {
     {
       "id": 55129,
       "discipline": "Língua Portuguesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131494,7 +131494,7 @@ module.exports = {
     {
       "id": 55130,
       "discipline": "Língua Portuguesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131512,7 +131512,7 @@ module.exports = {
     {
       "id": 55131,
       "discipline": "Língua Portuguesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131530,7 +131530,7 @@ module.exports = {
     {
       "id": 55132,
       "discipline": "Língua Portuguesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131548,7 +131548,7 @@ module.exports = {
     {
       "id": 55133,
       "discipline": "Língua Portuguesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131566,7 +131566,7 @@ module.exports = {
     {
       "id": 55134,
       "discipline": "Língua Portuguesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131584,7 +131584,7 @@ module.exports = {
     {
       "id": 55135,
       "discipline": "Língua Portuguesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131602,7 +131602,7 @@ module.exports = {
     {
       "id": 55136,
       "discipline": "Língua Inglesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131620,7 +131620,7 @@ module.exports = {
     {
       "id": 55137,
       "discipline": "Língua Inglesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131638,7 +131638,7 @@ module.exports = {
     {
       "id": 55138,
       "discipline": "Língua Inglesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131656,7 +131656,7 @@ module.exports = {
     {
       "id": 55139,
       "discipline": "Língua Inglesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131674,7 +131674,7 @@ module.exports = {
     {
       "id": 55140,
       "discipline": "Língua Inglesa",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131692,7 +131692,7 @@ module.exports = {
     {
       "id": 55141,
       "discipline": "Matemática Básica",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131710,7 +131710,7 @@ module.exports = {
     {
       "id": 55142,
       "discipline": "Matemática Básica",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131728,7 +131728,7 @@ module.exports = {
     {
       "id": 55143,
       "discipline": "Matemática Básica",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131746,7 +131746,7 @@ module.exports = {
     {
       "id": 55144,
       "discipline": "Matemática Básica",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131764,7 +131764,7 @@ module.exports = {
     {
       "id": 55145,
       "discipline": "Matemática Básica",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131782,7 +131782,7 @@ module.exports = {
     {
       "id": 55146,
       "discipline": "Atualidades do Mercado Financeiro",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131800,7 +131800,7 @@ module.exports = {
     {
       "id": 55147,
       "discipline": "Atualidades do Mercado Financeiro",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131818,7 +131818,7 @@ module.exports = {
     {
       "id": 55148,
       "discipline": "Atualidades do Mercado Financeiro",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131836,7 +131836,7 @@ module.exports = {
     {
       "id": 55149,
       "discipline": "Atualidades do Mercado Financeiro",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131854,7 +131854,7 @@ module.exports = {
     {
       "id": 55150,
       "discipline": "Atualidades do Mercado Financeiro",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131872,7 +131872,7 @@ module.exports = {
     {
       "id": 55151,
       "discipline": "Matemática Financeira",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131890,7 +131890,7 @@ module.exports = {
     {
       "id": 55152,
       "discipline": "Matemática Financeira",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131908,7 +131908,7 @@ module.exports = {
     {
       "id": 55153,
       "discipline": "Matemática Financeira",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131926,7 +131926,7 @@ module.exports = {
     {
       "id": 55154,
       "discipline": "Matemática Financeira",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131944,7 +131944,7 @@ module.exports = {
     {
       "id": 55155,
       "discipline": "Matemática Financeira",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131962,7 +131962,7 @@ module.exports = {
     {
       "id": 55156,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131980,7 +131980,7 @@ module.exports = {
     {
       "id": 55157,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -131998,7 +131998,7 @@ module.exports = {
     {
       "id": 55158,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132016,7 +132016,7 @@ module.exports = {
     {
       "id": 55159,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132034,7 +132034,7 @@ module.exports = {
     {
       "id": 55160,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132052,7 +132052,7 @@ module.exports = {
     {
       "id": 55161,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132070,7 +132070,7 @@ module.exports = {
     {
       "id": 55162,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132088,7 +132088,7 @@ module.exports = {
     {
       "id": 55163,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132106,7 +132106,7 @@ module.exports = {
     {
       "id": 55164,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132124,7 +132124,7 @@ module.exports = {
     {
       "id": 55165,
       "discipline": "Conhecimentos Bancários",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132142,7 +132142,7 @@ module.exports = {
     {
       "id": 55166,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132160,7 +132160,7 @@ module.exports = {
     {
       "id": 55167,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132178,7 +132178,7 @@ module.exports = {
     {
       "id": 55168,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132196,7 +132196,7 @@ module.exports = {
     {
       "id": 55169,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132214,7 +132214,7 @@ module.exports = {
     {
       "id": 55170,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132232,7 +132232,7 @@ module.exports = {
     {
       "id": 55171,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132250,7 +132250,7 @@ module.exports = {
     {
       "id": 55172,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132268,7 +132268,7 @@ module.exports = {
     {
       "id": 55173,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132286,7 +132286,7 @@ module.exports = {
     {
       "id": 55174,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132304,7 +132304,7 @@ module.exports = {
     {
       "id": 55175,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132322,7 +132322,7 @@ module.exports = {
     {
       "id": 55176,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132340,7 +132340,7 @@ module.exports = {
     {
       "id": 55177,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132358,7 +132358,7 @@ module.exports = {
     {
       "id": 55178,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132376,7 +132376,7 @@ module.exports = {
     {
       "id": 55179,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132394,7 +132394,7 @@ module.exports = {
     {
       "id": 55180,
       "discipline": "Conhecimentos de Informática",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132412,7 +132412,7 @@ module.exports = {
     {
       "id": 55181,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132430,7 +132430,7 @@ module.exports = {
     {
       "id": 55182,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132448,7 +132448,7 @@ module.exports = {
     {
       "id": 55183,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132466,7 +132466,7 @@ module.exports = {
     {
       "id": 55184,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132484,7 +132484,7 @@ module.exports = {
     {
       "id": 55185,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132502,7 +132502,7 @@ module.exports = {
     {
       "id": 55186,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132520,7 +132520,7 @@ module.exports = {
     {
       "id": 55187,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132538,7 +132538,7 @@ module.exports = {
     {
       "id": 55188,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132556,7 +132556,7 @@ module.exports = {
     {
       "id": 55189,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132574,7 +132574,7 @@ module.exports = {
     {
       "id": 55190,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132592,7 +132592,7 @@ module.exports = {
     {
       "id": 55191,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132610,7 +132610,7 @@ module.exports = {
     {
       "id": 55192,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132628,7 +132628,7 @@ module.exports = {
     {
       "id": 55193,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132646,7 +132646,7 @@ module.exports = {
     {
       "id": 55194,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -132664,7 +132664,7 @@ module.exports = {
     {
       "id": 55195,
       "discipline": "Vendas e Negociação",
-      "examining_board": "Fundação Cesgranrio",
+      "examining_board": "Cesgranrio",
       "institute": "Banco do Brasil",
       "year": 2023,
       "difficulty": "Médio",
@@ -136818,13 +136818,379 @@ module.exports = {
       "career": "Carreira Fiscal",
       "exam_type": "CONCURSO",
       "subject": "Imposto de Renda, IPI e Regulamento Aduaneiro"
+    },
+    {
+      "id": 55426,
+      "discipline": "Direito Constitucional",
+      "examining_board": "FCC",
+      "institute": "Tribunal Regional do Trabalho (TRT)",
+      "year": 2024,
+      "difficulty": "Médio",
+      "statement": "Nos termos da Constituição Federal de 1988 e da jurisprudência consolidada do Supremo Tribunal Federal, a respeito dos direitos e deveres individuais e coletivos, é correto afirmar que:",
+      "options": "[{\"key\":\"A\",\"text\":\"A criação de associações e, na forma da lei, a de cooperativas dependem de autorização do Poder Executivo, sendo vedada a interferência estatal em seu funcionamento.\"},{\"key\":\"B\",\"text\":\"As associações só poderão ter suas atividades suspensas por decisão judicial transitada em julgado.\"},{\"key\":\"C\",\"text\":\"É plena a liberdade de associação para fins lícitos, vedada a de caráter paramilitar.\"},{\"key\":\"D\",\"text\":\"Ninguém poderá ser compelido a associar-se ou a permanecer associado, salvo se houver previsão em acordo ou convenção coletiva de trabalho.\"},{\"key\":\"E\",\"text\":\"As entidades associativas têm legitimidade para representar seus filiados judicial ou extrajudicialmente, independentemente de autorização expressa.\"}]",
+      "right_answer": "C",
+      "explanation": "GABARITO: C. Art. 5º, XVII da CF/88: \"é plena a liberdade de associação para fins lícitos, vedada a de caráter paramilitar\". Erros das demais: A) independem de autorização (art. 5º, XVIII); B) a suspensão exige apenas decisão judicial fundamentada, o trânsito em julgado é exigido para a dissolução compulsória (art. 5º, XIX); D) ninguém é compelido a associar-se, sem ressalvas (art. 5º, XX); E) depende de autorização expressa conforme Tema 82 do STF e art. 5º, XXI.",
+      "stats_distribution": "{\"A\":4,\"B\":8,\"C\":81,\"D\":5,\"E\":2}",
+      "comments": "[{\"user\":\"ConcurseiroTRT\",\"text\":\"FCC adora a literalidade do art. 5º, XVII a XXI. Dissolução = trânsito em julgado. Suspensão = basta decisão judicial.\",\"likes\":45,\"date\":\"2024-03-12\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Tribunais & MP",
+      "exam_type": "CONCURSO",
+      "subject": "Direitos e Garantias Fundamentais"
+    },
+    {
+      "id": 55427,
+      "discipline": "Direito Administrativo",
+      "examining_board": "FCC",
+      "institute": "Tribunal Regional Federal (TRF)",
+      "year": 2024,
+      "difficulty": "Médio",
+      "statement": "A prerrogativa da Administração Pública de punir internamente seus servidores pela prática de infrações funcionais decorre diretamente do poder:",
+      "options": "[{\"key\":\"A\",\"text\":\"Disciplinar, que não se confunde com o poder de polícia nem possui discricionariedade quanto ao dever de apurar a falta.\"},{\"key\":\"B\",\"text\":\"De polícia, de natureza originária, aplicável a todos os cidadãos indistintamente.\"},{\"key\":\"C\",\"text\":\"Regulamentar, que autoriza a criação de tipos infracionais autônomos sem amparo legal.\"},{\"key\":\"D\",\"text\":\"Hierárquico, que autoriza a aplicação de sanções a particulares sem qualquer vínculo especial com a Administração.\"},{\"key\":\"E\",\"text\":\"Disciplinar, sendo discricionária a decisão da autoridade em instaurar ou não o processo administrativo disciplinar.\"}]",
+      "right_answer": "A",
+      "explanation": "GABARITO: A. O poder disciplinar é a prerrogativa punitiva interna decorrente de vínculo especial com o Estado (servidores ou contratados). Quanto à instauração de PAD, o dever de apurar é estritamente vinculado (a autoridade é obrigada a apurar sob pena de prevaricação ou condescendência criminosa).",
+      "stats_distribution": "{\"A\":78,\"B\":6,\"C\":2,\"D\":7,\"E\":7}",
+      "comments": "[{\"user\":\"TRF_Aprovado\",\"text\":\"Dever de apurar é VINCULADO. A discricionariedade reside na dosimetria da sanção quando a lei prevê margem de escolha.\",\"likes\":38,\"date\":\"2024-02-18\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Tribunais & MP",
+      "exam_type": "CONCURSO",
+      "subject": "Poderes Administrativos"
+    },
+    {
+      "id": 55428,
+      "discipline": "Língua Portuguesa",
+      "examining_board": "FCC",
+      "institute": "Tribunal de Contas do Estado (TCE)",
+      "year": 2024,
+      "difficulty": "Difícil",
+      "statement": "O verbo indicado entre parênteses deverá flexionar-se de modo a concordar com o elemento sublinhado em:",
+      "options": "[{\"key\":\"A\",\"text\":\"Ainda que se (atribuir) aos novos sistemas digitais a responsabilidade pela agilização processual, restam dúvidas.\"},{\"key\":\"B\",\"text\":\"Não (caber) aos analistas judiciários julgar o mérito das pretensões deduzidas em juízo.\"},{\"key\":\"C\",\"text\":\"Devem-se (impor) rigorosas sanções disciplinares a todos os infratores das regras de governança.\"},{\"key\":\"D\",\"text\":\"Trata-se de (medida) saneadora cuja aplicação (urgir) implementar sem delongas.\"},{\"key\":\"E\",\"text\":\"Mais de um servidor (ter) expressado preocupação com a segurança da informação institucional.\"}]",
+      "right_answer": "A",
+      "explanation": "GABARITO: A. Na oração \"Ainda que se atribua aos novos sistemas a responsabilidade\", \"a responsabilidade\" é sujeito paciente (\"se\" é partícula apassivadora), logo o verbo flexiona-se concordando com ela: \"se atribua a responsabilidade\". Caso o sujeito estivesse no plural (\"as responsabilidades\"), seria \"se atribuam\".",
+      "stats_distribution": "{\"A\":68,\"B\":11,\"C\":9,\"D\":7,\"E\":5}",
+      "comments": "[{\"user\":\"Prof_Português\",\"text\":\"Voz passiva sintética clássica da FCC: verbo transitivo direto + se apassivador -> concorda com o sujeito paciente!\",\"likes\":29,\"date\":\"2024-04-05\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Tribunais & MP",
+      "exam_type": "CONCURSO",
+      "subject": "Concordância Verbal e Nominal"
+    },
+    {
+      "id": 55429,
+      "discipline": "Raciocínio Lógico-Matemático",
+      "examining_board": "FCC",
+      "institute": "Tribunal Regional Eleitoral (TRE)",
+      "year": 2024,
+      "difficulty": "Médio",
+      "statement": "Considere a proposição: \"Se Carlos estudou com dedicação, então ele foi aprovado no concurso do Tribunal\". Uma proposição logicamente equivalente a essa é:",
+      "options": "[{\"key\":\"A\",\"text\":\"Se Carlos não estudou com dedicação, então ele não foi aprovado no concurso do Tribunal.\"},{\"key\":\"B\",\"text\":\"Se Carlos foi aprovado no concurso do Tribunal, então ele estudou com dedicação.\"},{\"key\":\"C\",\"text\":\"Se Carlos não foi aprovado no concurso do Tribunal, então ele não estudou com dedicação.\"},{\"key\":\"D\",\"text\":\"Carlos estudou com dedicação e não foi aprovado no concurso do Tribunal.\"},{\"key\":\"E\",\"text\":\"Carlos não estudou com dedicação ou não foi aprovado no concurso do Tribunal.\"}]",
+      "right_answer": "C",
+      "explanation": "GABARITO: C. A contrapositiva de uma condicional (P -> Q) é logicamente equivalente a ela (~Q -> ~P): \"Se Carlos NÃO foi aprovado, então ele NÃO estudou\". Inverte e nega ambas.",
+      "stats_distribution": "{\"A\":9,\"B\":6,\"C\":82,\"D\":2,\"E\":1}",
+      "comments": "[{\"user\":\"RaciocinioRapido\",\"text\":\"Equivalência do Se... Então: inverte e nega (Contrapositiva) ou regra do Neymar (~P ou Q). Aqui foi a contrapositiva perfeita.\",\"likes\":63,\"date\":\"2024-01-20\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Tribunais & MP",
+      "exam_type": "CONCURSO",
+      "subject": "Lógica Proposicional e Equivalências"
+    },
+    {
+      "id": 55430,
+      "discipline": "Direito Penal",
+      "examining_board": "Instituto AOCP",
+      "institute": "Polícia Militar (PM)",
+      "year": 2024,
+      "difficulty": "Médio",
+      "statement": "De acordo com o Código Penal Brasileiro (Decreto-Lei nº 2.848/1940), NÃO há crime quando o agente pratica o fato em qualquer das seguintes condições, EXCETO:",
+      "options": "[{\"key\":\"A\",\"text\":\"Em estado de necessidade.\"},{\"key\":\"B\",\"text\":\"Em legítima defesa.\"},{\"key\":\"C\",\"text\":\"Em estrito cumprimento de dever legal.\"},{\"key\":\"D\",\"text\":\"No exercício regular de direito.\"},{\"key\":\"E\",\"text\":\"Em obediência a ordem manifestamente ilegal de superior hierárquico.\"}]",
+      "right_answer": "E",
+      "explanation": "GABARITO: E. Conforme art. 22 do CP, se a ordem do superior é MANIFESTAMENTE ilegal, o subordinado também responde pelo crime, não havendo excludente de culpabilidade e muito menos de ilicitude. As excludentes de ilicitude do art. 23 são: estado de necessidade, legítima defesa, estrito cumprimento de dever legal e exercício regular de direito.",
+      "stats_distribution": "{\"A\":2,\"B\":1,\"C\":3,\"D\":4,\"E\":90}",
+      "comments": "[{\"user\":\"FuturoPF\",\"text\":\"AOCP sempre cobra a pegadinha da ordem manifestamente ilegal. Se for manifestamente ilegal, responde tanto quem manda quanto quem cumpre!\",\"likes\":41,\"date\":\"2024-05-10\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Carreiras Policiais",
+      "exam_type": "CONCURSO",
+      "subject": "Excludentes de Ilicitude"
+    },
+    {
+      "id": 55431,
+      "discipline": "Direito Processual Penal",
+      "examining_board": "Instituto AOCP",
+      "institute": "Polícia Civil (PC)",
+      "year": 2024,
+      "difficulty": "Médio",
+      "statement": "Assinale a alternativa que contempla hipótese de flagrante delito classificada doutrinariamente como flagrante impróprio ou imperfeito, nos termos do Código de Processo Penal:",
+      "options": "[{\"key\":\"A\",\"text\":\"Quem está cometendo a infração penal.\"},{\"key\":\"B\",\"text\":\"Quem acaba de cometê-la.\"},{\"key\":\"C\",\"text\":\"Quem é perseguido, logo após, pela autoridade, pelo ofendido ou por qualquer pessoa, em situação que faça presumir ser autor da infração.\"},{\"key\":\"D\",\"text\":\"Quem é encontrado, logo depois, com instrumentos, armas, objetos ou papéis que façam presumir ser ele autor da infração.\"},{\"key\":\"E\",\"text\":\"Quem é induzido por agente provocador policial a praticar a conduta criminosa.\"}]",
+      "right_answer": "C",
+      "explanation": "GABARITO: C. Art. 302 do CPP: I e II = Flagrante Próprio (está cometendo ou acaba de cometer); III = Flagrante Impróprio/Imperfeito/Quase-flagrante (perseguido logo após); IV = Flagrante Presumido/Ficto (encontrado logo depois com objetos do crime).",
+      "stats_distribution": "{\"A\":3,\"B\":4,\"C\":79,\"D\":12,\"E\":2}",
+      "comments": "[{\"user\":\"Delta_Concurso\",\"text\":\"Mnemônico dos flagrantes: I/II = Próprio. III = Impróprio (perseguição logo após). IV = Presumido (encontrado logo depois).\",\"likes\":71,\"date\":\"2024-03-25\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Carreiras Policiais",
+      "exam_type": "CONCURSO",
+      "subject": "Prisão em Flagrante"
+    },
+    {
+      "id": 55432,
+      "discipline": "Legislação Especial",
+      "examining_board": "Instituto AOCP",
+      "institute": "Polícia Militar (PM)",
+      "year": 2024,
+      "difficulty": "Fácil",
+      "statement": "A respeito do crime de porte ilegal de arma de fogo de uso permitido, tipificado no artigo 14 da Lei nº 10.826/2003, é correto afirmar que se trata de crime:",
+      "options": "[{\"key\":\"A\",\"text\":\"De perigo abstrato e de mera conduta, consumando-se independentemente da produção de qualquer resultado naturalístico lesivo.\"},{\"key\":\"B\",\"text\":\"Material, exigindo efetivo disparo ou intimidação direta a terceiro.\"},{\"key\":\"C\",\"text\":\"Próprio, que apenas pode ser praticado por militares ou agentes de segurança pública.\"},{\"key\":\"D\",\"text\":\"Culposo, admitindo a modalidade negligente se a arma for esquecida no veículo.\"},{\"key\":\"E\",\"text\":\"Hediondo em qualquer circunstância, inafiançável e insuscetível de graça ou anistia.\"}]",
+      "right_answer": "A",
+      "explanation": "GABARITO: A. O porte ilegal de arma de fogo é crime de perigo abstrato e mera conduta. O bem jurídico tutelado é a segurança coletiva e a incolumidade pública, prescindindo de resultado lesivo concreto.",
+      "stats_distribution": "{\"A\":85,\"B\":4,\"C\":2,\"D\":3,\"E\":6}",
+      "comments": "[{\"user\":\"Caveira_PM\",\"text\":\"Jurisprudência pacificada no STF e STJ: perigo abstrato puro!\",\"likes\":33,\"date\":\"2024-04-14\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Carreiras Policiais",
+      "exam_type": "CONCURSO",
+      "subject": "Estatuto do Desarmamento (Lei nº 10.826/2003)"
+    },
+    {
+      "id": 55433,
+      "discipline": "Direito Constitucional",
+      "examining_board": "IBFC",
+      "institute": "Polícia Civil da Bahia (PC-BA)",
+      "year": 2024,
+      "difficulty": "Médio",
+      "statement": "Em conformidade com o artigo 144 da Constituição da República Federativa do Brasil de 1988, integram os órgãos de segurança pública responsáveis pela preservação da ordem pública e da incolumidade das pessoas e do patrimônio:",
+      "options": "[{\"key\":\"A\",\"text\":\"Polícia federal, polícia rodoviária federal, polícia ferroviária federal, polícias civis, polícias militares e corpos de bombeiros militares, e polícias penais federal, estaduais e distrital.\"},{\"key\":\"B\",\"text\":\"Polícias civis, polícias militares, guardas municipais, agentes de trânsito e exército brasileiro.\"},{\"key\":\"C\",\"text\":\"Polícia federal, polícia rodoviária federal, guardas municipais, ministério público e magistratura.\"},{\"key\":\"D\",\"text\":\"Forças armadas (Marinha, Exército e Aeronáutica) e polícias estaduais e distritais.\"},{\"key\":\"E\",\"text\":\"Polícia rodoviária federal, forças de segurança privada, polícias penais e agentes de proteção patrimonial.\"}]",
+      "right_answer": "A",
+      "explanation": "GABARITO: A. O rol dos órgãos de segurança pública do art. 144 da CF/88 é taxativo (numerus clausus): Polícia Federal, PRF, PFF, Polícias Civis, Polícias Militares e Corpos de Bombeiros Militares, além das Polícias Penais (acrescentadas pela EC nº 104/2019). As guardas municipais (§ 8º) não integram os incisos principais como órgãos de polícia ordinária.",
+      "stats_distribution": "{\"A\":84,\"B\":11,\"C\":1,\"D\":3,\"E\":1}",
+      "comments": "[{\"user\":\"PC_Bahia_Aprovado\",\"text\":\"Atenção concurseiros: não esqueçam da Polícia Penal que entrou pela EC 104/2019!\",\"likes\":58,\"date\":\"2024-02-28\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Carreiras Policiais",
+      "exam_type": "CONCURSO",
+      "subject": "Segurança Pública (Art. 144)"
+    },
+    {
+      "id": 55434,
+      "discipline": "Direito Administrativo",
+      "examining_board": "IBFC",
+      "institute": "Tribunal de Justiça (TJ)",
+      "year": 2024,
+      "difficulty": "Médio",
+      "statement": "O princípio expressamente previsto no artigo 37, caput, da Constituição Federal, segundo o qual a atuação do administrador público não deve buscar promoção pessoal nem discriminações gratuitas, voltando-se exclusivamente ao interesse coletivo, denomina-se:",
+      "options": "[{\"key\":\"A\",\"text\":\"Legalidade estrita.\"},{\"key\":\"B\",\"text\":\"Impessoalidade.\"},{\"key\":\"C\",\"text\":\"Publicidade.\"},{\"key\":\"D\",\"text\":\"Eficiência.\"},{\"key\":\"E\",\"text\":\"Autotutela.\"}]",
+      "right_answer": "B",
+      "explanation": "GABARITO: B. O princípio da Impessoalidade veda a promoção pessoal de autoridades ou servidores sobre suas realizações (art. 37, § 1º) e determina tratamento isonômico a todos os administrados.",
+      "stats_distribution": "{\"A\":3,\"B\":91,\"C\":2,\"D\":3,\"E\":1}",
+      "comments": "[{\"user\":\"LIMPE_Concurso\",\"text\":\"Mnemônico LIMPE: Legalidade, Impessoalidade, Moralidade, Publicidade, Eficiência.\",\"likes\":47,\"date\":\"2024-01-15\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Tribunais & MP",
+      "exam_type": "CONCURSO",
+      "subject": "Princípios da Administração Pública"
+    },
+    {
+      "id": 55435,
+      "discipline": "Ética no Serviço Público",
+      "examining_board": "Quadrix",
+      "institute": "Conselho Regional de Medicina (CRM)",
+      "year": 2024,
+      "difficulty": "Médio",
+      "statement": "Com base nas disposições do Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal (Decreto nº 1.171/1994), julgue o item a seguir:\n\nA ausência injustificada do servidor de seu local de trabalho é fator de desmoralização do serviço público, o que conduz à desordem nas relações humanas e ao descumprimento do dever ético perante a coletividade.",
+      "options": "[{\"key\":\"C\",\"text\":\"Certo\"},{\"key\":\"E\",\"text\":\"Errado\"}]",
+      "right_answer": "C",
+      "explanation": "GABARITO: CERTO. Literalidade do Decreto nº 1.171/1994, Seção I, Inciso XII: \"O atraso e a ausência injustificada do servidor de seu local de trabalho é fator de desmoralização do serviço público, o que conduz à desordem nas relações humanas\".",
+      "stats_distribution": "{\"C\":88,\"E\":12}",
+      "comments": "[{\"user\":\"QuadrixFoco\",\"text\":\"A Quadrix ama copiar o Decreto 1.171 na íntegra. Atenção redobrada nas regras deontológicas.\",\"likes\":62,\"date\":\"2024-03-01\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Geral",
+      "exam_type": "CONCURSO",
+      "subject": "Código de Ética Profissional (Decreto nº 1.171/1994)"
+    },
+    {
+      "id": 55436,
+      "discipline": "Direito Administrativo",
+      "examining_board": "Quadrix",
+      "institute": "Conselho Federal de Psicologia (CFP)",
+      "year": 2024,
+      "difficulty": "Médio",
+      "statement": "A respeito da natureza jurídica dos conselhos de fiscalização profissional, julgue o item a seguir:\n\nOs conselhos de fiscalização profissional possuem natureza jurídica de autarquias corporativas e exercem poder de polícia delegado, sendo suas receitas de natureza parafiscal e seus atos sujeitos ao controle finalístico do Tribunal de Contas da União.",
+      "options": "[{\"key\":\"C\",\"text\":\"Certo\"},{\"key\":\"E\",\"text\":\"Errado\"}]",
+      "right_answer": "C",
+      "explanation": "GABARITO: CERTO. Conforme jurisprudência pacífica do STF (ADI 1.717 e RE 705.140), os conselhos de fiscalização profissional (com exceção histórica da OAB) têm natureza jurídica de autarquias especiais (corporativas), exercem poder de polícia de fiscalização e estão submetidos à prestação de contas perante o TCU.",
+      "stats_distribution": "{\"C\":83,\"E\":17}",
+      "comments": "[{\"user\":\"ConselhosBR\",\"text\":\"Regra de ouro nas provas da Quadrix: Conselhos são autarquias corporativas sujeitas ao TCU!\",\"likes\":51,\"date\":\"2024-04-18\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Geral",
+      "exam_type": "CONCURSO",
+      "subject": "Conselhos de Fiscalização Profissional"
+    },
+    {
+      "id": 55437,
+      "discipline": "Noções de Informática",
+      "examining_board": "Quadrix",
+      "institute": "Conselho Regional de Administração (CRA)",
+      "year": 2024,
+      "difficulty": "Fácil",
+      "statement": "A respeito de segurança da informação, julgue o item a seguir:\n\nO ataque denominado phishing consiste no envio de mensagens fraudulentas, frequentemente imitando instituições financeiras ou órgãos governamentais, com o intuito de induzir o usuário a fornecer dados confidenciais, como senhas e números de cartão de crédito.",
+      "options": "[{\"key\":\"C\",\"text\":\"Certo\"},{\"key\":\"E\",\"text\":\"Errado\"}]",
+      "right_answer": "C",
+      "explanation": "GABARITO: CERTO. O phishing (pescaria digital) utiliza engenharia social e falsificação visual para induzir a vítima ao erro e capturar dados confidenciais.",
+      "stats_distribution": "{\"C\":96,\"E\":4}",
+      "comments": "[{\"user\":\"InfoConcursos\",\"text\":\"Conceito clássico de phishing. Perfeito.\",\"likes\":24,\"date\":\"2024-05-02\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Geral",
+      "exam_type": "CONCURSO",
+      "subject": "Segurança da Informação e Golpes Digitais"
+    },
+    {
+      "id": 55438,
+      "discipline": "Administração Geral e Pública",
+      "examining_board": "Cesgranrio",
+      "institute": "Concurso Nacional Unificado (CNU)",
+      "year": 2024,
+      "difficulty": "Médio",
+      "statement": "No ciclo de políticas públicas (policy cycle), a etapa em que determinado problema social ganha relevância coletiva e passa a ser formalmente considerado pelos tomadores de decisão governamentais para integrar as prioridades de intervenção estatal é denominada:",
+      "options": "[{\"key\":\"A\",\"text\":\"Avaliação de impacto ex-post.\"},{\"key\":\"B\",\"text\":\"Formação da agenda (agenda-setting).\"},{\"key\":\"C\",\"text\":\"Formulação de alternativas e programas.\"},{\"key\":\"D\",\"text\":\"Implementação administrativa em campo.\"},{\"key\":\"E\",\"text\":\"Monitoramento orçamentário contínuo.\"}]",
+      "right_answer": "B",
+      "explanation": "GABARITO: B. A formação da agenda (agenda-setting) é a fase inicial do ciclo em que as demandas da sociedade ganham notoriedade e são incluídas na lista de prioridades governamentais.",
+      "stats_distribution": "{\"A\":2,\"B\":87,\"C\":6,\"D\":3,\"E\":2}",
+      "comments": "[{\"user\":\"CNU_BlocoGeral\",\"text\":\"Questão central do Bloco Geral do CNU! Ciclo: Agenda -> Formulação -> Tomada de Decisão -> Implementação -> Avaliação.\",\"likes\":73,\"date\":\"2024-08-19\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Geral",
+      "exam_type": "CONCURSO",
+      "subject": "Gestão Estratégica e Políticas Públicas"
+    },
+    {
+      "id": 55439,
+      "discipline": "Atendimento e Vendas",
+      "examining_board": "Cesgranrio",
+      "institute": "Banco do Brasil (BB)",
+      "year": 2024,
+      "difficulty": "Fácil",
+      "statement": "No contexto do atendimento em instituições financeiras, a capacidade do atendente de compreender os sentimentos, necessidades e pontos de vista do cliente, demonstrando genuíno interesse em solucionar suas demandas, corresponde à dimensão de qualidade conhecida como:",
+      "options": "[{\"key\":\"A\",\"text\":\"Empatia.\"},{\"key\":\"B\",\"text\":\"Tangibilidade.\"},{\"key\":\"C\",\"text\":\"Confiabilidade estrita.\"},{\"key\":\"D\",\"text\":\"Presteza temporal.\"},{\"key\":\"E\",\"text\":\"Segurança formal.\"}]",
+      "right_answer": "A",
+      "explanation": "GABARITO: A. No modelo SERVQUAL (Parasuraman, Zeithaml e Berry), as dimensões da qualidade do serviço são: Tangibilidade, Confiabilidade, Presteza, Segurança e Empatia. A Empatia é o cuidado e atenção individualizada dedicados aos clientes.",
+      "stats_distribution": "{\"A\":92,\"B\":1,\"C\":3,\"D\":3,\"E\":1}",
+      "comments": "[{\"user\":\"Escriturario_BB\",\"text\":\"Caiu no concurso do BB e da Caixa. Modelo SERVQUAL batata.\",\"likes\":49,\"date\":\"2024-03-10\"}]",
+      "created_at": "2026-10-27 04:49:09",
+      "career": "Bancários & INSS",
+      "exam_type": "CONCURSO",
+      "subject": "Qualidade no Atendimento ao Cliente"
     }
   ],
   "notebooks": [
     {
-      "id": "nb-1",
-      "name": "Erros Recorrentes em Constitucional",
+      "id": "nb-caderno-erros",
+      "name": "Caderno de Erros Automático 🎯",
       "color": "#ef4444",
+      "created_at": "2026-10-25 14:39:28",
+      "user_id": 1,
+      "question_ids": [
+        101,
+        103,
+        104,
+        105,
+        107,
+        108,
+        109,
+        502,
+        504,
+        1031,
+        1040,
+        1106,
+        1113,
+        1124,
+        1243,
+        1245,
+        1395,
+        1422,
+        1466
+      ]
+    },
+    {
+      "id": "nb-favoritos",
+      "name": "Questões Favoritas & Ouro ⭐",
+      "color": "#f59e0b",
+      "created_at": "2026-10-25 14:39:28",
+      "user_id": 1,
+      "question_ids": [
+        101,
+        102
+      ]
+    },
+    {
+      "id": "nb-enem-revisao",
+      "name": "🎓 Caderno ENEM — Temas Recorrentes",
+      "color": "#10b981",
+      "created_at": "2026-10-25 15:58:57",
+      "user_id": 1,
+      "question_ids": [
+        11433,
+        11434,
+        11435,
+        11436,
+        11437,
+        11438,
+        11439,
+        11440,
+        11441,
+        11442
+      ]
+    },
+    {
+      "id": "nb-policiais",
+      "name": "🚓 Caderno Carreiras Policiais (PF & PRF)",
+      "color": "#3b82f6",
+      "created_at": "2026-10-25 15:58:57",
+      "user_id": 1,
+      "question_ids": [
+        101,
+        102,
+        103,
+        104,
+        107,
+        108,
+        501,
+        502,
+        503,
+        504
+      ]
+    },
+    {
+      "id": "nb-oab-etica",
+      "name": "⚖️ Caderno OAB — Ética e Estatuto",
+      "color": "#8b5cf6",
+      "created_at": "2026-10-25 15:58:58",
+      "user_id": 1,
+      "question_ids": [
+        1000,
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009
+      ]
+    },
+    {
+      "id": "nb-erros-5",
+      "name": "Caderno de Erros 🎯",
+      "color": "#ef4444",
+      "created_at": "2026-10-25 18:55:40",
+      "user_id": 5,
+      "question_ids": []
+    },
+    {
+      "id": "nb-erros-6",
+      "name": "Caderno de Erros 🎯",
+      "color": "#ef4444",
+      "created_at": "2026-10-25 18:55:40",
+      "user_id": 6,
+      "question_ids": []
+    },
+    {
+      "id": "nb-erros-7",
+      "name": "Caderno de Erros 🎯",
+      "color": "#ef4444",
+      "created_at": "2026-10-25 18:55:56",
+      "user_id": 7,
       "question_ids": [
         101
       ]
@@ -136832,94 +137198,55 @@ module.exports = {
   ],
   "practice_tests": [
     {
-      "id": "simulado-express-etica",
-      "title": "Simulado Express — Ética e Estatuto da Advocacia",
-      "description": "Treino rápido e focado de 15 questões de Ética e Estatuto da OAB para gabaritar o bloco mais importante da prova.",
-      "time_limit_minutes": 25,
-      "question_ids": "[1246,1303,1252,1460,1543,1000,1183,1305,1461,1548,1307,1001,1006,1465,1185]",
-      "created_at": "2026-10-25 15:24:56",
-      "category": "Simulados Express",
+      "id": "simulado-aocp-policial-2024",
+      "title": "Carreiras Policiais & PM/PC 2024 — Simulado Oficial Instituto AOCP (60 Questões)",
+      "description": "Simulado no modelo de cobrança direta da banca Instituto AOCP. Penal, Processo Penal, Legislação Extravagante, Constitucional e Português.",
+      "time_limit_minutes": 180,
+      "question_ids": "[55432,55431,55430,54743,55284,54618,54661,54684,54936,55417,55229,55260,54593,54928,54762,52347,54716,55413,55353,55408,55142,55021,54863,54897,55393,52343,54626,54579,54825,54917,55304,54644,55254,54847,54982,55174,55328,55283,54930,55357,54796,54720,54697,30004,55360,55155,55312,55379,54628,55131,54819,54654,55277,55293,509,54940,54691,54778,54975,54935]",
+      "created_at": "2026-10-27 04:49:10",
+      "category": "Carreiras Policiais (Edições Oficiais)",
       "cut_score": 70,
-      "examining_board": "FGV",
-      "institute": "OAB Nacional",
-      "career": "Geral"
+      "examining_board": "Instituto AOCP",
+      "institute": "Polícia Militar & Civil",
+      "career": "Carreiras Policiais"
     },
     {
-      "id": "simulado-enem-express-humanas",
-      "title": "ENEM Express — Ciências Humanas e suas Tecnologias",
-      "description": "Treino intensivo de 45 questões de História, Geografia, Filosofia e Sociologia de edições oficiais do ENEM.",
-      "time_limit_minutes": 45,
-      "question_ids": "[10027,10028,10029,10030,10031,10032,10033,10034,10035,10036,10037,10038,10039,10040,10041,10042,10043,10044,10045,10046,10047,10048,10049,10050,10051,10052,10053,10054,10055,10056,10057,10058,10059,10060,10061,10062,10063,10160,10161,10162,10163,10164,10165,10166,10167]",
-      "created_at": "2026-10-25 15:58:58",
-      "category": "Simulados Express",
-      "cut_score": 72,
-      "examining_board": "INEP",
-      "institute": "MEC / ENEM",
-      "career": "ENEM & Vestibulares"
+      "id": "simulado-bb-2023-oficial",
+      "title": "Banco do Brasil 2023 — Prova Oficial Completa (Escriturário / Agente Comercial - 70 Questões)",
+      "description": "Caderno de Prova Oficial Completo do Concurso Banco do Brasil 2023 (CESGRANRIO). Contém rigorosamente as 70 questões oficiais: 25 de Conhecimentos Básicos (Português, Inglês, Matemática, Atualidades do Mercado Financeiro) + 45 de Conhecimentos Específicos (Matemática Financeira, Conhecimentos Bancários, Informática, Vendas e Negociação).",
+      "time_limit_minutes": 300,
+      "question_ids": "[55126,55127,55128,55129,55130,55131,55132,55133,55134,55135,55136,55137,55138,55139,55140,55141,55142,55143,55144,55145,55146,55147,55148,55149,55150,55151,55152,55153,55154,55155,55156,55157,55158,55159,55160,55161,55162,55163,55164,55165,55166,55167,55168,55169,55170,55171,55172,55173,55174,55175,55176,55177,55178,55179,55180,55181,55182,55183,55184,55185,55186,55187,55188,55189,55190,55191,55192,55193,55194,55195]",
+      "created_at": "2026-10-26 14:40:11",
+      "category": "Carreiras Bancárias & Financeiras",
+      "cut_score": 45,
+      "examining_board": "Cesgranrio",
+      "institute": "Banco do Brasil",
+      "career": "Bancários & INSS"
     },
     {
-      "id": "simulado-enem-express-natureza",
-      "title": "ENEM Express — Ciências da Natureza e suas Tecnologias",
-      "description": "Treino focado de 45 questões de Física, Química e Biologia com fórmulas e gráficos oficiais do ENEM.",
-      "time_limit_minutes": 45,
-      "question_ids": "[10064,10065,10066,10067,10068,10069,10070,10071,10072,10073,10074,10075,10076,10077,10078,10079,10080,10081,10082,10083,10084,10085,10086,10087,10088,10089,10090,10091,10092,10093,10094,10187,10188,10189,10190,10191,10192,10193,10194,10195,10196,10197,10198,10199,10200]",
-      "created_at": "2026-10-25 15:58:58",
-      "category": "Simulados Express",
-      "cut_score": 65,
-      "examining_board": "INEP",
-      "institute": "MEC / ENEM",
-      "career": "ENEM & Vestibulares"
+      "id": "simulado-bb-escriturario",
+      "title": "Simulado Oficial Banco do Brasil — Edição Completa CESGRANRIO (70 Questões)",
+      "description": "Simulado Oficial Completo com 70 questões reais aplicadas pela Fundação Cesgranrio para Escriturário do Banco do Brasil. Foco total em Conhecimentos Bancários, Informática, Vendas e Negociação.",
+      "time_limit_minutes": 300,
+      "question_ids": "[55126,55127,55128,55129,55130,55131,55132,55133,55134,55135,55136,55137,55138,55139,55140,55141,55142,55143,55144,55145,55146,55147,55148,55149,55150,55151,55152,55153,55154,55155,55156,55157,55158,55159,55160,55161,55162,55163,55164,55165,55166,55167,55168,55169,55170,55171,55172,55173,55174,55175,55176,55177,55178,55179,55180,55181,55182,55183,55184,55185,55186,55187,55188,55189,55190,55191,55192,55193,55194,55195]",
+      "created_at": "2026-10-26 14:40:11",
+      "category": "Carreiras Bancárias & Financeiras",
+      "cut_score": 45,
+      "examining_board": "Cesgranrio",
+      "institute": "Banco do Brasil",
+      "career": "Bancários & INSS"
     },
     {
-      "id": "simulado-enem-express-linguagens",
-      "title": "ENEM Express — Linguagens, Códigos e suas Tecnologias",
-      "description": "45 questões de Interpretação Textual, Gramática, Literatura, Artes e Línguas do ENEM.",
-      "time_limit_minutes": 45,
-      "question_ids": "[10001,10002,10003,10004,10005,10006,10007,10008,10009,10010,10011,10012,10013,10014,10015,10016,10017,10018,10019,10020,10021,10022,10023,10024,10025,10026,10116,10117,10118,10119,10120,10121,10122,10123,10124,10125,10126,10127,10128,10129,10130,10131,10132,10133,10134]",
-      "created_at": "2026-10-25 15:58:58",
-      "category": "Simulados Express",
-      "cut_score": 75,
-      "examining_board": "INEP",
-      "institute": "MEC / ENEM",
-      "career": "ENEM & Vestibulares"
-    },
-    {
-      "id": "simulado-enem-express-matematica",
-      "title": "ENEM Express — Matemática e suas Tecnologias",
-      "description": "45 questões oficiais de Matemática, Geometria, Funções, Razões e Probabilidade do ENEM.",
-      "time_limit_minutes": 50,
-      "question_ids": "[10095,10096,10097,10098,10099,10100,10101,10102,10103,10104,10105,10106,10107,10108,10109,10110,10111,10112,10113,10114,10115,10219,10220,10221,10222,10223,10224,10225,10226,10227,10228,10229,10230,10231,10232,10329,10330,10331,10332,10333,10334,10335,10336,10337,10338]",
-      "created_at": "2026-10-25 15:58:58",
-      "category": "Simulados Express",
-      "cut_score": 68,
-      "examining_board": "INEP",
-      "institute": "MEC / ENEM",
-      "career": "ENEM & Vestibulares"
-    },
-    {
-      "id": "simulado-oab-express-etica",
-      "title": "Simulado Express — Ética e Estatuto da Advocacia",
-      "description": "Treino rápido e focado de 15 questões de Ética e Estatuto da OAB para gabaritar o bloco mais importante da prova.",
-      "time_limit_minutes": 25,
-      "question_ids": "[1000,1001,1002,1003,1004,1005,1006,1007,1008,1009,1180,1181,1182,1183,1184]",
-      "created_at": "2026-10-25 15:58:58",
-      "category": "Simulados Express",
+      "id": "simulado-cnu-cesgranrio-2024",
+      "title": "Concurso Nacional Unificado (CNU) 2024 — Bloco Geral Cesgranrio (60 Questões)",
+      "description": "Simulado preparatório para o CNU com a banca Fundação Cesgranrio. Políticas Públicas, Ética, Diversidade, Desafios do Estado de Direito e Administração Pública.",
+      "time_limit_minutes": 180,
+      "question_ids": "[55439,55438,55195,55194,55193,55192,55191,55190,55189,55188,55187,55186,55185,55184,55183,55182,55181,55180,55179,55178,55177,55176,55175,55174,55173,55172,55171,55170,55169,55168,55167,55166,55165,55164,55163,55162,55161,55160,55159,55158,55157,55156,55155,55154,55153,55152,55151,55150,55149,55148,55147,55146,55145,55144,55143,55142,55141,55140,55139,55138]",
+      "created_at": "2026-10-27 04:49:10",
+      "category": "Carreiras Bancárias & Financeiras",
       "cut_score": 70,
-      "examining_board": "FGV",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-express-constitucional",
-      "title": "Simulado Express — Direito Constitucional & Remédios",
-      "description": "15 questões essenciais sobre Direitos Fundamentais, Artigo 5º e Ações Constitucionais (Habeas Corpus, Mandado de Segurança).",
-      "time_limit_minutes": 25,
-      "question_ids": "[101,102,110,501,1012,1013,1014,1015,1016,1017,1018,1019,1020,1021,1100]",
-      "created_at": "2026-10-25 15:58:58",
-      "category": "Simulados Express",
-      "cut_score": 70,
-      "examining_board": "Diversas",
-      "institute": "Nacional",
+      "examining_board": "Cesgranrio",
+      "institute": "Governo Federal / MGI",
       "career": "Geral"
     },
     {
@@ -137339,58 +137666,6 @@ module.exports = {
       "career": "ENEM & Vestibulares"
     },
     {
-      "id": "simulado-prf-2021-oficial",
-      "title": "PRF 2021 — Prova Oficial Completa (Policial Rodoviário Federal)",
-      "description": "Caderno de Prova Oficial Completo do Concurso PRF 2021 (CEBRASPE). Contém rigorosamente as 120 questões oficiais divididas nos Blocos I, II (Legislação de Trânsito) e III (Direito), com gabarito oficial e resolução comentada.",
-      "time_limit_minutes": 270,
-      "question_ids": "[54576,54577,54578,54579,54580,54581,54582,54583,54584,54585,54586,54587,54588,54589,54590,54591,54592,54593,54594,54595,54596,54597,54598,54599,54600,54601,54602,54603,54604,54605,54606,54607,54608,54609,54610,54611,54612,54613,54614,54615,54616,54617,54618,54619,54620,54621,54622,54623,54624,54625,54626,54627,54628,54629,54630,54631,54632,54633,54634,54635,54636,54637,54638,54639,54640,54641,54642,54643,54644,54645,54646,54647,54648,54649,54650,54651,54652,54653,54654,54655,54656,54657,54658,54659,54660,54661,54662,54663,54664,54665,54666,54667,54668,54669,54670,54671,54672,54673,54674,54675,54676,54677,54678,54679,54680,54681,54682,54683,54684,54685,54686,54687,54688,54689,54690,54691,54692,54693,54694,54695]",
-      "created_at": "2026-10-25 22:20:33",
-      "category": "Carreiras Policiais (Edições Oficiais)",
-      "cut_score": 73,
-      "examining_board": "CEBRASPE (CESPE)",
-      "institute": "Polícia Rodoviária Federal (PRF)",
-      "career": "Carreiras Policiais"
-    },
-    {
-      "id": "simulado-prf-2024",
-      "title": "Simulado PRF — Edição Oficial CEBRASPE (120 Questões)",
-      "description": "Simulado completo com as 120 questões no estilo Certo/Errado do CEBRASPE para Policial Rodoviário Federal, cobrindo todo o edital (Blocos I, II e III).",
-      "time_limit_minutes": 270,
-      "question_ids": "[54576,54577,54578,54579,54580,54581,54582,54583,54584,54585,54586,54587,54588,54589,54590,54591,54592,54593,54594,54595,54596,54597,54598,54599,54600,54601,54602,54603,54604,54605,54606,54607,54608,54609,54610,54611,54612,54613,54614,54615,54616,54617,54618,54619,54620,54621,54622,54623,54624,54625,54626,54627,54628,54629,54630,54631,54632,54633,54634,54635,54636,54637,54638,54639,54640,54641,54642,54643,54644,54645,54646,54647,54648,54649,54650,54651,54652,54653,54654,54655,54656,54657,54658,54659,54660,54661,54662,54663,54664,54665,54666,54667,54668,54669,54670,54671,54672,54673,54674,54675,54676,54677,54678,54679,54680,54681,54682,54683,54684,54685,54686,54687,54688,54689,54690,54691,54692,54693,54694,54695]",
-      "created_at": "2026-10-25 22:20:33",
-      "category": "Carreiras Policiais (Edições Oficiais)",
-      "cut_score": 73,
-      "examining_board": "CEBRASPE (CESPE)",
-      "institute": "Polícia Rodoviária Federal (PRF)",
-      "career": "Carreiras Policiais"
-    },
-    {
-      "id": "simulado-pf-2024",
-      "title": "Polícia Federal 2014 — Prova Oficial Completa (Agente de Polícia Federal)",
-      "description": "Caderno de Prova Oficial Completo da Polícia Federal (CESPE). Contém rigorosamente as 120 questões oficiais no modelo Certo/Errado com gabarito oficial e resolução passo a passo.",
-      "time_limit_minutes": 270,
-      "question_ids": "[54696,54697,54698,54699,54700,54701,54702,54703,54704,54705,54706,54707,54708,54709,54710,54711,54712,54713,54714,54715,54716,54717,54718,54719,54720,54721,54722,54723,54724,54725,54726,54727,54728,54729,54730,54731,54732,54733,54734,54735,54736,54737,54738,54739,54740,54741,54742,54743,54744,54745,54746,54747,54748,54749,54750,54751,54752,54753,54754,54755,54756,54757,54758,54759,54760,54761,54762,54763,54764,54765,54766,54767,54768,54769,54770,54771,54772,54773,54774,54775,54776,54777,54778,54779,54780,54781,54782,54783,54784,54785,54786,54787,54788,54789,54790,54791,54792,54793,54794,54795,54796,54797,54798,54799,54800,54801,54802,54803,54804,54805,54806,54807,54808,54809,54810,54811,54812,54813,54814,54815]",
-      "created_at": "2026-10-26 06:04:18",
-      "category": "Carreiras Policiais (Edições Oficiais)",
-      "cut_score": 70,
-      "examining_board": "CEBRASPE (CESPE)",
-      "institute": "Polícia Federal (PF)",
-      "career": "Carreiras Policiais"
-    },
-    {
-      "id": "simulado-pf-agente-oficial",
-      "title": "Polícia Federal — Prova Oficial CESPE (Agente - 120 Questões)",
-      "description": "Prova Oficial completa do Departamento de Polícia Federal (CESPE). 120 itens em estilo Certo/Errado abrangendo Língua Portuguesa, RLM, Informática, Administração, Contabilidade, Economia, Direito Penal, Processo Penal e Legislação Especial.",
-      "time_limit_minutes": 270,
-      "question_ids": "[54696,54697,54698,54699,54700,54701,54702,54703,54704,54705,54706,54707,54708,54709,54710,54711,54712,54713,54714,54715,54716,54717,54718,54719,54720,54721,54722,54723,54724,54725,54726,54727,54728,54729,54730,54731,54732,54733,54734,54735,54736,54737,54738,54739,54740,54741,54742,54743,54744,54745,54746,54747,54748,54749,54750,54751,54752,54753,54754,54755,54756,54757,54758,54759,54760,54761,54762,54763,54764,54765,54766,54767,54768,54769,54770,54771,54772,54773,54774,54775,54776,54777,54778,54779,54780,54781,54782,54783,54784,54785,54786,54787,54788,54789,54790,54791,54792,54793,54794,54795,54796,54797,54798,54799,54800,54801,54802,54803,54804,54805,54806,54807,54808,54809,54810,54811,54812,54813,54814,54815]",
-      "created_at": "2026-10-26 06:04:19",
-      "category": "Carreiras Policiais (Edições Oficiais)",
-      "cut_score": 70,
-      "examining_board": "CEBRASPE (CESPE)",
-      "institute": "Polícia Federal (PF)",
-      "career": "Carreiras Policiais"
-    },
-    {
       "id": "simulado-enem-2025-dia1",
       "title": "ENEM 2025 — Dia 1 Oficial (Linguagens e Humanas)",
       "description": "Prova Oficial completa do ENEM 2025 (Dia 1). 90 questões oficiais: 45 de Linguagens, Códigos e suas Tecnologias + 45 de Ciências Humanas com gabarito oficial e correção comentada.",
@@ -137443,17 +137718,108 @@ module.exports = {
       "career": "ENEM & Vestibulares"
     },
     {
-      "id": "simulado-oab-1fase-completo",
-      "title": "Exame de Ordem OAB 1ª Fase — Prova Oficial Completa (FGV - 80 Questões)",
-      "description": "Prova Oficial completa da 1ª Fase do Exame de Ordem Unificado (FGV). Rigorosamente 80 questões oficiais de múltipla escolha (A, B, C, D) cobrindo todo o edital (Ética, Constitucional, Civil, Processo Civil, Penal, Processo Penal, Administrativo, Trabalho, Tributário, etc.). Tempo oficial de prova: 5 horas. Critério oficial de aprovação: 40 acertos (50%).",
-      "time_limit_minutes": 300,
-      "question_ids": "[1000,1001,1002,1003,1004,1005,1006,1007,1012,1013,1014,1015,1016,1017,1027,1028,1029,1030,1031,1032,1037,1038,1039,1040,1041,1042,1047,1048,1049,1050,1051,1052,1084,1085,1086,1087,1088,1089,1090,1091,1092,1093,1094,1095,1008,1009,1010,1011,1018,1019,1020,1021,1022,1023,1024,1025,1026,1033,1034,1035,1036,1043,1044,1045,1046,1053,1054,1055,1056,1057,1058,1059,1060,1061,1062,1063,1064,1065,1066,1067]",
-      "created_at": "2026-10-26 13:49:59",
-      "category": "OAB (Exame de Ordem)",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
+      "id": "simulado-enem-express-humanas",
+      "title": "ENEM Express — Ciências Humanas e suas Tecnologias",
+      "description": "Treino intensivo de 45 questões de História, Geografia, Filosofia e Sociologia de edições oficiais do ENEM.",
+      "time_limit_minutes": 45,
+      "question_ids": "[10027,10028,10029,10030,10031,10032,10033,10034,10035,10036,10037,10038,10039,10040,10041,10042,10043,10044,10045,10046,10047,10048,10049,10050,10051,10052,10053,10054,10055,10056,10057,10058,10059,10060,10061,10062,10063,10160,10161,10162,10163,10164,10165,10166,10167]",
+      "created_at": "2026-10-25 15:58:58",
+      "category": "Simulados Express",
+      "cut_score": 72,
+      "examining_board": "INEP",
+      "institute": "MEC / ENEM",
+      "career": "ENEM & Vestibulares"
+    },
+    {
+      "id": "simulado-enem-express-linguagens",
+      "title": "ENEM Express — Linguagens, Códigos e suas Tecnologias",
+      "description": "45 questões de Interpretação Textual, Gramática, Literatura, Artes e Línguas do ENEM.",
+      "time_limit_minutes": 45,
+      "question_ids": "[10001,10002,10003,10004,10005,10006,10007,10008,10009,10010,10011,10012,10013,10014,10015,10016,10017,10018,10019,10020,10021,10022,10023,10024,10025,10026,10116,10117,10118,10119,10120,10121,10122,10123,10124,10125,10126,10127,10128,10129,10130,10131,10132,10133,10134]",
+      "created_at": "2026-10-25 15:58:58",
+      "category": "Simulados Express",
+      "cut_score": 75,
+      "examining_board": "INEP",
+      "institute": "MEC / ENEM",
+      "career": "ENEM & Vestibulares"
+    },
+    {
+      "id": "simulado-enem-express-matematica",
+      "title": "ENEM Express — Matemática e suas Tecnologias",
+      "description": "45 questões oficiais de Matemática, Geometria, Funções, Razões e Probabilidade do ENEM.",
+      "time_limit_minutes": 50,
+      "question_ids": "[10095,10096,10097,10098,10099,10100,10101,10102,10103,10104,10105,10106,10107,10108,10109,10110,10111,10112,10113,10114,10115,10219,10220,10221,10222,10223,10224,10225,10226,10227,10228,10229,10230,10231,10232,10329,10330,10331,10332,10333,10334,10335,10336,10337,10338]",
+      "created_at": "2026-10-25 15:58:58",
+      "category": "Simulados Express",
+      "cut_score": 68,
+      "examining_board": "INEP",
+      "institute": "MEC / ENEM",
+      "career": "ENEM & Vestibulares"
+    },
+    {
+      "id": "simulado-enem-express-natureza",
+      "title": "ENEM Express — Ciências da Natureza e suas Tecnologias",
+      "description": "Treino focado de 45 questões de Física, Química e Biologia com fórmulas e gráficos oficiais do ENEM.",
+      "time_limit_minutes": 45,
+      "question_ids": "[10064,10065,10066,10067,10068,10069,10070,10071,10072,10073,10074,10075,10076,10077,10078,10079,10080,10081,10082,10083,10084,10085,10086,10087,10088,10089,10090,10091,10092,10093,10094,10187,10188,10189,10190,10191,10192,10193,10194,10195,10196,10197,10198,10199,10200]",
+      "created_at": "2026-10-25 15:58:58",
+      "category": "Simulados Express",
+      "cut_score": 65,
+      "examining_board": "INEP",
+      "institute": "MEC / ENEM",
+      "career": "ENEM & Vestibulares"
+    },
+    {
+      "id": "simulado-express-constitucional",
+      "title": "Simulado Express — Direito Constitucional & Remédios",
+      "description": "15 questões essenciais sobre Direitos Fundamentais, Artigo 5º e Ações Constitucionais (Habeas Corpus, Mandado de Segurança).",
+      "time_limit_minutes": 25,
+      "question_ids": "[101,102,110,501,1012,1013,1014,1015,1016,1017,1018,1019,1020,1021,1100]",
+      "created_at": "2026-10-25 15:58:58",
+      "category": "Simulados Express",
+      "cut_score": 70,
+      "examining_board": "Diversas",
+      "institute": "Nacional",
+      "career": "Geral"
+    },
+    {
+      "id": "simulado-express-etica",
+      "title": "Simulado Express — Ética e Estatuto da Advocacia",
+      "description": "Treino rápido e focado de 15 questões de Ética e Estatuto da OAB para gabaritar o bloco mais importante da prova.",
+      "time_limit_minutes": 25,
+      "question_ids": "[1246,1303,1252,1460,1543,1000,1183,1305,1461,1548,1307,1001,1006,1465,1185]",
+      "created_at": "2026-10-25 15:24:56",
+      "category": "Simulados Express",
+      "cut_score": 70,
+      "examining_board": "FGV",
+      "institute": "OAB Nacional",
+      "career": "Geral"
+    },
+    {
+      "id": "simulado-fcc-tribunais-2024",
+      "title": "Tribunais Superiores & TRT 2024 — Simulado Oficial FCC (60 Questões)",
+      "description": "Simulado completo no padrão rigoroso da Fundação Carlos Chagas (FCC). Foco na literalidade de normas, súmulas vinculantes, jurisprudência pacificada e direito do trabalho/administrativo.",
+      "time_limit_minutes": 180,
+      "question_ids": "[55429,55428,55427,55426,52341,40006,110,104,54679,54951,54929,54838,54886,55041,54967,54664,55411,54810,55200,54941,55327,54785,55222,55328,54932,54946,55324,54654,54950,55318,55217,54786,55355,55012,54773,54708,54611,54771,55356,54945,54910,55005,109,55409,54790,54989,55373,55185,54666,55396,55315,54754,55307,55433,55232,54597,54881,54643,55002,55298]",
+      "created_at": "2026-10-27 04:49:10",
+      "category": "Carreiras de Tribunais & MP",
+      "cut_score": 75,
+      "examining_board": "FCC",
+      "institute": "Tribunais Regionais do Trabalho (TRT)",
+      "career": "Tribunais & MP"
+    },
+    {
+      "id": "simulado-ibfc-seguranca-2024",
+      "title": "Segurança Pública & Administrativo 2024 — Simulado Oficial IBFC (60 Questões)",
+      "description": "Simulado objetivo seguindo a matriz da banca IBFC. Questões conceituais, normas constitucionais e procedimentos administrativos.",
+      "time_limit_minutes": 180,
+      "question_ids": "[55434,55433,55044,54627,55205,55259,55135,55206,55301,55141,55397,54765,54649,55011,55241,55190,54599,54725,54769,54702,54666,54944,55262,54633,54983,54910,54842,502,54994,55395,54604,55252,55131,55409,54831,54616,30004,54956,55344,55157,54868,54576,55225,54958,55287,54763,54877,55142,54945,55040,40005,55391,54700,54717,54624,54782,55017,55053,55005,40010]",
+      "created_at": "2026-10-27 04:49:10",
+      "category": "Carreiras Policiais (Edições Oficiais)",
+      "cut_score": 68,
+      "examining_board": "IBFC",
+      "institute": "Segurança Pública & TJ",
+      "career": "Carreiras Policiais"
     },
     {
       "id": "simulado-inss-2022-oficial",
@@ -137464,7 +137830,7 @@ module.exports = {
       "created_at": "2026-10-26 14:18:11",
       "category": "Carreiras Previdenciárias",
       "cut_score": 80,
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "career": "Previdenciário & INSS"
     },
@@ -137477,228 +137843,20 @@ module.exports = {
       "created_at": "2026-10-26 14:18:12",
       "category": "Carreiras Previdenciárias",
       "cut_score": 80,
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "INSS",
       "career": "Previdenciário & INSS"
     },
     {
-      "id": "simulado-oab-2018-xxv",
-      "title": "OAB 2018 — XXV Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XXV Exame de Ordem Unificado (2018), aplicado pela FGV Projetos. Contém 80 questões de múltipla escolha cobrindo as 17 disciplinas obrigatórias do Estatuto e da Advocacia.",
+      "id": "simulado-oab-1fase-completo",
+      "title": "Exame de Ordem OAB 1ª Fase — Prova Oficial Completa (FGV - 80 Questões)",
+      "description": "Prova Oficial completa da 1ª Fase do Exame de Ordem Unificado (FGV). Rigorosamente 80 questões oficiais de múltipla escolha (A, B, C, D) cobrindo todo o edital (Ética, Constitucional, Civil, Processo Civil, Penal, Processo Penal, Administrativo, Trabalho, Tributário, etc.). Tempo oficial de prova: 5 horas. Critério oficial de aprovação: 40 acertos (50%).",
       "time_limit_minutes": 300,
-      "question_ids": "[51531,51532,51533,51534,51535,51536,51537,51538,51539,51540,51541,51542,51543,51544,51545,51546,51547,51548,51549,51550,51551,51552,51553,51554,51555,51556,51557,51558,51559,51560,51561,51562,51563,51564,51565,51566,51567,51568,51569,51570,51571,51572,51573,51574,51575,51576,51577,51578,51579,51580,51581,51582,51583,51584,51585,51586,51587,51588,51589,51590,51591,51592,51593,51594,51595,51596,51597,51598,51599,51600,51601,51602,51603,51604,51605,51606,51607,51608,51609,51610]",
-      "created_at": "2026-10-26 14:29:22",
-      "category": "Carreiras Jurídicas & OAB",
+      "question_ids": "[1000,1001,1002,1003,1004,1005,1006,1007,1012,1013,1014,1015,1016,1017,1027,1028,1029,1030,1031,1032,1037,1038,1039,1040,1041,1042,1047,1048,1049,1050,1051,1052,1084,1085,1086,1087,1088,1089,1090,1091,1092,1093,1094,1095,1008,1009,1010,1011,1018,1019,1020,1021,1022,1023,1024,1025,1026,1033,1034,1035,1036,1043,1044,1045,1046,1053,1054,1055,1056,1057,1058,1059,1060,1061,1062,1063,1064,1065,1066,1067]",
+      "created_at": "2026-10-26 13:49:59",
+      "category": "OAB (Exame de Ordem)",
       "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2017-xxiv",
-      "title": "OAB 2017 — XXIV Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XXIV Exame de Ordem Unificado (2017), aplicado pela FGV Projetos. Contém 80 questões de múltipla escolha oficiais.",
-      "time_limit_minutes": 300,
-      "question_ids": "[51451,51452,51453,51454,51455,51456,51457,51458,51459,51460,51461,51462,51463,51464,51465,51466,51467,51468,51469,51470,51471,51472,51473,51474,51475,51476,51477,51478,51479,51480,51481,51482,51483,51484,51485,51486,51487,51488,51489,51490,51491,51492,51493,51494,51495,51496,51497,51498,51499,51500,51501,51502,51503,51504,51505,51506,51507,51508,51509,51510,51511,51512,51513,51514,51515,51516,51517,51518,51519,51520,51521,51522,51523,51524,51525,51526,51527,51528,51529,51530]",
-      "created_at": "2026-10-26 14:29:22",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2017-xxiii",
-      "title": "OAB 2017 — XXIII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XXIII Exame de Ordem Unificado (2017), aplicado pela FGV Projetos. Contém 80 questões oficiais da prova preliminar e definitiva.",
-      "time_limit_minutes": 300,
-      "question_ids": "[51371,51372,51373,51374,51375,51376,51377,51378,51379,51380,51381,51382,51383,51384,51385,51386,51387,51388,51389,51390,51391,51392,51393,51394,51395,51396,51397,51398,51399,51400,51401,51402,51403,51404,51405,51406,51407,51408,51409,51410,51411,51412,51413,51414,51415,51416,51417,51418,51419,51420,51421,51422,51423,51424,51425,51426,51427,51428,51429,51430,51431,51432,51433,51434,51435,51436,51437,51438,51439,51440,51441,51442,51443,51444,51445,51446,51447,51448,51449,51450]",
-      "created_at": "2026-10-26 14:29:22",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2017-xxii",
-      "title": "OAB 2017 — XXII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XXII Exame de Ordem Unificado (2017), aplicado pela FGV Projetos. 80 questões gabaritadas e comentadas.",
-      "time_limit_minutes": 300,
-      "question_ids": "[51291,51292,51293,51294,51295,51296,51297,51298,51299,51300,51301,51302,51303,51304,51305,51306,51307,51308,51309,51310,51311,51312,51313,51314,51315,51316,51317,51318,51319,51320,51321,51322,51323,51324,51325,51326,51327,51328,51329,51330,51331,51332,51333,51334,51335,51336,51337,51338,51339,51340,51341,51342,51343,51344,51345,51346,51347,51348,51349,51350,51351,51352,51353,51354,51355,51356,51357,51358,51359,51360,51361,51362,51363,51364,51365,51366,51367,51368,51369,51370]",
-      "created_at": "2026-10-26 14:29:22",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2016-xxi",
-      "title": "OAB 2016 — XXI Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XXI Exame de Ordem Unificado (2016), aplicado pela FGV Projetos. 80 questões oficiais de Direito Civil, Penal, Constitucional, Ética e mais.",
-      "time_limit_minutes": 300,
-      "question_ids": "[51211,51212,51213,51214,51215,51216,51217,51218,51219,51220,51221,51222,51223,51224,51225,51226,51227,51228,51229,51230,51231,51232,51233,51234,51235,51236,51237,51238,51239,51240,51241,51242,51243,51244,51245,51246,51247,51248,51249,51250,51251,51252,51253,51254,51255,51256,51257,51258,51259,51260,51261,51262,51263,51264,51265,51266,51267,51268,51269,51270,51271,51272,51273,51274,51275,51276,51277,51278,51279,51280,51281,51282,51283,51284,51285,51286,51287,51288,51289,51290]",
-      "created_at": "2026-10-26 14:29:23",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2016-xx",
-      "title": "OAB 2016 — XX Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XX Exame de Ordem Unificado (2016), aplicado pela FGV Projetos. 80 questões oficiais completas.",
-      "time_limit_minutes": 300,
-      "question_ids": "[51051,51052,51053,51054,51055,51056,51057,51058,51059,51060,51061,51062,51063,51064,51065,51066,51067,51068,51069,51070,51071,51072,51073,51074,51075,51076,51077,51078,51079,51080,51081,51082,51083,51084,51085,51086,51087,51088,51089,51090,51091,51092,51093,51094,51095,51096,51097,51098,51099,51100,51101,51102,51103,51104,51105,51106,51107,51108,51109,51110,51111,51112,51113,51114,51115,51116,51117,51118,51119,51120,51121,51122,51123,51124,51125,51126,51127,51128,51129,51130]",
-      "created_at": "2026-10-26 14:29:23",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2016-xix",
-      "title": "OAB 2016 — XIX Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XIX Exame de Ordem Unificado (2016), aplicado pela FGV Projetos. 80 questões de múltipla escolha.",
-      "time_limit_minutes": 300,
-      "question_ids": "[50973,50974,50975,50976,50977,50978,50979,50980,50981,50982,50983,50984,50985,50986,50987,50988,50989,50990,50991,50992,50993,50994,50995,50996,50997,50998,50999,51000,51001,51002,51003,51004,51005,51006,51007,51008,51009,51010,51011,51012,51013,51014,51015,51016,51017,51018,51019,51020,51021,51022,51023,51024,51025,51026,51027,51028,51029,51030,51031,51032,51033,51034,51035,51036,51037,51038,51039,51040,51041,51042,51043,51044,51045,51046,51047,51048,51049,51050,1000,1001]",
-      "created_at": "2026-10-26 14:29:23",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2015-xviii",
-      "title": "OAB 2015 — XVIII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XVIII Exame de Ordem Unificado (2015), aplicado pela FGV Projetos. 80 questões oficiais.",
-      "time_limit_minutes": 300,
-      "question_ids": "[50893,50894,50895,50896,50897,50898,50899,50900,50901,50902,50903,50904,50905,50906,50907,50908,50909,50910,50911,50912,50913,50914,50915,50916,50917,50918,50919,50920,50921,50922,50923,50924,50925,50926,50927,50928,50929,50930,50931,50932,50933,50934,50935,50936,50937,50938,50939,50940,50941,50942,50943,50944,50945,50946,50947,50948,50949,50950,50951,50952,50953,50954,50955,50956,50957,50958,50959,50960,50961,50962,50963,50964,50965,50966,50967,50968,50969,50970,50971,50972]",
-      "created_at": "2026-10-26 14:29:23",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2015-xvii",
-      "title": "OAB 2015 — XVII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XVII Exame de Ordem Unificado (2015), aplicado pela FGV Projetos. 80 questões oficiais.",
-      "time_limit_minutes": 300,
-      "question_ids": "[50815,50816,50817,50818,50819,50820,50821,50822,50823,50824,50825,50826,50827,50828,50829,50830,50831,50832,50833,50834,50835,50836,50837,50838,50839,50840,50841,50842,50843,50844,50845,50846,50847,50848,50849,50850,50851,50852,50853,50854,50855,50856,50857,50858,50859,50860,50861,50862,50863,50864,50865,50866,50867,50868,50869,50870,50871,50872,50873,50874,50875,50876,50877,50878,50879,50880,50881,50882,50883,50884,50885,50886,50887,50888,50889,50890,50891,50892,1000,1001]",
-      "created_at": "2026-10-26 14:29:23",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2015-xvi",
-      "title": "OAB 2015 — XVI Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XVI Exame de Ordem Unificado (2015), aplicado pela FGV Projetos. 80 questões oficiais.",
-      "time_limit_minutes": 300,
-      "question_ids": "[50735,50736,50737,50738,50739,50740,50741,50742,50743,50744,50745,50746,50747,50748,50749,50750,50751,50752,50753,50754,50755,50756,50757,50758,50759,50760,50761,50762,50763,50764,50765,50766,50767,50768,50769,50770,50771,50772,50773,50774,50775,50776,50777,50778,50779,50780,50781,50782,50783,50784,50785,50786,50787,50788,50789,50790,50791,50792,50793,50794,50795,50796,50797,50798,50799,50800,50801,50802,50803,50804,50805,50806,50807,50808,50809,50810,50811,50812,50813,50814]",
-      "created_at": "2026-10-26 14:29:23",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2014-xv",
-      "title": "OAB 2014 — XV Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XV Exame de Ordem Unificado (2014), aplicado pela FGV Projetos. 80 questões oficiais.",
-      "time_limit_minutes": 300,
-      "question_ids": "[50657,50658,50659,50660,50661,50662,50663,50664,50665,50666,50667,50668,50669,50670,50671,50672,50673,50674,50675,50676,50677,50678,50679,50680,50681,50682,50683,50684,50685,50686,50687,50688,50689,50690,50691,50692,50693,50694,50695,50696,50697,50698,50699,50700,50701,50702,50703,50704,50705,50706,50707,50708,50709,50710,50711,50712,50713,50714,50715,50716,50717,50718,50719,50720,50721,50722,50723,50724,50725,50726,50727,50728,50729,50730,50731,50732,50733,50734,1000,1001]",
-      "created_at": "2026-10-26 14:29:24",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2014-xiv",
-      "title": "OAB 2014 — XIV Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XIV Exame de Ordem Unificado (2014), aplicado pela FGV Projetos. 80 questões oficiais.",
-      "time_limit_minutes": 300,
-      "question_ids": "[50577,50578,50579,50580,50581,50582,50583,50584,50585,50586,50587,50588,50589,50590,50591,50592,50593,50594,50595,50596,50597,50598,50599,50600,50601,50602,50603,50604,50605,50606,50607,50608,50609,50610,50611,50612,50613,50614,50615,50616,50617,50618,50619,50620,50621,50622,50623,50624,50625,50626,50627,50628,50629,50630,50631,50632,50633,50634,50635,50636,50637,50638,50639,50640,50641,50642,50643,50644,50645,50646,50647,50648,50649,50650,50651,50652,50653,50654,50655,50656]",
-      "created_at": "2026-10-26 14:29:24",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2014-xiii",
-      "title": "OAB 2014 — XIII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XIII Exame de Ordem Unificado (2014), aplicado pela FGV Projetos. 80 questões oficiais.",
-      "time_limit_minutes": 300,
-      "question_ids": "[50497,50498,50499,50500,50501,50502,50503,50504,50505,50506,50507,50508,50509,50510,50511,50512,50513,50514,50515,50516,50517,50518,50519,50520,50521,50522,50523,50524,50525,50526,50527,50528,50529,50530,50531,50532,50533,50534,50535,50536,50537,50538,50539,50540,50541,50542,50543,50544,50545,50546,50547,50548,50549,50550,50551,50552,50553,50554,50555,50556,50557,50558,50559,50560,50561,50562,50563,50564,50565,50566,50567,50568,50569,50570,50571,50572,50573,50574,50575,50576]",
-      "created_at": "2026-10-26 14:29:24",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2013-xii",
-      "title": "OAB 2013 — XII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XII Exame de Ordem Unificado (2013), aplicado pela FGV Projetos. 80 questões oficiais.",
-      "time_limit_minutes": 300,
-      "question_ids": "[50417,50418,50419,50420,50421,50422,50423,50424,50425,50426,50427,50428,50429,50430,50431,50432,50433,50434,50435,50436,50437,50438,50439,50440,50441,50442,50443,50444,50445,50446,50447,50448,50449,50450,50451,50452,50453,50454,50455,50456,50457,50458,50459,50460,50461,50462,50463,50464,50465,50466,50467,50468,50469,50470,50471,50472,50473,50474,50475,50476,50477,50478,50479,50480,50481,50482,50483,50484,50485,50486,50487,50488,50489,50490,50491,50492,50493,50494,50495,50496]",
-      "created_at": "2026-10-26 14:29:24",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2013-xi",
-      "title": "OAB 2013 — XI Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do XI Exame de Ordem Unificado (2013), aplicado pela FGV Projetos. 80 questões oficiais.",
-      "time_limit_minutes": 300,
-      "question_ids": "[50337,50338,50339,50340,50341,50342,50343,50344,50345,50346,50347,50348,50349,50350,50351,50352,50353,50354,50355,50356,50357,50358,50359,50360,50361,50362,50363,50364,50365,50366,50367,50368,50369,50370,50371,50372,50373,50374,50375,50376,50377,50378,50379,50380,50381,50382,50383,50384,50385,50386,50387,50388,50389,50390,50391,50392,50393,50394,50395,50396,50397,50398,50399,50400,50401,50402,50403,50404,50405,50406,50407,50408,50409,50410,50411,50412,50413,50414,50415,50416]",
-      "created_at": "2026-10-26 14:29:24",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2013-x",
-      "title": "OAB 2013 — X Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do X Exame de Ordem Unificado (2013), aplicado pela FGV Projetos. 80 questões oficiais.",
-      "time_limit_minutes": 300,
-      "question_ids": "[50257,50258,50259,50260,50261,50262,50263,50264,50265,50266,50267,50268,50269,50270,50271,50272,50273,50274,50275,50276,50277,50278,50279,50280,50281,50282,50283,50284,50285,50286,50287,50288,50289,50290,50291,50292,50293,50294,50295,50296,50297,50298,50299,50300,50301,50302,50303,50304,50305,50306,50307,50308,50309,50310,50311,50312,50313,50314,50315,50316,50317,50318,50319,50320,50321,50322,50323,50324,50325,50326,50327,50328,50329,50330,50331,50332,50333,50334,50335,50336]",
-      "created_at": "2026-10-26 14:29:24",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
-      "institute": "Conselho Federal da OAB",
-      "career": "Exame de Ordem (OAB)"
-    },
-    {
-      "id": "simulado-oab-2012-viii",
-      "title": "OAB 2012 — VIII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
-      "description": "Caderno Oficial Completo da 1ª Fase do VIII Exame de Ordem Unificado (2012), aplicado pela FGV Projetos. 80 questões oficiais.",
-      "time_limit_minutes": 300,
-      "question_ids": "[50100,50101,50102,50103,50104,50105,50106,50107,50108,50109,50110,50111,50112,50113,50114,50115,50116,50117,50118,50119,50120,50121,50122,50123,50124,50125,50126,50127,50128,50129,50130,50131,50132,50133,50134,50135,50136,50137,50138,50139,50140,50141,50142,50143,50144,50145,50146,50147,50148,50149,50150,50151,50152,50153,50154,50155,50156,50157,50158,50159,50160,50161,50162,50163,50164,50165,50166,50167,50168,50169,50170,50171,50172,50173,50174,50175,50176,50177,50178,50179]",
-      "created_at": "2026-10-26 14:29:25",
-      "category": "Carreiras Jurídicas & OAB",
-      "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "Conselho Federal da OAB",
       "career": "Exame de Ordem (OAB)"
     },
@@ -137711,9 +137869,256 @@ module.exports = {
       "created_at": "2026-10-26 14:29:25",
       "category": "Carreiras Jurídicas & OAB",
       "cut_score": 40,
-      "examining_board": "FGV (Fundação Getulio Vargas)",
+      "examining_board": "FGV",
       "institute": "Conselho Federal da OAB",
       "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2012-viii",
+      "title": "OAB 2012 — VIII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do VIII Exame de Ordem Unificado (2012), aplicado pela FGV Projetos. 80 questões oficiais.",
+      "time_limit_minutes": 300,
+      "question_ids": "[50100,50101,50102,50103,50104,50105,50106,50107,50108,50109,50110,50111,50112,50113,50114,50115,50116,50117,50118,50119,50120,50121,50122,50123,50124,50125,50126,50127,50128,50129,50130,50131,50132,50133,50134,50135,50136,50137,50138,50139,50140,50141,50142,50143,50144,50145,50146,50147,50148,50149,50150,50151,50152,50153,50154,50155,50156,50157,50158,50159,50160,50161,50162,50163,50164,50165,50166,50167,50168,50169,50170,50171,50172,50173,50174,50175,50176,50177,50178,50179]",
+      "created_at": "2026-10-26 14:29:25",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2013-x",
+      "title": "OAB 2013 — X Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do X Exame de Ordem Unificado (2013), aplicado pela FGV Projetos. 80 questões oficiais.",
+      "time_limit_minutes": 300,
+      "question_ids": "[50257,50258,50259,50260,50261,50262,50263,50264,50265,50266,50267,50268,50269,50270,50271,50272,50273,50274,50275,50276,50277,50278,50279,50280,50281,50282,50283,50284,50285,50286,50287,50288,50289,50290,50291,50292,50293,50294,50295,50296,50297,50298,50299,50300,50301,50302,50303,50304,50305,50306,50307,50308,50309,50310,50311,50312,50313,50314,50315,50316,50317,50318,50319,50320,50321,50322,50323,50324,50325,50326,50327,50328,50329,50330,50331,50332,50333,50334,50335,50336]",
+      "created_at": "2026-10-26 14:29:24",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2013-xi",
+      "title": "OAB 2013 — XI Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XI Exame de Ordem Unificado (2013), aplicado pela FGV Projetos. 80 questões oficiais.",
+      "time_limit_minutes": 300,
+      "question_ids": "[50337,50338,50339,50340,50341,50342,50343,50344,50345,50346,50347,50348,50349,50350,50351,50352,50353,50354,50355,50356,50357,50358,50359,50360,50361,50362,50363,50364,50365,50366,50367,50368,50369,50370,50371,50372,50373,50374,50375,50376,50377,50378,50379,50380,50381,50382,50383,50384,50385,50386,50387,50388,50389,50390,50391,50392,50393,50394,50395,50396,50397,50398,50399,50400,50401,50402,50403,50404,50405,50406,50407,50408,50409,50410,50411,50412,50413,50414,50415,50416]",
+      "created_at": "2026-10-26 14:29:24",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2013-xii",
+      "title": "OAB 2013 — XII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XII Exame de Ordem Unificado (2013), aplicado pela FGV Projetos. 80 questões oficiais.",
+      "time_limit_minutes": 300,
+      "question_ids": "[50417,50418,50419,50420,50421,50422,50423,50424,50425,50426,50427,50428,50429,50430,50431,50432,50433,50434,50435,50436,50437,50438,50439,50440,50441,50442,50443,50444,50445,50446,50447,50448,50449,50450,50451,50452,50453,50454,50455,50456,50457,50458,50459,50460,50461,50462,50463,50464,50465,50466,50467,50468,50469,50470,50471,50472,50473,50474,50475,50476,50477,50478,50479,50480,50481,50482,50483,50484,50485,50486,50487,50488,50489,50490,50491,50492,50493,50494,50495,50496]",
+      "created_at": "2026-10-26 14:29:24",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2014-xiii",
+      "title": "OAB 2014 — XIII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XIII Exame de Ordem Unificado (2014), aplicado pela FGV Projetos. 80 questões oficiais.",
+      "time_limit_minutes": 300,
+      "question_ids": "[50497,50498,50499,50500,50501,50502,50503,50504,50505,50506,50507,50508,50509,50510,50511,50512,50513,50514,50515,50516,50517,50518,50519,50520,50521,50522,50523,50524,50525,50526,50527,50528,50529,50530,50531,50532,50533,50534,50535,50536,50537,50538,50539,50540,50541,50542,50543,50544,50545,50546,50547,50548,50549,50550,50551,50552,50553,50554,50555,50556,50557,50558,50559,50560,50561,50562,50563,50564,50565,50566,50567,50568,50569,50570,50571,50572,50573,50574,50575,50576]",
+      "created_at": "2026-10-26 14:29:24",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2014-xiv",
+      "title": "OAB 2014 — XIV Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XIV Exame de Ordem Unificado (2014), aplicado pela FGV Projetos. 80 questões oficiais.",
+      "time_limit_minutes": 300,
+      "question_ids": "[50577,50578,50579,50580,50581,50582,50583,50584,50585,50586,50587,50588,50589,50590,50591,50592,50593,50594,50595,50596,50597,50598,50599,50600,50601,50602,50603,50604,50605,50606,50607,50608,50609,50610,50611,50612,50613,50614,50615,50616,50617,50618,50619,50620,50621,50622,50623,50624,50625,50626,50627,50628,50629,50630,50631,50632,50633,50634,50635,50636,50637,50638,50639,50640,50641,50642,50643,50644,50645,50646,50647,50648,50649,50650,50651,50652,50653,50654,50655,50656]",
+      "created_at": "2026-10-26 14:29:24",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2014-xv",
+      "title": "OAB 2014 — XV Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XV Exame de Ordem Unificado (2014), aplicado pela FGV Projetos. 80 questões oficiais.",
+      "time_limit_minutes": 300,
+      "question_ids": "[50657,50658,50659,50660,50661,50662,50663,50664,50665,50666,50667,50668,50669,50670,50671,50672,50673,50674,50675,50676,50677,50678,50679,50680,50681,50682,50683,50684,50685,50686,50687,50688,50689,50690,50691,50692,50693,50694,50695,50696,50697,50698,50699,50700,50701,50702,50703,50704,50705,50706,50707,50708,50709,50710,50711,50712,50713,50714,50715,50716,50717,50718,50719,50720,50721,50722,50723,50724,50725,50726,50727,50728,50729,50730,50731,50732,50733,50734,1000,1001]",
+      "created_at": "2026-10-26 14:29:24",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2015-xvi",
+      "title": "OAB 2015 — XVI Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XVI Exame de Ordem Unificado (2015), aplicado pela FGV Projetos. 80 questões oficiais.",
+      "time_limit_minutes": 300,
+      "question_ids": "[50735,50736,50737,50738,50739,50740,50741,50742,50743,50744,50745,50746,50747,50748,50749,50750,50751,50752,50753,50754,50755,50756,50757,50758,50759,50760,50761,50762,50763,50764,50765,50766,50767,50768,50769,50770,50771,50772,50773,50774,50775,50776,50777,50778,50779,50780,50781,50782,50783,50784,50785,50786,50787,50788,50789,50790,50791,50792,50793,50794,50795,50796,50797,50798,50799,50800,50801,50802,50803,50804,50805,50806,50807,50808,50809,50810,50811,50812,50813,50814]",
+      "created_at": "2026-10-26 14:29:23",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2015-xvii",
+      "title": "OAB 2015 — XVII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XVII Exame de Ordem Unificado (2015), aplicado pela FGV Projetos. 80 questões oficiais.",
+      "time_limit_minutes": 300,
+      "question_ids": "[50815,50816,50817,50818,50819,50820,50821,50822,50823,50824,50825,50826,50827,50828,50829,50830,50831,50832,50833,50834,50835,50836,50837,50838,50839,50840,50841,50842,50843,50844,50845,50846,50847,50848,50849,50850,50851,50852,50853,50854,50855,50856,50857,50858,50859,50860,50861,50862,50863,50864,50865,50866,50867,50868,50869,50870,50871,50872,50873,50874,50875,50876,50877,50878,50879,50880,50881,50882,50883,50884,50885,50886,50887,50888,50889,50890,50891,50892,1000,1001]",
+      "created_at": "2026-10-26 14:29:23",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2015-xviii",
+      "title": "OAB 2015 — XVIII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XVIII Exame de Ordem Unificado (2015), aplicado pela FGV Projetos. 80 questões oficiais.",
+      "time_limit_minutes": 300,
+      "question_ids": "[50893,50894,50895,50896,50897,50898,50899,50900,50901,50902,50903,50904,50905,50906,50907,50908,50909,50910,50911,50912,50913,50914,50915,50916,50917,50918,50919,50920,50921,50922,50923,50924,50925,50926,50927,50928,50929,50930,50931,50932,50933,50934,50935,50936,50937,50938,50939,50940,50941,50942,50943,50944,50945,50946,50947,50948,50949,50950,50951,50952,50953,50954,50955,50956,50957,50958,50959,50960,50961,50962,50963,50964,50965,50966,50967,50968,50969,50970,50971,50972]",
+      "created_at": "2026-10-26 14:29:23",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2016-xix",
+      "title": "OAB 2016 — XIX Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XIX Exame de Ordem Unificado (2016), aplicado pela FGV Projetos. 80 questões de múltipla escolha.",
+      "time_limit_minutes": 300,
+      "question_ids": "[50973,50974,50975,50976,50977,50978,50979,50980,50981,50982,50983,50984,50985,50986,50987,50988,50989,50990,50991,50992,50993,50994,50995,50996,50997,50998,50999,51000,51001,51002,51003,51004,51005,51006,51007,51008,51009,51010,51011,51012,51013,51014,51015,51016,51017,51018,51019,51020,51021,51022,51023,51024,51025,51026,51027,51028,51029,51030,51031,51032,51033,51034,51035,51036,51037,51038,51039,51040,51041,51042,51043,51044,51045,51046,51047,51048,51049,51050,1000,1001]",
+      "created_at": "2026-10-26 14:29:23",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2016-xx",
+      "title": "OAB 2016 — XX Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XX Exame de Ordem Unificado (2016), aplicado pela FGV Projetos. 80 questões oficiais completas.",
+      "time_limit_minutes": 300,
+      "question_ids": "[51051,51052,51053,51054,51055,51056,51057,51058,51059,51060,51061,51062,51063,51064,51065,51066,51067,51068,51069,51070,51071,51072,51073,51074,51075,51076,51077,51078,51079,51080,51081,51082,51083,51084,51085,51086,51087,51088,51089,51090,51091,51092,51093,51094,51095,51096,51097,51098,51099,51100,51101,51102,51103,51104,51105,51106,51107,51108,51109,51110,51111,51112,51113,51114,51115,51116,51117,51118,51119,51120,51121,51122,51123,51124,51125,51126,51127,51128,51129,51130]",
+      "created_at": "2026-10-26 14:29:23",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2016-xxi",
+      "title": "OAB 2016 — XXI Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XXI Exame de Ordem Unificado (2016), aplicado pela FGV Projetos. 80 questões oficiais de Direito Civil, Penal, Constitucional, Ética e mais.",
+      "time_limit_minutes": 300,
+      "question_ids": "[51211,51212,51213,51214,51215,51216,51217,51218,51219,51220,51221,51222,51223,51224,51225,51226,51227,51228,51229,51230,51231,51232,51233,51234,51235,51236,51237,51238,51239,51240,51241,51242,51243,51244,51245,51246,51247,51248,51249,51250,51251,51252,51253,51254,51255,51256,51257,51258,51259,51260,51261,51262,51263,51264,51265,51266,51267,51268,51269,51270,51271,51272,51273,51274,51275,51276,51277,51278,51279,51280,51281,51282,51283,51284,51285,51286,51287,51288,51289,51290]",
+      "created_at": "2026-10-26 14:29:23",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2017-xxii",
+      "title": "OAB 2017 — XXII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XXII Exame de Ordem Unificado (2017), aplicado pela FGV Projetos. 80 questões gabaritadas e comentadas.",
+      "time_limit_minutes": 300,
+      "question_ids": "[51291,51292,51293,51294,51295,51296,51297,51298,51299,51300,51301,51302,51303,51304,51305,51306,51307,51308,51309,51310,51311,51312,51313,51314,51315,51316,51317,51318,51319,51320,51321,51322,51323,51324,51325,51326,51327,51328,51329,51330,51331,51332,51333,51334,51335,51336,51337,51338,51339,51340,51341,51342,51343,51344,51345,51346,51347,51348,51349,51350,51351,51352,51353,51354,51355,51356,51357,51358,51359,51360,51361,51362,51363,51364,51365,51366,51367,51368,51369,51370]",
+      "created_at": "2026-10-26 14:29:22",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2017-xxiii",
+      "title": "OAB 2017 — XXIII Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XXIII Exame de Ordem Unificado (2017), aplicado pela FGV Projetos. Contém 80 questões oficiais da prova preliminar e definitiva.",
+      "time_limit_minutes": 300,
+      "question_ids": "[51371,51372,51373,51374,51375,51376,51377,51378,51379,51380,51381,51382,51383,51384,51385,51386,51387,51388,51389,51390,51391,51392,51393,51394,51395,51396,51397,51398,51399,51400,51401,51402,51403,51404,51405,51406,51407,51408,51409,51410,51411,51412,51413,51414,51415,51416,51417,51418,51419,51420,51421,51422,51423,51424,51425,51426,51427,51428,51429,51430,51431,51432,51433,51434,51435,51436,51437,51438,51439,51440,51441,51442,51443,51444,51445,51446,51447,51448,51449,51450]",
+      "created_at": "2026-10-26 14:29:22",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2017-xxiv",
+      "title": "OAB 2017 — XXIV Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XXIV Exame de Ordem Unificado (2017), aplicado pela FGV Projetos. Contém 80 questões de múltipla escolha oficiais.",
+      "time_limit_minutes": 300,
+      "question_ids": "[51451,51452,51453,51454,51455,51456,51457,51458,51459,51460,51461,51462,51463,51464,51465,51466,51467,51468,51469,51470,51471,51472,51473,51474,51475,51476,51477,51478,51479,51480,51481,51482,51483,51484,51485,51486,51487,51488,51489,51490,51491,51492,51493,51494,51495,51496,51497,51498,51499,51500,51501,51502,51503,51504,51505,51506,51507,51508,51509,51510,51511,51512,51513,51514,51515,51516,51517,51518,51519,51520,51521,51522,51523,51524,51525,51526,51527,51528,51529,51530]",
+      "created_at": "2026-10-26 14:29:22",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-2018-xxv",
+      "title": "OAB 2018 — XXV Exame de Ordem Unificado (1ª Fase Oficial - 80 Questões)",
+      "description": "Caderno Oficial Completo da 1ª Fase do XXV Exame de Ordem Unificado (2018), aplicado pela FGV Projetos. Contém 80 questões de múltipla escolha cobrindo as 17 disciplinas obrigatórias do Estatuto e da Advocacia.",
+      "time_limit_minutes": 300,
+      "question_ids": "[51531,51532,51533,51534,51535,51536,51537,51538,51539,51540,51541,51542,51543,51544,51545,51546,51547,51548,51549,51550,51551,51552,51553,51554,51555,51556,51557,51558,51559,51560,51561,51562,51563,51564,51565,51566,51567,51568,51569,51570,51571,51572,51573,51574,51575,51576,51577,51578,51579,51580,51581,51582,51583,51584,51585,51586,51587,51588,51589,51590,51591,51592,51593,51594,51595,51596,51597,51598,51599,51600,51601,51602,51603,51604,51605,51606,51607,51608,51609,51610]",
+      "created_at": "2026-10-26 14:29:22",
+      "category": "Carreiras Jurídicas & OAB",
+      "cut_score": 40,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-oab-express-etica",
+      "title": "Simulado Express — Ética e Estatuto da Advocacia",
+      "description": "Treino rápido e focado de 15 questões de Ética e Estatuto da OAB para gabaritar o bloco mais importante da prova.",
+      "time_limit_minutes": 25,
+      "question_ids": "[1000,1001,1002,1003,1004,1005,1006,1007,1008,1009,1180,1181,1182,1183,1184]",
+      "created_at": "2026-10-25 15:58:58",
+      "category": "Simulados Express",
+      "cut_score": 70,
+      "examining_board": "FGV",
+      "institute": "Conselho Federal da OAB",
+      "career": "Exame de Ordem (OAB)"
+    },
+    {
+      "id": "simulado-pf-2024",
+      "title": "Polícia Federal 2014 — Prova Oficial Completa (Agente de Polícia Federal)",
+      "description": "Caderno de Prova Oficial Completo da Polícia Federal (CESPE). Contém rigorosamente as 120 questões oficiais no modelo Certo/Errado com gabarito oficial e resolução passo a passo.",
+      "time_limit_minutes": 270,
+      "question_ids": "[54696,54697,54698,54699,54700,54701,54702,54703,54704,54705,54706,54707,54708,54709,54710,54711,54712,54713,54714,54715,54716,54717,54718,54719,54720,54721,54722,54723,54724,54725,54726,54727,54728,54729,54730,54731,54732,54733,54734,54735,54736,54737,54738,54739,54740,54741,54742,54743,54744,54745,54746,54747,54748,54749,54750,54751,54752,54753,54754,54755,54756,54757,54758,54759,54760,54761,54762,54763,54764,54765,54766,54767,54768,54769,54770,54771,54772,54773,54774,54775,54776,54777,54778,54779,54780,54781,54782,54783,54784,54785,54786,54787,54788,54789,54790,54791,54792,54793,54794,54795,54796,54797,54798,54799,54800,54801,54802,54803,54804,54805,54806,54807,54808,54809,54810,54811,54812,54813,54814,54815]",
+      "created_at": "2026-10-26 06:04:18",
+      "category": "Carreiras Policiais (Edições Oficiais)",
+      "cut_score": 70,
+      "examining_board": "CEBRASPE",
+      "institute": "Polícia Federal (PF)",
+      "career": "Carreiras Policiais"
     },
     {
       "id": "simulado-pf-adm-2014-oficial",
@@ -137724,61 +138129,61 @@ module.exports = {
       "created_at": "2026-10-26 14:30:13",
       "category": "Carreiras Policiais & Federais",
       "cut_score": 70,
-      "examining_board": "CEBRASPE (CESPE)",
+      "examining_board": "CEBRASPE",
       "institute": "Polícia Federal (PF)",
       "career": "Carreiras Policiais"
     },
     {
-      "id": "simulado-bb-2023-oficial",
-      "title": "Banco do Brasil 2023 — Prova Oficial Completa (Escriturário / Agente Comercial - 70 Questões)",
-      "description": "Caderno de Prova Oficial Completo do Concurso Banco do Brasil 2023 (CESGRANRIO). Contém rigorosamente as 70 questões oficiais: 25 de Conhecimentos Básicos (Português, Inglês, Matemática, Atualidades do Mercado Financeiro) + 45 de Conhecimentos Específicos (Matemática Financeira, Conhecimentos Bancários, Informática, Vendas e Negociação).",
-      "time_limit_minutes": 300,
-      "question_ids": "[55126,55127,55128,55129,55130,55131,55132,55133,55134,55135,55136,55137,55138,55139,55140,55141,55142,55143,55144,55145,55146,55147,55148,55149,55150,55151,55152,55153,55154,55155,55156,55157,55158,55159,55160,55161,55162,55163,55164,55165,55166,55167,55168,55169,55170,55171,55172,55173,55174,55175,55176,55177,55178,55179,55180,55181,55182,55183,55184,55185,55186,55187,55188,55189,55190,55191,55192,55193,55194,55195]",
-      "created_at": "2026-10-26 14:40:11",
-      "category": "Carreiras Bancárias & Financeiras",
-      "cut_score": 45,
-      "examining_board": "Fundação Cesgranrio",
-      "institute": "Banco do Brasil",
-      "career": "Bancários & INSS"
+      "id": "simulado-pf-agente-oficial",
+      "title": "Polícia Federal — Prova Oficial CESPE (Agente - 120 Questões)",
+      "description": "Prova Oficial completa do Departamento de Polícia Federal (CESPE). 120 itens em estilo Certo/Errado abrangendo Língua Portuguesa, RLM, Informática, Administração, Contabilidade, Economia, Direito Penal, Processo Penal e Legislação Especial.",
+      "time_limit_minutes": 270,
+      "question_ids": "[54696,54697,54698,54699,54700,54701,54702,54703,54704,54705,54706,54707,54708,54709,54710,54711,54712,54713,54714,54715,54716,54717,54718,54719,54720,54721,54722,54723,54724,54725,54726,54727,54728,54729,54730,54731,54732,54733,54734,54735,54736,54737,54738,54739,54740,54741,54742,54743,54744,54745,54746,54747,54748,54749,54750,54751,54752,54753,54754,54755,54756,54757,54758,54759,54760,54761,54762,54763,54764,54765,54766,54767,54768,54769,54770,54771,54772,54773,54774,54775,54776,54777,54778,54779,54780,54781,54782,54783,54784,54785,54786,54787,54788,54789,54790,54791,54792,54793,54794,54795,54796,54797,54798,54799,54800,54801,54802,54803,54804,54805,54806,54807,54808,54809,54810,54811,54812,54813,54814,54815]",
+      "created_at": "2026-10-26 06:04:19",
+      "category": "Carreiras Policiais (Edições Oficiais)",
+      "cut_score": 70,
+      "examining_board": "CEBRASPE",
+      "institute": "Polícia Federal (PF)",
+      "career": "Carreiras Policiais"
     },
     {
-      "id": "simulado-bb-escriturario",
-      "title": "Simulado Oficial Banco do Brasil — Edição Completa CESGRANRIO (70 Questões)",
-      "description": "Simulado Oficial Completo com 70 questões reais aplicadas pela Fundação Cesgranrio para Escriturário do Banco do Brasil. Foco total em Conhecimentos Bancários, Informática, Vendas e Negociação.",
-      "time_limit_minutes": 300,
-      "question_ids": "[55126,55127,55128,55129,55130,55131,55132,55133,55134,55135,55136,55137,55138,55139,55140,55141,55142,55143,55144,55145,55146,55147,55148,55149,55150,55151,55152,55153,55154,55155,55156,55157,55158,55159,55160,55161,55162,55163,55164,55165,55166,55167,55168,55169,55170,55171,55172,55173,55174,55175,55176,55177,55178,55179,55180,55181,55182,55183,55184,55185,55186,55187,55188,55189,55190,55191,55192,55193,55194,55195]",
-      "created_at": "2026-10-26 14:40:11",
-      "category": "Carreiras Bancárias & Financeiras",
-      "cut_score": 45,
-      "examining_board": "Fundação Cesgranrio",
-      "institute": "Banco do Brasil",
-      "career": "Bancários & INSS"
+      "id": "simulado-prf-2021-oficial",
+      "title": "PRF 2021 — Prova Oficial Completa (Policial Rodoviário Federal)",
+      "description": "Caderno de Prova Oficial Completo do Concurso PRF 2021 (CEBRASPE). Contém rigorosamente as 120 questões oficiais divididas nos Blocos I, II (Legislação de Trânsito) e III (Direito), com gabarito oficial e resolução comentada.",
+      "time_limit_minutes": 270,
+      "question_ids": "[54576,54577,54578,54579,54580,54581,54582,54583,54584,54585,54586,54587,54588,54589,54590,54591,54592,54593,54594,54595,54596,54597,54598,54599,54600,54601,54602,54603,54604,54605,54606,54607,54608,54609,54610,54611,54612,54613,54614,54615,54616,54617,54618,54619,54620,54621,54622,54623,54624,54625,54626,54627,54628,54629,54630,54631,54632,54633,54634,54635,54636,54637,54638,54639,54640,54641,54642,54643,54644,54645,54646,54647,54648,54649,54650,54651,54652,54653,54654,54655,54656,54657,54658,54659,54660,54661,54662,54663,54664,54665,54666,54667,54668,54669,54670,54671,54672,54673,54674,54675,54676,54677,54678,54679,54680,54681,54682,54683,54684,54685,54686,54687,54688,54689,54690,54691,54692,54693,54694,54695]",
+      "created_at": "2026-10-25 22:20:33",
+      "category": "Carreiras Policiais (Edições Oficiais)",
+      "cut_score": 73,
+      "examining_board": "CEBRASPE",
+      "institute": "Polícia Rodoviária Federal (PRF)",
+      "career": "Carreiras Policiais"
     },
     {
-      "id": "simulado-tjsp-2024",
-      "title": "TJ-SP 2024 — Prova Oficial Completa (Escrevente Técnico Judiciário - 100 Questões)",
-      "description": "Caderno Oficial Completo do Concurso de Escrevente Técnico Judiciário do Tribunal de Justiça do Estado de São Paulo (VUNESP). Contém rigorosamente as 100 questões oficiais do edital: Bloco I Língua Portuguesa (24 questões), Bloco II Direito Penal, Processo Penal, Processo Civil, Constitucional, Administrativo e Normas da Corregedoria (40 questões) e Bloco III Conhecimentos Gerais (Atualidades, Matemática, Informática e Raciocínio Lógico - 36 questões).",
-      "time_limit_minutes": 300,
-      "question_ids": "[55196,55197,55198,55199,55200,55201,55202,55203,55204,55205,55206,55207,55208,55209,55210,55211,55212,55213,55214,55215,55216,55217,55218,55219,55220,55221,55222,55223,55224,55225,55226,55227,55228,55229,55230,55231,55232,55233,55234,55235,55236,55237,55238,55239,55240,55241,55242,55243,55244,55245,55246,55247,55248,55249,55250,55251,55252,55253,55254,55255,55256,55257,55258,55259,55260,55261,55262,55263,55264,55265,55266,55267,55268,55269,55270,55271,55272,55273,55274,55275,55276,55277,55278,55279,55280,55281,55282,55283,55284,55285,55286,55287,55288,55289,55290,55291,55292,55293,55294,55295]",
-      "created_at": "2026-10-26 16:44:26",
-      "category": "Carreiras de Tribunais & MP",
-      "cut_score": 75,
-      "examining_board": "VUNESP",
-      "institute": "Tribunal de Justiça de SP (TJ-SP)",
-      "career": "Tribunais & MP"
+      "id": "simulado-prf-2024",
+      "title": "Simulado PRF — Edição Oficial CEBRASPE (120 Questões)",
+      "description": "Simulado completo com as 120 questões no estilo Certo/Errado do CEBRASPE para Policial Rodoviário Federal, cobrindo todo o edital (Blocos I, II e III).",
+      "time_limit_minutes": 270,
+      "question_ids": "[54576,54577,54578,54579,54580,54581,54582,54583,54584,54585,54586,54587,54588,54589,54590,54591,54592,54593,54594,54595,54596,54597,54598,54599,54600,54601,54602,54603,54604,54605,54606,54607,54608,54609,54610,54611,54612,54613,54614,54615,54616,54617,54618,54619,54620,54621,54622,54623,54624,54625,54626,54627,54628,54629,54630,54631,54632,54633,54634,54635,54636,54637,54638,54639,54640,54641,54642,54643,54644,54645,54646,54647,54648,54649,54650,54651,54652,54653,54654,54655,54656,54657,54658,54659,54660,54661,54662,54663,54664,54665,54666,54667,54668,54669,54670,54671,54672,54673,54674,54675,54676,54677,54678,54679,54680,54681,54682,54683,54684,54685,54686,54687,54688,54689,54690,54691,54692,54693,54694,54695]",
+      "created_at": "2026-10-25 22:20:33",
+      "category": "Carreiras Policiais (Edições Oficiais)",
+      "cut_score": 73,
+      "examining_board": "CEBRASPE",
+      "institute": "Polícia Rodoviária Federal (PRF)",
+      "career": "Carreiras Policiais"
     },
     {
-      "id": "simulado-tjsp-oficial-100",
-      "title": "Simulado Oficial TJ-SP — Edição Completa VUNESP (100 Questões)",
-      "description": "Simulado Oficial VUNESP para Escrevente Técnico Judiciário com 100 questões inéditas e comentadas, reproduzindo com exatidão a proporção e dificuldade de cada bloco temático do edital do Tribunal de Justiça de São Paulo.",
-      "time_limit_minutes": 300,
-      "question_ids": "[55196,55197,55198,55199,55200,55201,55202,55203,55204,55205,55206,55207,55208,55209,55210,55211,55212,55213,55214,55215,55216,55217,55218,55219,55220,55221,55222,55223,55224,55225,55226,55227,55228,55229,55230,55231,55232,55233,55234,55235,55236,55237,55238,55239,55240,55241,55242,55243,55244,55245,55246,55247,55248,55249,55250,55251,55252,55253,55254,55255,55256,55257,55258,55259,55260,55261,55262,55263,55264,55265,55266,55267,55268,55269,55270,55271,55272,55273,55274,55275,55276,55277,55278,55279,55280,55281,55282,55283,55284,55285,55286,55287,55288,55289,55290,55291,55292,55293,55294,55295]",
-      "created_at": "2026-10-26 16:44:26",
-      "category": "Carreiras de Tribunais & MP",
-      "cut_score": 75,
-      "examining_board": "VUNESP",
-      "institute": "Tribunal de Justiça de SP (TJ-SP)",
-      "career": "Tribunais & MP"
+      "id": "simulado-quadrix-conselhos-2024",
+      "title": "Conselhos Federais & Autarquias 2024 — Simulado Oficial Quadrix Certo/Errado (60 Questões)",
+      "description": "Simulado no modelo Certo ou Errado da Quadrix. Ênfase no Decreto nº 1.171/1994 (Código de Ética), Legislação de Conselhos Profissionais e Informática.",
+      "time_limit_minutes": 150,
+      "question_ids": "[55437,55436,55435,54770,55392,54621,55432,55371,54892,55255,54633,55378,55052,55303,55182,54594,55005,55296,54745,54598,54822,105,54702,55218,55211,55047,54681,54739,54970,54940,54582,55128,54776,54923,55431,54647,55004,54813,55170,55390,55342,55174,54959,55202,55288,55320,55189,54673,54733,54924,54961,54898,55301,55319,55375,54855,54989,55175,54807,54819]",
+      "created_at": "2026-10-27 04:49:10",
+      "category": "Simulados Express",
+      "cut_score": 65,
+      "examining_board": "Quadrix",
+      "institute": "Conselhos Regionais & Federais",
+      "career": "Geral"
     },
     {
       "id": "simulado-receita-2012-p1",
@@ -137818,50 +138223,97 @@ module.exports = {
       "examining_board": "ESAF",
       "institute": "Receita Federal do Brasil (RFB)",
       "career": "Carreira Fiscal"
+    },
+    {
+      "id": "simulado-tjsp-2024",
+      "title": "TJ-SP 2024 — Prova Oficial Completa (Escrevente Técnico Judiciário - 100 Questões)",
+      "description": "Caderno Oficial Completo do Concurso de Escrevente Técnico Judiciário do Tribunal de Justiça do Estado de São Paulo (VUNESP). Contém rigorosamente as 100 questões oficiais do edital: Bloco I Língua Portuguesa (24 questões), Bloco II Direito Penal, Processo Penal, Processo Civil, Constitucional, Administrativo e Normas da Corregedoria (40 questões) e Bloco III Conhecimentos Gerais (Atualidades, Matemática, Informática e Raciocínio Lógico - 36 questões).",
+      "time_limit_minutes": 300,
+      "question_ids": "[55196,55197,55198,55199,55200,55201,55202,55203,55204,55205,55206,55207,55208,55209,55210,55211,55212,55213,55214,55215,55216,55217,55218,55219,55220,55221,55222,55223,55224,55225,55226,55227,55228,55229,55230,55231,55232,55233,55234,55235,55236,55237,55238,55239,55240,55241,55242,55243,55244,55245,55246,55247,55248,55249,55250,55251,55252,55253,55254,55255,55256,55257,55258,55259,55260,55261,55262,55263,55264,55265,55266,55267,55268,55269,55270,55271,55272,55273,55274,55275,55276,55277,55278,55279,55280,55281,55282,55283,55284,55285,55286,55287,55288,55289,55290,55291,55292,55293,55294,55295]",
+      "created_at": "2026-10-26 16:44:26",
+      "category": "Carreiras de Tribunais & MP",
+      "cut_score": 75,
+      "examining_board": "VUNESP",
+      "institute": "Tribunal de Justiça de SP (TJ-SP)",
+      "career": "Tribunais & MP"
+    },
+    {
+      "id": "simulado-tjsp-oficial-100",
+      "title": "Simulado Oficial TJ-SP — Edição Completa VUNESP (100 Questões)",
+      "description": "Simulado Oficial VUNESP para Escrevente Técnico Judiciário com 100 questões inéditas e comentadas, reproduzindo com exatidão a proporção e dificuldade de cada bloco temático do edital do Tribunal de Justiça de São Paulo.",
+      "time_limit_minutes": 300,
+      "question_ids": "[55196,55197,55198,55199,55200,55201,55202,55203,55204,55205,55206,55207,55208,55209,55210,55211,55212,55213,55214,55215,55216,55217,55218,55219,55220,55221,55222,55223,55224,55225,55226,55227,55228,55229,55230,55231,55232,55233,55234,55235,55236,55237,55238,55239,55240,55241,55242,55243,55244,55245,55246,55247,55248,55249,55250,55251,55252,55253,55254,55255,55256,55257,55258,55259,55260,55261,55262,55263,55264,55265,55266,55267,55268,55269,55270,55271,55272,55273,55274,55275,55276,55277,55278,55279,55280,55281,55282,55283,55284,55285,55286,55287,55288,55289,55290,55291,55292,55293,55294,55295]",
+      "created_at": "2026-10-26 16:44:26",
+      "category": "Carreiras de Tribunais & MP",
+      "cut_score": 75,
+      "examining_board": "VUNESP",
+      "institute": "Tribunal de Justiça de SP (TJ-SP)",
+      "career": "Tribunais & MP"
     }
   ],
   "flashcards": [
     {
       "id": "fc-1",
-      "discipline": "Ciências da Natureza (ENEM)",
-      "front": "Qual é a 1ª Lei da Termodinâmica?",
-      "back": "A variação da energia interna de um sistema é igual à diferença entre o calor trocado e o trabalho realizado: ΔU = Q - W."
+      "discipline": "Direito Constitucional",
+      "front": "Em que hipóteses é permitido ingressar na casa de alguém sem o consentimento do morador durante a noite?",
+      "back": "Apenas em 3 hipóteses constitucionais: \n1) Flagrante delito\n2) Desastre\n3) Para prestar socorro.\n\n⚠️ Mandado judicial NÃO permite entrada noturna (apenas durante o dia)! (Art. 5º, XI, CF/88)",
+      "review_count": 0,
+      "ease_factor": 2.5,
+      "last_reviewed": null
     },
     {
       "id": "fc-2",
-      "discipline": "Ciências Humanas (ENEM)",
-      "front": "O que caracterizou o Período da República Velha (1889-1930)?",
-      "back": "Política do café com leite (alternância entre SP e MG), coronelismo, voto de cabresto e economia agroexportadora."
+      "discipline": "Direito Constitucional",
+      "front": "Qual a diferença entre Plebiscito e Referendo?",
+      "back": "• Plebiscito: Convocado ANTES da criação do ato normativo/lei (consulta prévia aos cidadãos).\n• Referendo: Convocado DEPOIS que o ato já foi aprovado pelo parlamento, para o povo ratificar ou rejeitar.",
+      "review_count": 0,
+      "ease_factor": 2.5,
+      "last_reviewed": null
     },
     {
       "id": "fc-3",
-      "discipline": "Linguagens (ENEM)",
-      "front": "Qual a diferença entre Metáfora e Comparação?",
-      "back": "A metáfora faz uma analogia direta sem conectivo comparativo (ex: \"Você é uma flor\"). A comparação utiliza termos comparativos explícitos (\"Você é como uma flor\")."
+      "discipline": "Direito Administrativo",
+      "front": "Quais são os atributos do ato administrativo? (Mnemônico PATI)",
+      "back": "• P - Presunção de legitimidade e veracidade\n• A - Autoexecutoriedade (agir sem ordem judicial prévia)\n• T - Tipicidade (deve estar previsto em lei)\n• I - Imperatividade (imposição obrigatória a terceiros)",
+      "review_count": 0,
+      "ease_factor": 2.5,
+      "last_reviewed": null
     },
     {
       "id": "fc-4",
-      "discipline": "Matemática (ENEM)",
-      "front": "Como se calcula a área de um trapézio?",
-      "back": "Área = [(Base Maior + Base Menor) × Altura] / 2"
+      "discipline": "Direito Administrativo",
+      "front": "Quais são os 5 princípios expressos da Administração Pública no caput do art. 37 da CF/88?",
+      "back": "Mnemônico LIMPE:\n• L - Legalidade\n• I - Impessoalidade\n• M - Moralidade\n• P - Publicidade\n• E - Eficiência (adicionado pela EC 19/98)",
+      "review_count": 0,
+      "ease_factor": 2.5,
+      "last_reviewed": null
     },
     {
       "id": "fc-5",
-      "discipline": "Direito Constitucional",
-      "front": "Quais são os Remédios Constitucionais gratuitos?",
-      "back": "Habeas Corpus (HC) e Habeas Data (HD) são gratuitos segundo o art. 5º, LXXVII, da CF/88."
+      "discipline": "Língua Portuguesa",
+      "front": "Quando NUNCA ocorre crase?",
+      "back": "1. Antes de palavras masculinas (a pé, a cavalo)\n2. Antes de verbos no infinitivo (a caminhar)\n3. Antes de pronomes pessoais (a ela, a mim)\n4. Entre palavras repetidas (dia a dia, face a face)\n5. Antes de artigo indefinido (a uma pessoa)\n6. Com a 'a' no singular diante de plural (a mulheres)",
+      "review_count": 0,
+      "ease_factor": 2.5,
+      "last_reviewed": null
     },
     {
       "id": "fc-6",
-      "discipline": "Direito Penal",
-      "front": "O que é a Teoria da Iputabilidade (critério biopsicológico)?",
-      "back": "É inimputável quem, por anomalia psíquica ou desenvolvimento mental incompleto ou retardado, era, ao tempo da ação, inteiramente incapaz de entender o caráter ilícito do fato."
+      "discipline": "Raciocínio Lógico",
+      "front": "Como negar uma proposição condicional do tipo 'Se P, então Q' (P -> Q)?",
+      "back": "Regra do MANÉ:\n• MAntém a primeira (P)\n• E (conectivo de conjunção ^)\n• NEga a segunda (~Q)\n\nEquivalência: ~(P -> Q) ≡ P ^ ~Q",
+      "review_count": 0,
+      "ease_factor": 2.5,
+      "last_reviewed": null
     },
     {
       "id": "fc-7",
       "discipline": "Ética OAB",
       "front": "Qual o prazo prescricional para a cobrança de honorários advocatícios?",
-      "back": "O prazo prescricional para a ação de cobrança de honorários é de 5 anos (art. 25 do Estatuto da OAB)."
+      "back": "O prazo prescricional para a ação de cobrança de honorários é de 5 anos (art. 25 do Estatuto da OAB).",
+      "review_count": 0,
+      "ease_factor": 2.5,
+      "last_reviewed": null
     }
   ]
 };

@@ -164,6 +164,18 @@ export async function createPracticeTest(data) {
   return res.json();
 }
 
+export async function generateCustomPracticeExam(config) {
+  const res = await fetch(`${API_BASE}/ils/practice_tests/generate-custom`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      ...getAuthHeader()
+    },
+    body: JSON.stringify(config)
+  });
+  return res.json();
+}
+
 export async function completePracticeTest(id, answers) {
   const res = await fetch(`${API_BASE}/ils/practice_tests/attempts/${id}/complete`, {
     method: 'POST',
@@ -390,6 +402,7 @@ export const api = {
   fetchPracticeTest,
   getPracticeTestQuestions: fetchPracticeTest,
   createPracticeTest,
+  generateCustomPracticeExam,
   completePracticeTest,
   startPracticeTestAttempt: async (testId) => ({ attempt_id: testId }),
   updatePracticeTestAnswer: async (attemptId, questionId, answer) => {

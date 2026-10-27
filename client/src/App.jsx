@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Navigation from './components/Navigation';
 import QuestionCard from './components/QuestionCard';
 import PracticeExam from './components/PracticeExam';
+import CustomExamGenerator from './components/CustomExamGenerator';
 import FlashcardViewer from './components/FlashcardViewer';
 import NotebooksView from './components/NotebooksView';
 import ProfileStats from './components/ProfileStats';
@@ -20,8 +21,64 @@ import {
   fetchUserProfile, getSavedUser, fetchMe, clearAuth 
 } from './services/api';
 
+
+const BANCA_PROFILES = {
+  'CEBRASPE': {
+    name: 'CEBRASPE (CESPE/UnB)',
+    badge: 'Certo / Errado • Anulação',
+    desc: 'Método de pontuação líquida (1 errada anula 1 certa). Questões conceituais com pegadinhas teóricas e jurisprudência.'
+  },
+  'FGV': {
+    name: 'FGV (Fundação Getulio Vargas)',
+    badge: 'Casos Práticos • Textos Longos',
+    desc: 'Enunciados longos, situações-problema complexas, interpretação detalhada e doutrina jurídica consolidada.'
+  },
+  'FCC': {
+    name: 'FCC (Fundação Carlos Chagas)',
+    badge: 'Letra da Lei • Súmulas',
+    desc: 'Forte literalidade da lei ("lei seca") e jurisprudência sumulada dos tribunais superiores (STF/STJ).'
+  },
+  'VUNESP': {
+    name: 'VUNESP',
+    badge: 'Literalidade & Gramática',
+    desc: '5 alternativas objetivas, apego ao texto da lei e cobrança rigorosa de normas gramaticais.'
+  },
+  'Cesgranrio': {
+    name: 'Cesgranrio',
+    badge: 'Bancos & CNU',
+    desc: 'Organizadora do CNU e de instituições financeiras (BB, Caixa). Foco em raciocínio, políticas públicas e atendimento.'
+  },
+  'Instituto AOCP': {
+    name: 'Instituto AOCP',
+    badge: 'Policial & Prazos',
+    desc: 'Questões diretas de concursos policiais e órgãos estaduais. Prazos processuais e artigos expressos.'
+  },
+  'IBFC': {
+    name: 'IBFC',
+    badge: 'Conceitual & Direta',
+    desc: 'Questões objetivas que cobram diretamente o texto dos artigos de lei e definições básicas a intermediárias.'
+  },
+  'Quadrix': {
+    name: 'Quadrix',
+    badge: 'Conselhos Federais & Ética',
+    desc: 'Modelo Certo/Errado. Foco no Decreto nº 1.171/94 (Código de Ética Pública) e autarquias profissionais.'
+  },
+  'ESAF': {
+    name: 'ESAF',
+    badge: 'Carreira Fiscal',
+    desc: 'Provas históricas da Receita Federal. Altíssima densidade em contabilidade avançada e legislação tributária.'
+  },
+  'INEP': {
+    name: 'INEP (ENEM)',
+    badge: 'Matriz de Habilidades (TRI)',
+    desc: 'Contextualização de situações cotidianas, interdisciplinaridade e interpretação.'
+  }
+};
+
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
+  const [generatedTestToRun, setGeneratedTestToRun] = useState(null);
+  const [generatedQuestionsToRun, setGeneratedQuestionsToRun] = useState(null);
   const [currentUser, setCurrentUser] = useState(getSavedUser());
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [streakData, setStreakData] = useState(null);
@@ -88,6 +145,13 @@ export default function App() {
     } finally {
       setIsLoadingDaily(false);
     }
+  };
+
+
+  const handleStartGeneratedTest = (test, questions) => {
+    setGeneratedTestToRun(test);
+    setGeneratedQuestionsToRun(questions);
+    setActiveTab('practice');
   };
 
   const handleCareerChange = (newCareer) => {
@@ -637,7 +701,11 @@ export default function App() {
                     className="w-full text-xs py-2 px-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-orange-500"
                   >
                     <option value="all">Todas as Bancas</option>
-                    {(availableFilters.boards || []).map((b) => (
+                    {Array.from(new Set([
+                      'CEBRASPE', 'FGV', 'FCC', 'VUNESP', 'Cesgranrio', 
+                      'Instituto AOCP', 'IBFC', 'Quadrix', 'ESAF', 'INEP',
+                      ...(availableFilters.boards || [])
+                    ])).filter(Boolean).map((b) => (
                       <option key={b} value={b}>{b}</option>
                     ))}
                   </select>
@@ -694,6 +762,24 @@ export default function App() {
                 )}
               </div>
 
+              {/* Informative card when a Banca is selected */}
+              {filterBoard !== 'all' && BANCA_PROFILES[filterBoard] && (
+                <div className={`mt-4 p-3.5 rounded-2xl border flex items-start gap-3 text-xs leading-relaxed animate-fadeIn ${
+                  isDark ? 'bg-orange-950/30 border-orange-500/30 text-orange-200' : 'bg-orange-50 border-orange-200 text-orange-800'
+                }`}>
+                  <Sparkles className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
+                  <div>
+                    <div className="font-bold flex items-center gap-2 flex-wrap">
+                      <span>Perfil da Banca: {BANCA_PROFILES[filterBoard].name}</span>
+                      <span className="text-[10px] uppercase font-black px-2 py-0.5 rounded bg-orange-500/20 text-orange-400 border border-orange-500/30">
+                        {BANCA_PROFILES[filterBoard].badge}
+                      </span>
+                    </div>
+                    <p className="mt-1 opacity-90">{BANCA_PROFILES[filterBoard].desc}</p>
+                  </div>
+                </div>
+              )}
+
             </div>
 
             {/* Questions Stream */}
@@ -736,9 +822,29 @@ export default function App() {
           </div>
         )}
 
+        {/* CUSTOM EXAM GENERATOR TAB */}
+        {activeTab === 'custom-generator' && (
+          <div className="max-w-6xl mx-auto px-4 py-6">
+            <CustomExamGenerator 
+              theme={theme} 
+              onStartGeneratedTest={handleStartGeneratedTest} 
+            />
+          </div>
+        )}
+
         {/* PRACTICE EXAMS TAB */}
         {activeTab === 'practice' && (
-          <PracticeExam onBackToDashboard={() => setActiveTab('dashboard')} theme={theme} user={currentUser} />
+          <PracticeExam 
+            onBackToDashboard={() => setActiveTab('dashboard')} 
+            theme={theme} 
+            user={currentUser} 
+            initialTest={generatedTestToRun}
+            initialQuestions={generatedQuestionsToRun}
+            onClearInitialTest={() => {
+              setGeneratedTestToRun(null);
+              setGeneratedQuestionsToRun(null);
+            }}
+          />
         )}
 
         {/* ANALYTICS & PERFORMANCE DIAGNOSIS TAB */}

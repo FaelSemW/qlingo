@@ -10,13 +10,15 @@ import { api } from '../services/api';
 import confetti from 'canvas-confetti';
 import StatementRenderer from './StatementRenderer';
 
-export default function PracticeExam({ user, onRequireAuth, onBackToDashboard, theme = 'dark' }) {
+export default function PracticeExam({ user, onRequireAuth, onBackToDashboard, theme = 'dark', initialTest = null, initialQuestions = null, onClearInitialTest = null }) {
   const isDark = theme === 'dark';
   const [tests, setTests] = useState([]);
   const [activeCategory, setActiveCategory] = useState('all');
   const [loading, setLoading] = useState(true);
   const [examSearch, setExamSearch] = useState('');
   const [enemYearFilter, setEnemYearFilter] = useState('all');
+  const [activeBoardFilter, setActiveBoardFilter] = useState('all');
+  const [showBancasGuide, setShowBancasGuide] = useState(false);
   const [inProgressTests, setInProgressTests] = useState([]);
   
   // Test in progress state
@@ -36,6 +38,23 @@ export default function PracticeExam({ user, onRequireAuth, onBackToDashboard, t
     loadTests();
     loadInProgress();
   }, []);
+
+  // Auto-launch custom generated test
+  useEffect(() => {
+    if (initialTest) {
+      if (initialQuestions && initialQuestions.length > 0) {
+        setActiveTest(initialTest);
+        setTestQuestions(initialQuestions);
+        setCurrentIdx(0);
+        setSelectedAnswers({});
+        setResult(null);
+        setTimeLeft((initialTest.time_limit_minutes || 60) * 60);
+      } else {
+        handleStartTest(initialTest);
+      }
+      if (onClearInitialTest) onClearInitialTest();
+    }
+  }, [initialTest]);
 
 
   const loadInProgress = async () => {
@@ -276,8 +295,28 @@ export default function PracticeExam({ user, onRequireAuth, onBackToDashboard, t
     return `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
   };
 
+    const getBoardBadgeStyle = (board = '') => {
+    const b = (board || '').toUpperCase();
+    if (b.includes('CEBRASPE') || b.includes('CESPE')) return 'bg-purple-500/15 text-purple-300 border-purple-500/30';
+    if (b.includes('FGV')) return 'bg-blue-500/15 text-blue-300 border-blue-500/30';
+    if (b.includes('FCC')) return 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30';
+    if (b.includes('VUNESP')) return 'bg-amber-500/15 text-amber-300 border-amber-500/30';
+    if (b.includes('CESGRANRIO')) return 'bg-yellow-500/15 text-yellow-300 border-yellow-500/30';
+    if (b.includes('AOCP')) return 'bg-rose-500/15 text-rose-300 border-rose-500/30';
+    if (b.includes('IBFC')) return 'bg-cyan-500/15 text-cyan-300 border-cyan-500/30';
+    if (b.includes('QUADRIX')) return 'bg-teal-500/15 text-teal-300 border-teal-500/30';
+    if (b.includes('ESAF')) return 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30';
+    if (b.includes('INEP')) return 'bg-sky-500/15 text-sky-300 border-sky-500/30';
+    return 'bg-slate-500/15 text-slate-300 border-slate-500/30';
+  };
+
   const filteredTests = tests.filter(t => {
-    if (activeCategory !== 'all') {
+    if (activeCategory === 'custom_ineditos') {
+      const isCustom = (t.category || '').toLowerCase().includes('inédit') || 
+                       (t.category || '').toLowerCase().includes('inedit') ||
+                       (t.id || '').startsWith('sim-inedito');
+      if (!isCustom) return false;
+    } else if (activeCategory !== 'all') {
       const cat = activeCategory.toLowerCase();
       const matchesCategory = (t.career || '').toLowerCase().includes(cat) || 
                               (t.category || '').toLowerCase().includes(cat) ||
@@ -285,6 +324,13 @@ export default function PracticeExam({ user, onRequireAuth, onBackToDashboard, t
                               (t.description || '').toLowerCase().includes(cat);
       if (!matchesCategory) return false;
     }
+
+    if (activeBoardFilter !== 'all') {
+      const bFilter = activeBoardFilter.toUpperCase();
+      const boardVal = (t.examining_board || '').toUpperCase();
+      if (!boardVal.includes(bFilter)) return false;
+    }
+
 
     if (activeCategory === 'ENEM' && enemYearFilter !== 'all') {
       const yearMatches = (t.title || '').includes(enemYearFilter) || (t.description || '').includes(enemYearFilter);
@@ -764,6 +810,7 @@ export default function PracticeExam({ user, onRequireAuth, onBackToDashboard, t
       <div className="flex items-center gap-2 overflow-x-auto pb-2 border-b border-slate-800 text-xs">
         {[
           { id: 'all', label: '🌟 Todos os Simulados' },
+          { id: 'custom_ineditos', label: '✨ Simulados Inéditos' },
           { id: 'in_progress', label: `⏳ Em Andamento (${inProgressTests.length})` },
           { id: 'ENEM', label: '🎓 ENEM (Edições 2009 a 2026)' },
           { id: 'Policial', label: '🚓 Carreiras Policiais (PF / PRF)' },
@@ -788,6 +835,101 @@ export default function PracticeExam({ user, onRequireAuth, onBackToDashboard, t
             {cat.label}
           </button>
         ))}
+      </div>
+
+      {/* Bancas Examinadoras Filter Bar & Guia */}
+      <div className="bg-slate-900/60 p-4 rounded-2xl border border-slate-800 space-y-3">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-black uppercase tracking-wider text-slate-300">
+              🏛️ Filtrar por Banca:
+            </span>
+            {activeBoardFilter !== 'all' && (
+              <span className="text-[11px] text-amber-400 font-bold bg-amber-500/10 px-2 py-0.5 rounded-md border border-amber-500/20">
+                Filtro ativo: {activeBoardFilter}
+              </span>
+            )}
+          </div>
+          <button
+            type="button"
+            onClick={() => setShowBancasGuide(!showBancasGuide)}
+            className="text-xs font-bold text-indigo-400 hover:text-indigo-300 flex items-center gap-1 cursor-pointer"
+          >
+            <BookOpen className="w-3.5 h-3.5" />
+            <span>{showBancasGuide ? 'Ocultar Guia das Bancas ▲' : 'Guia Estratégico das Bancas ▼'}</span>
+          </button>
+        </div>
+
+        {/* Bancas Pills */}
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs">
+          {[
+            { id: 'all', label: 'Todas as Bancas' },
+            { id: 'CEBRASPE', label: 'CEBRASPE (CESPE)' },
+            { id: 'FGV', label: 'FGV' },
+            { id: 'FCC', label: 'FCC' },
+            { id: 'VUNESP', label: 'VUNESP' },
+            { id: 'Cesgranrio', label: 'Cesgranrio' },
+            { id: 'Instituto AOCP', label: 'AOCP' },
+            { id: 'IBFC', label: 'IBFC' },
+            { id: 'Quadrix', label: 'Quadrix' },
+            { id: 'ESAF', label: 'ESAF' },
+            { id: 'INEP', label: 'INEP (ENEM)' }
+          ].map(b => (
+            <button
+              key={b.id}
+              onClick={() => setActiveBoardFilter(b.id)}
+              className={`px-3 py-1.5 rounded-xl font-bold whitespace-nowrap transition-all cursor-pointer text-xs ${
+                activeBoardFilter === b.id
+                  ? 'bg-amber-500 text-slate-950 shadow-md font-black'
+                  : 'bg-slate-800/80 text-slate-400 hover:text-white hover:bg-slate-800'
+              }`}
+            >
+              {b.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Guia Estratégico Expandível das Bancas */}
+        {showBancasGuide && (
+          <div className="pt-3 border-t border-slate-800/80 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-xs animate-fadeIn">
+            <div className="p-3 rounded-xl bg-purple-950/30 border border-purple-500/20 space-y-1">
+              <span className="font-bold text-purple-300">CEBRASPE (CESPE)</span>
+              <p className="text-slate-300 text-[11px] leading-relaxed">
+                <b>Regra:</b> 1 errada anula 1 certa. Enunciados multidisciplinares e pegadinhas teóricas. Se não tiver certeza, deixar em branco pode ser estratégia.
+              </p>
+            </div>
+            <div className="p-3 rounded-xl bg-blue-950/30 border border-blue-500/20 space-y-1">
+              <span className="font-bold text-blue-300">FGV</span>
+              <p className="text-slate-300 text-[11px] leading-relaxed">
+                <b>Regra:</b> Casos práticos longos. Atenção máxima à interpretação do enunciado e à jurisprudência pacificada dos tribunais.
+              </p>
+            </div>
+            <div className="p-3 rounded-xl bg-emerald-950/30 border border-emerald-500/20 space-y-1">
+              <span className="font-bold text-emerald-300">FCC</span>
+              <p className="text-slate-300 text-[11px] leading-relaxed">
+                <b>Regra:</b> Literalidade da lei pura ("lei seca") e súmulas do STF/STJ. Questões técnicas e diretas de 5 alternativas.
+              </p>
+            </div>
+            <div className="p-3 rounded-xl bg-amber-950/30 border border-amber-500/20 space-y-1">
+              <span className="font-bold text-amber-300">VUNESP</span>
+              <p className="text-slate-300 text-[11px] leading-relaxed">
+                <b>Regra:</b> Texto literal de artigos e forte cobrança de gramática normativa (crase, pontuação, concordância).
+              </p>
+            </div>
+            <div className="p-3 rounded-xl bg-yellow-950/30 border border-yellow-500/20 space-y-1">
+              <span className="font-bold text-yellow-300">Cesgranrio</span>
+              <p className="text-slate-300 text-[11px] leading-relaxed">
+                <b>Regra:</b> Organizadora do CNU e de bancos (BB, Caixa). Foco em políticas públicas, matemática financeira e atendimento.
+              </p>
+            </div>
+            <div className="p-3 rounded-xl bg-rose-950/30 border border-rose-500/20 space-y-1">
+              <span className="font-bold text-rose-300">Instituto AOCP / IBFC</span>
+              <p className="text-slate-300 text-[11px] leading-relaxed">
+                <b>Regra:</b> Questões diretas de concursos policiais e órgãos estaduais. Cobrança de prazos e dispositivos do CP/CPP.
+              </p>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Controls Bar: Search & Sub-filters */}
@@ -943,9 +1085,16 @@ export default function PracticeExam({ user, onRequireAuth, onBackToDashboard, t
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-lg border border-indigo-500/20">
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    {test.examining_board && (
+                      <span className={`text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md border ${getBoardBadgeStyle(test.examining_board)}`}>
+                        {test.examining_board}
+                      </span>
+                    )}
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-lg border border-indigo-500/20">
                     {test.career || test.category || 'Geral'}
                   </span>
+                  </div>
                   <div className="flex items-center gap-1.5 text-xs text-amber-400 font-medium">
                     <Clock className="w-3.5 h-3.5" />
                     <span>{test.time_limit_minutes || test.duration_minutes || 60} min</span>

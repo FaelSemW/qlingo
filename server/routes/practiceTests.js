@@ -205,6 +205,116 @@ router.post('/create', (req, res) => {
   }
 });
 
+// POST /api/practice-tests/generate-custom
+// Cria simulado 100% inédito sob medida para concurseiros
+router.post('/generate-custom', (req, res) => {
+  try {
+    const {
+      title,
+      board = 'CEBRASPE',
+      career = 'Carreiras Policiais',
+      disciplines = [],
+      count = 20,
+      style = 'certo_errado',
+      time_mode = 'timed',
+      time_limit_minutes
+    } = req.body;
+
+    const requestedCount = Math.min(Math.max(Number(count) || 10, 5), 100);
+
+    let finalTimeMinutes = Number(time_limit_minutes);
+    if (!finalTimeMinutes || isNaN(finalTimeMinutes)) {
+      if (time_mode === 'untimed') {
+        finalTimeMinutes = 0;
+      } else {
+        const perQ = style === 'certo_errado' ? 1.5 : 2.5;
+        finalTimeMinutes = Math.round(requestedCount * perQ);
+      }
+    }
+
+    const { generateIneditaQuestions } = require('../customExamGenerator');
+    const generatedQuestions = generateIneditaQuestions({
+      board,
+      career,
+      disciplines,
+      count: requestedCount,
+      style
+    });
+
+    const insertQStmt = db.prepare(`
+      INSERT INTO questions (
+        discipline, examining_board, institute, year, difficulty,
+        statement, options, right_answer, explanation, stats_distribution,
+        comments, career, exam_type, subject
+      ) VALUES (
+        @discipline, @examining_board, @institute, @year, @difficulty,
+        @statement, @options, @right_answer, @explanation, @stats_distribution,
+        @comments, @career, @exam_type, @subject
+      )
+    `);
+
+    const qIds = [];
+    const questionObjects = [];
+
+    for (const q of generatedQuestions) {
+      const info = insertQStmt.run(q);
+      const insertedId = Number(info.lastInsertRowid);
+      qIds.push(insertedId);
+      questionObjects.push({
+        ...q,
+        id: insertedId,
+        options: JSON.parse(q.options),
+        stats_distribution: JSON.parse(q.stats_distribution),
+        comments: JSON.parse(q.comments)
+      });
+    }
+
+    const testId = `sim-inedito-${Date.now()}-${uuidv4().substring(0, 6)}`;
+    const finalTitle = title || `Simulado Inédito ${board} — ${career} (${requestedCount} Questões)`;
+    const discLabel = disciplines && disciplines.length > 0 ? disciplines.join(', ') : 'Conhecimentos Gerais & Específicos';
+    const finalDesc = `Simulado inédito gerado sob medida pelo QLingo AI para concurseiros. Foco em: ${discLabel}. Estilo: ${style === 'certo_errado' ? 'Certo ou Errado' : 'Múltipla Escolha'}.`;
+    const cutScore = board.includes('CEBRASPE') ? 60 : 70;
+
+    db.prepare(`
+      INSERT INTO practice_tests (
+        id, title, description, time_limit_minutes, question_ids,
+        category, cut_score, examining_board, institute, career
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `).run(
+      testId,
+      finalTitle,
+      finalDesc,
+      finalTimeMinutes,
+      JSON.stringify(qIds),
+      'Simulados Inéditos (QLingo AI)',
+      cutScore,
+      board,
+      `${career} (Inédita)`,
+      career
+    );
+
+    res.json({
+      success: true,
+      test: {
+        id: testId,
+        title: finalTitle,
+        description: finalDesc,
+        time_limit_minutes: finalTimeMinutes,
+        cut_score: cutScore,
+        category: 'Simulados Inéditos (QLingo AI)',
+        examining_board: board,
+        career,
+        total_questions: requestedCount,
+        question_ids: qIds
+      },
+      questions: questionObjects
+    });
+  } catch (error) {
+    console.error('Error generating custom practice test:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Responder questão individual durante tentativa (api/ils/practice_tests/attempts/{ATTEMPT_ID}/questions/{QUESTION_ID})
 router.post('/attempts/:attempt_id/questions/:question_id', (req, res) => {
   try {
