@@ -46,8 +46,10 @@ export default function App() {
   useEffect(() => {
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
+      document.body.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
+      document.body.classList.remove('dark');
     }
   }, [theme]);
 
@@ -195,8 +197,12 @@ export default function App() {
     loadInitialData();
   };
 
+  const isDark = theme === 'dark';
+
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col text-slate-900 pb-16 sm:pb-0">
+    <div className={`min-h-screen flex flex-col transition-colors duration-150 pb-16 sm:pb-0 ${
+      isDark ? 'bg-slate-950 text-slate-100' : 'bg-slate-50 text-slate-900'
+    }`}>
       
       {/* Top Sticky Header */}
       <Header
@@ -205,12 +211,21 @@ export default function App() {
         onOpenImport={() => setIsImportModalOpen(true)}
         onOpenAuth={() => setIsAuthModalOpen(true)}
         onLogout={handleLogout}
+        theme={theme}
+        onToggleTheme={toggleTheme}
+        onOpenOnboarding={() => setIsOnboardingOpen(true)}
       />
 
       {/* Navigation Bar */}
       <Navigation
         activeTab={activeTab}
-        onSelectTab={setActiveTab}
+        theme={theme}
+        onSelectTab={(tab) => {
+          setActiveTab(tab);
+          if (isDailyChallengeActive && tab !== 'questions') {
+            setIsDailyChallengeActive(false);
+          }
+        }}
       />
 
       {/* Main Content Area */}
@@ -253,7 +268,9 @@ export default function App() {
             </div>
 
             {/* Daily Mission Card & Desafio Diário (Duolingo Style) */}
-            <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-7 shadow-xs mb-8 space-y-6">
+            <div className={`rounded-3xl border p-6 sm:p-7 shadow-xs mb-8 space-y-6 transition-colors ${
+              isDark ? 'bg-slate-900 border-slate-800 text-white' : 'bg-white border-slate-200 text-slate-800'
+            }`}>
               
               {/* Header com Progresso da Meta */}
               <div className="flex items-center justify-between">
@@ -526,7 +543,11 @@ export default function App() {
             )}
 
             {/* Search and Filter Panel (Hidden in pure Daily Challenge mode or available to switch) */}
-            <div className="bg-white rounded-3xl border border-slate-200 p-5 sm:p-6 shadow-xs mb-8">
+            <div className={`rounded-3xl border p-5 sm:p-6 shadow-xs mb-8 transition-colors ${
+              isDark 
+                ? 'bg-slate-900/90 border-slate-800 text-slate-100 shadow-xl shadow-slate-950/40' 
+                : 'bg-white border-slate-200 text-slate-800 shadow-xs'
+            }`}>
               
               {/* Category Filter Tabs */}
               <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-4 border-b border-slate-100 text-xs">
@@ -687,14 +708,19 @@ export default function App() {
                   key={q.id}
                   question={q}
                   notebooks={notebooks}
+                  isDark={isDark}
                   onResolved={handleQuestionResolved}
                   onRefreshQuestion={loadQuestions}
                 />
               ))
             ) : (
-              <div className="bg-white rounded-3xl border border-slate-200 p-12 text-center text-slate-500">
-                <BookOpen className="w-12 h-12 text-slate-300 mx-auto mb-3" />
-                <h3 className="font-bold text-base text-slate-800 mb-1">Nenhuma questão encontrada</h3>
+              <div className={`rounded-3xl border p-12 text-center transition-colors ${
+                isDark 
+                  ? 'bg-slate-900 border-slate-800 text-slate-400' 
+                  : 'bg-white border-slate-200 text-slate-500'
+              }`}>
+                <BookOpen className="w-12 h-12 text-slate-500 mx-auto mb-3" />
+                <h3 className={`font-bold text-base mb-1 ${isDark ? 'text-white' : 'text-slate-800'}`}>Nenhuma questão encontrada</h3>
                 <p className="text-xs mb-4">
                   Tente alterar os filtros de busca ou importar novas questões pelo botão "Importar".
                 </p>
@@ -712,7 +738,7 @@ export default function App() {
 
         {/* PRACTICE EXAMS TAB */}
         {activeTab === 'practice' && (
-          <PracticeExam onBackToDashboard={() => setActiveTab('dashboard')} />
+          <PracticeExam onBackToDashboard={() => setActiveTab('dashboard')} theme={theme} user={currentUser} />
         )}
 
         {/* ANALYTICS & PERFORMANCE DIAGNOSIS TAB */}
@@ -732,17 +758,17 @@ export default function App() {
 
         {/* FLASHCARDS TAB */}
         {activeTab === 'flashcards' && (
-          <FlashcardViewer />
+          <FlashcardViewer theme={theme} />
         )}
 
         {/* NOTEBOOKS TAB */}
         {activeTab === 'notebooks' && (
-          <NotebooksView onRefreshUserData={loadInitialData} />
+          <NotebooksView onRefreshUserData={loadInitialData} theme={theme} />
         )}
 
         {/* PROFILE / PERFORMANCE TAB */}
         {activeTab === 'profile' && (
-          <ProfileStats />
+          <ProfileStats theme={theme} />
         )}
 
       </main>

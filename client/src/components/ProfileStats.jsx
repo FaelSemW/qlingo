@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { User, Flame, Award, Target, TrendingUp, CheckCircle, BarChart3 } from 'lucide-react';
 import { fetchUserProfile, fetchPerformance, fetchStreaks, updateDailyGoal } from '../services/api';
 
-export default function ProfileStats() {
+export default function ProfileStats({ theme = 'dark' }) {
+  const isDark = theme === 'dark';
   const [profile, setProfile] = useState(null);
   const [performance, setPerformance] = useState([]);
   const [streakData, setStreakData] = useState(null);

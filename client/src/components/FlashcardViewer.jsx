@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Layers, RotateCcw, Check, Plus, Sparkles, HelpCircle } from 'lucide-react';
 import { fetchFlashcards, answerFlashcard, createFlashcard } from '../services/api';
 
-export default function FlashcardViewer() {
+export default function FlashcardViewer({ theme = 'dark' }) {
+  const isDark = theme === 'dark';
   const [deck, setDeck] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);

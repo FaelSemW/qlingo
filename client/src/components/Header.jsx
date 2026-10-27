@@ -52,22 +52,8 @@ export default function Header({
           </div>
         </div>
 
-        {/* Gamification Bar (Streak, XP, Target, Theme, User) */}
+        {/* Gamification Bar (Streak, XP, Theme Switcher, User) */}
         <div className="flex items-center gap-2 sm:gap-3">
-          
-          {/* Target Exam Pill */}
-          <button
-            onClick={onOpenOnboarding}
-            className={`hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all cursor-pointer border ${
-              isDark 
-                ? 'bg-indigo-950/50 border-indigo-500/30 text-indigo-300 hover:bg-indigo-900/50' 
-                : 'bg-indigo-50 border-indigo-200 text-indigo-700 hover:bg-indigo-100'
-            }`}
-            title="Alterar carreira foco e metas pedagógicas"
-          >
-            <Target className="w-3.5 h-3.5 text-indigo-400" />
-            <span>Foco: <b>{currentUser?.target_exam || 'Definir'}</b></span>
-          </button>
 
           {/* Daily Streak Flame */}
           <div 
@@ -80,7 +66,7 @@ export default function Header({
           >
             <Flame className="w-4 h-4 fill-orange-500 text-orange-500 animate-pulse group-hover:scale-110 transition-transform" />
             <span className="font-extrabold text-xs sm:text-sm">{currentStreak}</span>
-            <span className="text-xs font-semibold hidden lg:inline">dias</span>
+            <span className="text-xs font-semibold hidden md:inline">dias</span>
           </div>
 
           {/* XP Level Badge */}
@@ -96,17 +82,27 @@ export default function Header({
             <span className="font-bold text-xs sm:text-sm">{currentXp} <span className="text-[10px] font-normal">XP</span></span>
           </div>
 
-          {/* Dark / Light Mode Toggle Button */}
+          {/* Functional Dark / Light Mode Switcher */}
           <button
             onClick={onToggleTheme}
-            className={`p-2 rounded-xl border transition-all cursor-pointer ${
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-bold transition-all cursor-pointer ${
               isDark 
-                ? 'bg-slate-900 border-slate-800 text-amber-400 hover:bg-slate-800 hover:border-slate-700' 
-                : 'bg-slate-100 border-slate-200 text-slate-700 hover:bg-slate-200'
+                ? 'bg-slate-900 border-slate-700 text-amber-300 hover:bg-slate-800 hover:border-slate-600 shadow-sm' 
+                : 'bg-slate-100 border-slate-300 text-slate-700 hover:bg-slate-200 shadow-xs'
             }`}
-            title={isDark ? 'Alternar para Modo Claro (Light)' : 'Alternar para Modo Escuro (Dark)'}
+            title={isDark ? 'Mudar para Modo Claro (Light)' : 'Mudar para Modo Escuro (Dark)'}
           >
-            {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4 text-indigo-600" />}
+            {isDark ? (
+              <>
+                <Sun className="w-4 h-4 text-amber-400" />
+                <span className="hidden sm:inline">Modo Claro</span>
+              </>
+            ) : (
+              <>
+                <Moon className="w-4 h-4 text-indigo-600" />
+                <span className="hidden sm:inline">Modo Escuro</span>
+              </>
+            )}
           </button>
 
           {/* User Account / Login Button */}

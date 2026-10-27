@@ -3,7 +3,8 @@ import { BookmarkCheck, AlertTriangle, Plus, ChevronRight, BookOpen } from 'luci
 import { fetchNotebooks, fetchNotebook, createNotebook, fetchWeeklyErrors } from '../services/api';
 import QuestionCard from './QuestionCard';
 
-export default function NotebooksView({ onRefreshUserData }) {
+export default function NotebooksView({ onRefreshUserData, theme = 'dark' }) {
+  const isDark = theme === 'dark';
   const [notebooks, setNotebooks] = useState([]);
   const [selectedNotebook, setSelectedNotebook] = useState(null);
   const [notebookQuestions, setNotebookQuestions] = useState([]);
@@ -107,6 +108,7 @@ export default function NotebooksView({ onRefreshUserData }) {
                 key={q.id}
                 question={q}
                 notebooks={notebooks}
+                isDark={isDark}
                 onResolved={() => {
                   if (onRefreshUserData) onRefreshUserData();
                 }}

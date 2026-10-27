@@ -10,7 +10,8 @@ import { api } from '../services/api';
 import confetti from 'canvas-confetti';
 import StatementRenderer from './StatementRenderer';
 
-export default function PracticeExam({ user, onRequireAuth }) {
+export default function PracticeExam({ user, onRequireAuth, onBackToDashboard, theme = 'dark' }) {
+  const isDark = theme === 'dark';
   const [tests, setTests] = useState([]);
   const [activeCategory, setActiveCategory] = useState('all');
   const [loading, setLoading] = useState(true);
