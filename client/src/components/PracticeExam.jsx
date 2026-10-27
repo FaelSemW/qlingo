@@ -533,7 +533,7 @@ export default function PracticeExam({ user, onRequireAuth, onBackToDashboard, t
                           }`}>
                             {optKey}
                           </span>
-                          <span className="flex-1 leading-relaxed"><OptionContent text={alt.text} isDark={true} /></span>
+                          <span className="flex-1 leading-relaxed"><OptionContent text={alt.text} file={alt.file} isDark={true} /></span>
                           {isOptionCorrect && <span className="text-[11px] text-emerald-400 font-bold uppercase tracking-wider">Gabarito Oficial</span>}
                         </div>
                       );
@@ -681,7 +681,7 @@ export default function PracticeExam({ user, onRequireAuth, onBackToDashboard, t
                   }`}>
                     {optKey}
                   </span>
-                  <span className="text-sm leading-relaxed flex-1"><OptionContent text={alt.text} isDark={true} /></span>
+                  <span className="text-sm leading-relaxed flex-1"><OptionContent text={alt.text} file={alt.file} isDark={true} /></span>
                   {isSelected && <Check className="w-5 h-5 text-indigo-400 shrink-0" />}
                 </button>
               );

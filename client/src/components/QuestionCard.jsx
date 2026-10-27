@@ -219,7 +219,7 @@ export default function QuestionCard({
                     {opt.key}
                   </span>
                   <span className="flex-1 pt-0.5 text-sm sm:text-base leading-snug">
-                    <OptionContent text={opt.text} isDark={isDark} />
+                    <OptionContent text={opt.text} file={opt.file} isDark={isDark} />
                   </span>
 
                   {/* Right/Wrong Icon Indicator */}
